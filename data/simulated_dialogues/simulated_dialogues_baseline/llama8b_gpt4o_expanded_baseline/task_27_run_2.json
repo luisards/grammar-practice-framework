@@ -1,0 +1,89 @@
+{
+  "task_id": 27,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend advice about friendships'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "How's it going?"
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you."
+    },
+    {
+      "role": "system",
+      "content": "I'm glad to hear that. So, what's on your mind? You wanted to talk about something, right?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "It means you wanted to ask me something or talk about something, but you haven't said what it is yet."
+    },
+    {
+      "role": "student",
+      "content": "I understand now. Thank you."
+    },
+    {
+      "role": "system",
+      "content": "No problem, happy to help. So, you're good, and you wanted to talk about something. What's been on your mind lately?"
+    },
+    {
+      "role": "student",
+      "content": "I am learning English."
+    },
+    {
+      "role": "system",
+      "content": "That's great. You're learning English, so why don't we practice talking in English? Last week, I heard that your friend Sarah left town without saying goodbye. How do you think you would feel if that happened to you?"
+    }
+  ],
+  "timestamp": "2025-06-08T12:42:52Z"
+}

@@ -1,0 +1,95 @@
+{
+  "task_id": 50,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about leisure activities with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by mentioning some leisure activities you always, usually or sometimes do at the weekend, then ask me about mine. ('I sometimes read a book at the park. What do you do for relaxing?', 'I usually watch a TV show. How about you?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about leisure activities with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I always go for a walk in the morning. I usually watch a movie in the evening. Sometimes I play games with my friends. What do you do for fun on the weekend?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I usually read a book on the weekend. Sometimes I go hiking with my family. I always cook a nice meal on Sunday. What about you?"
+    },
+    {
+      "role": "system",
+      "content": "That sounds nice! I always enjoy a good book too. I usually visit my friends on Saturdays. Sometimes I go to the gym in the afternoon. Do you ever play sports or exercise on the weekend?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "\"Play sports or exercise\" means doing physical activities like running, swimming, or playing football. For example, \"I sometimes play football with my friends\" or \"I always jog in the morning.\" Do you do any activities like that on the weekend?",
+      "advanced_content": "\"Play sports or exercise\" means doing physical activities like running, swimming, or playing football. For example, \"I sometimes play football with my friends\" or \"I always go jogging in the morning.\" Do you do any activities like that on the weekend?",
+      "advanced_construct_ids": "956"
+    },
+    {
+      "role": "student",
+      "content": "I sometimes go for a run in the park. I usually ride my bike on Saturday mornings. I never play football, but I like watching it on TV. What about you? Do you play any sports?"
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s great! I sometimes play tennis with my brother. I usually go swimming on Sundays. I never watch sports on TV, but I enjoy playing them. It\u2019s nice to talk about our weekend activities with you! Keep practicing, and you\u2019ll get even better at using the present simple and frequency adverbs. Goodbye for now!",
+      "advanced_content": "That\u2019s great! I sometimes play tennis with my brother. I usually go swimming on Sundays. I never watch sports on TV, but I enjoy playing them. It was nice talking about our weekend activities with you! Keep practicing, and you\u2019ll get even better at using the present simple and frequency adverbs. Goodbye for now!",
+      "advanced_construct_ids": "879"
+    },
+    {
+      "role": "student",
+      "content": "Goodbye! It was nice talking to you about our weekend activities. I'll keep practicing. Have a great day!"
+    },
+    {
+      "role": "system",
+      "content": "Great job! You always finish the task. You usually do very well using the present simple and frequency adverbs. Practice often, and you\u2019ll get better. Talk to you later! Goodbye!",
+      "advanced_content": "Good job! You have completed the task. You did very well using the present simple and frequency adverbs. Keep practicing, and you\u2019ll keep improving. Talk to you later! Goodbye!",
+      "advanced_construct_ids": "956"
+    }
+  ],
+  "timestamp": "2025-06-05T14:23:43Z"
+}

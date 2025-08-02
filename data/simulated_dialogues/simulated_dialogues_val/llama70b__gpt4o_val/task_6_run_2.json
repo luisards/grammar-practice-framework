@@ -1,0 +1,95 @@
+{
+  "task_id": 6,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing family and friends with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your family and ask me about mine (e.g. 'My family is very big. Is your family very big too?', 'Do you have siblings? Are they really nice?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing family and friends with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I'm happy to meet you. My family is very big. Is your family very big too?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! Nice to meet you too. My family is quite small."
+    },
+    {
+      "role": "system",
+      "content": "That's really nice. I have many siblings, they are very funny. Do you have siblings? Are they really nice?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "They extremely enjoy joking and incredibly well make people laugh. They are remarkably good at making me smile really widely. My sister is incredibly clever, she does exceptionally well at school. Is your sister or brother equally good at school too?",
+      "advanced_content": "It means they like to joke and make people laugh. They are very good at making me smile. My sister is extremely clever, she is very good at school. Is your sister or brother very good at school too?",
+      "advanced_construct_ids": "753, 983"
+    },
+    {
+      "role": "student",
+      "content": "I have one brother. He is quite smart, but sometimes he is really lazy. He does very well in math, but he is not so good at history."
+    },
+    {
+      "role": "system",
+      "content": "That's really interesting. My brother is also very good at math, but he is not too good at languages. He is very bad at speaking English, but he is really trying to improve. Does your brother like playing sports, is he very good at them?",
+      "advanced_content": "That's really interesting. My brother is also very good at math, but he is not too good at languages. He is extremely bad at speaking English, but he is really trying to improve. Does your brother like playing sports, is he very good at them?",
+      "advanced_construct_ids": "983"
+    },
+    {
+      "role": "student",
+      "content": "My brother loves playing soccer. He is really good at it and plays every weekend. However, he is not so good at basketball. He finds it quite difficult."
+    },
+    {
+      "role": "system",
+      "content": "That's really great! I'm glad to hear that your brother enjoys playing soccer. He knows what he's not so good at, like basketball. Well, it was really nice chatting with you about our families. I think we've had a very interesting conversation. Good job! You have completed the task. Talk to you later!",
+      "advanced_content": "That's really great! I'm glad to hear that your brother enjoys playing soccer. It's also good that he knows what he's not so good at, like basketball. Well, it was really nice chatting with you about our families. I think we've had a very interesting conversation. Good job! You have completed the task. Talk to you later!",
+      "advanced_construct_ids": "805"
+    }
+  ],
+  "timestamp": "2025-06-04T18:13:24Z"
+}

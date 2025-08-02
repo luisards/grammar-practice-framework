@@ -1,0 +1,93 @@
+{
+  "task_id": 28,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice should by Giving a friend advice using 'should'. I want to ensure that I can use the affirmative form. For example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have problems with your health. Start by telling me what's wrong and ask for advice (e.g. 'Should I...?, 'What should I do?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Giving a friend advice using 'should', using, for example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "I'm not feeling well. I have a bad headache and I'm very tired. Should I go to the doctor?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, you should go to the doctor."
+    },
+    {
+      "role": "system",
+      "content": "I also have a bad cough. What should I do to get rid of it?"
+    },
+    {
+      "role": "student",
+      "content": "You should drink warm tea and rest."
+    },
+    {
+      "role": "system",
+      "content": "I have been working too much and I think it's making my health worse. You should tell me what I should do to reduce my work stress."
+    },
+    {
+      "role": "student",
+      "content": "You should take regular breaks and try to relax."
+    },
+    {
+      "role": "system",
+      "content": "That's a great idea, I should try to exercise to reduce stress. What should I do to start exercising regularly?",
+      "advanced_content": "That's a great idea, I should also try to exercise more to reduce stress. What should I do to start exercising regularly?",
+      "advanced_construct_ids": "753"
+    },
+    {
+      "role": "student",
+      "content": "You should start with short walks and gradually increase your activity."
+    },
+    {
+      "role": "system",
+      "content": "I think I have a good plan now. You should be proud of me for taking care of my health. I should go to the doctor tomorrow and I should exercise soon. Thanks for your help and advice. Goodbye!",
+      "advanced_content": "I think I have a good plan now. You should be proud of me for taking care of my health. I should go to the doctor tomorrow and start exercising soon. Thanks for your help and advice. Goodbye!",
+      "advanced_construct_ids": "956"
+    }
+  ],
+  "timestamp": "2025-06-04T12:52:50Z"
+}

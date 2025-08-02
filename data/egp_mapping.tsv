@@ -1,0 +1,660 @@
+construct_id	construct_name	level
+1	combining, combining two adjectives with 'and'	A1
+2	modifying, with 'very' 	A1
+3	position, attributive (with nouns)	A1
+4	position, predicative, with 'be'	A1
+5	superlatives, 'my best friend'	A1
+11	adverbs and adverb phrases: types and meanings, 'very' + adjectives	A1
+12	adverbs and adverb phrases: types and meanings, 'very' + time adverbs 	A1
+13	adverbs and adverb phrases: types and meanings, degree and time, modifying verbs	A1
+14	adverbs and adverb phrases: types and meanings, place, complement	A1
+15	position, degree, before adjectives	A1
+16	position, frequency, mid position	A1
+17	position, front position	A1
+18	position, 'really,'  mid position 	A1
+19	position, time, end position	A1
+20	position, place, end position	A1
+21	adverb phrases - form, 'very' + adverb	A1
+22	coordinated, main clause + main clause	A1
+23	coordinated, clause + clause, ellipted subject	A1
+24	declarative, affirmative declarative	A1
+25	declarative, negative declarative with 'be'	A1
+26	declarative, negative declarative, lexical verbs	A1
+27	declarative, affirmative declarative, modal auxiliary verbs	A1
+28	interrogatives, affirmative interrogative, with 'be'	A1
+30	coordinating, word + word	A1
+31	coordinating, phrase + phrase	A1
+32	coordinating, clause + clause	A1
+33	coordinating, sentence + sentence	A1
+36	subordinating, 'because' 	A1
+37	articles, with nouns 	A1
+38	articles, 'a' + adjectives	A1
+39	articles, 'a' + 'very' + adjectives	A1
+40	articles, preposition + 'the' + noun	A1
+41	articles, preposition + no article	A1
+43	demonstratives, 'this' with singular nouns	A1
+46	possessives, with nouns	A1
+47	quantity, with plural nouns 	A1
+48	quantity, with singular nouns	A1
+49	future with will and shall, affirmative 'will'	A1
+51	can, affirmative	A1
+52	can, negative 	A1
+53	can, question 	A1
+58	will, affirmative	A1
+60	would, affirmative with 'like'	A1
+107	negation, main verb 'be'	A1
+108	negation, auxiliary verb 'do', present	A1
+109	negation, modal verb 'can'	A1
+63	noun phrases, determiner + noun	A1
+64	noun phrases, determiner + adjective + noun	A1
+65	noun phrases, adjective + plural noun	A1
+66	noun phrases, noun + noun	A1
+67	types, common nouns	A1
+68	types, proper nouns	A1
+69	types, compound nouns	A1
+70	plural, plural '-s'	A1
+71	noun phrases - grammatical functions, as subjects 	A1
+72	noun phrases - grammatical functions, as objects	A1
+73	noun phrases - grammatical functions, as complement of prepositions	A1
+74	noun phrases - grammatical functions, as complement of 'be'	A1
+75	noun phrases - grammatical functions, as adjuncts	A1
+76	past simple, affirmative	A1
+78	prepositions, simple	A1
+79	prepositions, preposition + noun phrase	A1
+80	present continuous, affirmative	A1
+82	present simple, affirmative	A1
+83	present simple, negative	A1
+84	present simple, with 'really'	A1
+86	subject/ object, (object) 'it'	A1
+87	subject/ object, (object) 'me', 'you', 'her', 'him', 'us', 'them' 	A1
+88	subject/ object, (object) with preposition 	A1
+89	subject/ object, (subject) 'it' for first person	A1
+90	subject/ object, (subject) questions	A1
+91	subject/ object, (subject) questions with 'be'	A1
+92	subject/ object, (subject) statements	A1
+93	indefinite - thing, -one, -body etc, object	A1
+94	indefinite - thing, -one, -body etc, 'everything', subject	A1
+95	yes/no, modal verbs	A1
+96	prepositional, verb + preposition + object	A1
+97	types, main verbs	A1
+98	types, linking verb, 'be'	A1
+99	types, auxiliary verb 'be' 	A1
+100	types, modal auxiliary verbs	A1
+101	patterns_with to and -ing, verb + 'to'-infinitive	A1
+102	patterns_with to and -ing, 'like' + 'to'-infinitive or + '-ing'	A1
+103	patterns_with to and -ing, 'would like to'	A1
+104	there is/are, 'there is'	A1
+105	there is/are, 'there are'	A1
+106	linking, 'be' + complement	A1
+110	combining, combining two adjectives with 'but'	A2
+111	comparatives, + -er	A2
+112	comparatives, + -ier	A2
+113	comparatives, before nouns	A2
+114	comparatives, complement of 'be' 	A2
+115	comparatives, double consonant + '-er'	A2
+116	comparatives, ending in '-e' + '-r' 	A2
+117	comparatives, irregular	A2
+118	comparatives, with 'more'	A2
+119	comparatives, with 'than'	A2
+120	modifying, with degree adverbs	A2
+121	modifying, with prepositional phrase	A2
+122	modifying, with 'too'	A2
+123	modifying, with 'too' + prepositional phrase	A2
+125	position, predicative, with 'be'	A2
+126	position, predicative, with linking verbs	A2
+130	superlatives, ellipsis, with 'the'	A2
+131	superlatives, with '-est'	A2
+132	superlatives, with '-est' 	A2
+133	superlatives, with '-est' 	A2
+134	superlatives, with 'my' or 'your'	A2
+135	superlatives, with '-st' 	A2
+136	superlatives, with 'the'	A2
+137	superlatives, with 'the most'	A2
+148	adverbs and adverb phrases: types and meanings, degree, modifying adjectives	A2
+149	adverbs and adverb phrases: types and meanings, manner, modifying verbs	A2
+150	adverbs and adverb phrases: types and meanings, time and sequencing, modifying clauses	A2
+151	position, degree, before adjectives 	A2
+152	position, front position	A2
+153	position, mid position	A2
+154	position, end position, manner	A2
+155	position, degree, end position	A2
+156	position, sentence adverb,  front position	A2
+157	adverb phrases - form, adverb + adverb	A2
+158	comparatives, 'be like' + noun or pronoun	A2
+160	declarative, negative declarative with 'have'	A2
+161	declarative, negative declarative, modal auxiliary verbs	A2
+162	imperatives, affirmative	A2
+168	interrogatives, affirmative interrogative, with auxiliary 'be/have'	A2
+169	interrogatives, affirmative interrogative	A2
+170	interrogatives, affirmative interrogative, with modal auxiliary verbs	A2
+171	interrogatives, affirmative 'wh-' interrogative 	A2
+172	interrogatives, negative 'wh-' interrogative 	A2
+173	interrogatives, negative interrogative	A2
+174	phrases/exclamations, 'what a …!'	A2
+175	phrases/exclamations, 'what a pity' + ('that') clause	A2
+176	relative, non-defining, subject, with 'who'	A2
+177	relative, defining, subject, with 'who'	A2
+178	relative, non-defining, subject, with 'which'	A2
+179	relative, defining, subject, with 'which'	A2
+180	relative, defining, object, with 'that'	A2
+181	relative, non-defining, object, with 'which'	A2
+182	relative, defining, object, with 'which'	A2
+183	relative, defining, without pronoun	A2
+379	conditional, 'if' + present simple	A2
+380	conditional, present simple 'if' clause + imperative	A2
+187	subordinating, simple 	A2
+189	articles, 'the' + superlatives 	A2
+190	demonstratives, 'this' with uncountable nouns	A2
+194	demonstratives, 'that'	A2
+197	demonstratives, 'these' 	A2
+200	demonstratives, 'those' 	A2
+203	possessives, singular noun +''s'	A2
+204	possessives, with quantifying determiners + 'of' 	A2
+205	quantity, with plural nouns 	A2
+206	quantity, with plural and uncountable nouns	A2
+207	quantity, with singular nouns 	A2
+208	quantity, 'much' with uncountable nouns, negative	A2
+209	quantity, 'many' with plural nouns, negative	A2
+210	quantity, 'so many' with plural nouns	A2
+211	quantity, determiner + 'of' + determiner	A2
+212	future continuous, affirmative with 'will' 	A2
+214	future with will and shall, affirmative 'shall'	A2
+215	future with will and shall, negative 'will'	A2
+216	future with will and shall, questions 	A2
+222	future with be going to, affirmative	A2
+223	future with be going to, questions	A2
+228	present simple for future use, with 'when'	A2
+231	adjectives, 'be' + 'sure' + clause 	A2
+234	have (got) to, affirmative	A2
+235	have (got) to, negative	A2
+236	have (got) to, questions	A2
+238	may, affirmative	A2
+240	might, affirmative	A2
+242	must, affirmative 	A2
+243	must, negative 	A2
+245	shall, affirmative	A2
+246	shall, questions	A2
+249	should, affirmative	A2
+250	should, negative	A2
+251	should, questions	A2
+255	will, negative	A2
+256	will, questions	A2
+260	would, affirmative	A2
+261	would, negative	A2
+262	would, questions with 'like'	A2
+267	adverbs, clause position	A2
+395	could, affirmative	A2
+396	could, negative	A2
+397	could, questions	A2
+388	negation, auxiliary verbs 'be', 'have', present	A2
+389	negation, auxiliary verb 'do', past	A2
+390	negation, 'do', imperatives	A2
+391	negation, modal verbs	A2
+392	negation, pronouns 	A2
+393	negation, determiners 'no'	A2
+394	negation, determiners 'any', 'much', 'many'	A2
+268	noun phrases, determiner + uncountable noun	A2
+269	noun phrases, determiner + noun	A2
+270	noun phrases, noun phrases with adjectives	A2
+271	noun phrases, with relative clause as postmodifier	A2
+272	noun phrases, with relative clause as complement	A2
+273	noun phrases, possession with ''s' + noun	A2
+274	types, '-ing' forms, object  	A2
+275	plural, plural '-es'	A2
+276	plural, plural '-ies'	A2
+277	plural, irregular plural nouns	A2
+278	plural, nouns only used in the plural	A2
+279	uncountable, uncountable nouns	A2
+280	uncountable, with 'the' 	A2
+281	uncountable, with determiners, quantity	A2
+282	uncountable, containers, quantity expressions	A2
+284	passives: form, past simple, affirmative	A2
+285	passives: form, present simple, affirmative	A2
+286	past continuous, affirmative	A2
+287	past continuous, with adverbs	A2
+290	past simple, affirmative	A2
+291	past simple, negative	A2
+292	past simple, questions	A2
+293	past simple, with 'when'	A2
+296	present perfect simple, affirmative	A2
+297	present perfect simple, negative	A2
+298	present perfect simple, questions	A2
+299	present perfect simple, with adverbs	A2
+301	prepositions, simple	A2
+302	prepositions, complex	A2
+303	prepositions, 'just' + preposition	A2
+304	prepositions, + '-ing'	A2
+305	prepositions, stranding	A2
+306	present continuous, negative	A2
+307	present continuous, questions	A2
+312	present simple, affirmative	A2
+313	present simple, indirect questions	A2
+314	present simple, negative 	A2
+315	present simple, questions 	A2
+316	present simple, with adverbs of indefinite frequency 	A2
+320	possessive, + 'of mine' 	A2
+321	possessive, 'mine'	A2
+322	possessive, 'yours' as object	A2
+323	reflexive, same subject and object.	A2
+324	subject/ object, (subject) ellipsis after 'hope'	A2
+325	subject/ object, (subject) empty 'it'	A2
+326	demonstratives, 'this'	A2
+330	demonstratives, 'that'	A2
+334	quantity, 'some' and 'any' 	A2
+335	quantity, 'some' as subject and object	A2
+336	quantity, 'any' as object	A2
+337	quantity, with 'of' + object pronoun	A2
+338	substitution, one, ones, none, 'one'	A2
+339	substitution, one, ones, none, pre-modifying	A2
+341	indefinite - thing, -one, -body etc, object or complement	A2
+342	indefinite - thing, -one, -body etc, subject	A2
+343	indefinite - thing, -one, -body etc, negative + 'anything'	A2
+346	indefinite - thing, -one, -body etc, with 'else'	A2
+349	alternatives, word + word	A2
+350	tags, question tags	A2
+351	wh-, main verb 'be'	A2
+352	wh-, with auxiliary 'do'	A2
+353	wh-, with auxiliary 'have'	A2
+354	wh-, with auxiliary 'be'	A2
+355	wh-, modal verbs 	A2
+357	yes/no, main verb 'be'	A2
+358	yes/no, modal verbs	A2
+359	yes/no, lexical verbs with 'do'	A2
+360	yes/no, auxiliary 'be'	A2
+361	yes/no, auxiliary 'have'	A2
+385	reported speech, reported statements with 'say', pronoun shift	A2
+386	reported speech, reported statements with 'tell', pronoun shift	A2
+363	patterns_that clauses, reporting verbs + direct object 'that'-clause	A2
+364	patterns_that clauses, verbs + direct object clause without 'that'	A2
+365	patterns_that clauses, verbs + indirect object clause	A2
+366	phrasal, no object	A2
+367	phrasal, verb + pronoun + particle 	A2
+368	types, auxiliary verbs 'have' and 'do'	A2
+369	types, linking verbs + adjective	A2
+370	types, modal auxiliary verbs	A2
+371	types, semi-modal auxiliary verbs, 'have (got) to'	A2
+372	patterns_with to and -ing, verb + 'to'- infinitive	A2
+373	patterns_with to and -ing, verbs + 'to'-infinitive or + '-ing'	A2
+375	patterns_with to and -ing, 'enjoy' + '-ing'	A2
+376	there is/are, 'there is' + uncountable	A2
+377	there is/are, 'there is/are' + a lot of 	A2
+378	linking, linking + complement	A2
+401	combining, before the noun	B1
+402	combining, combining comparative adjectives with 'and'	B1
+403	combining, combining more than two adjectives 	B1
+404	combining, combining the same comparative adjective with 'and'	B1
+405	combining, compound adjectives	B1
+410	modifying, adjective phrase + noun	B1
+411	modifying, with 'enough' 	B1
+412	modifying, with 'quite a'	B1
+413	modifying, with 'too' + 'to'-infinitive 	B1
+414	position, adjectives with prefix 'a-'	B1
+415	position, attributive (with nouns)	B1
+416	position, with 'make' as object complement	B1
+417	position, with pronoun	B1
+420	superlatives, 'one of the' 	B1
+421	superlatives, 'the best' with noun and  'to-' infinitive	B1
+422	superlatives, with determiners	B1
+433	adverbs and adverb phrases: types and meanings, degree, modifying adverbs	B1
+434	adverbs and adverb phrases: types and meanings, manner, modifying verbs  	B1
+436	adverb phrases - form, adverb + adverb	B1
+437	comparatives, finite after 'than'	B1
+442	comparatives, 'too' + 'to'-infinitive 	B1
+443	comparatives, 'the same' (+ noun) + 'as' + pronoun or noun	B1
+444	comparatives, 'so' + adjective + 'that' clause	B1
+445	comparatives, sense verbs + 'as if' or 'as though' + finite clause	B1
+446	comparatives, linking verb + 'like' or 'similar to'	B1
+448	coordinated, 'either … or'	B1
+449	coordinated, combining clauses of the same type	B1
+454	interrogatives, 'wh-' interrogative, subject	B1
+455	interrogatives, interrogative + adverb	B1
+456	interrogatives, 'which', 'whose'	B1
+457	phrases/exclamations, 'how' + adjective	B1
+458	phrases/exclamations, 'how' + adjective + clause	B1
+459	relative, non-defining, object, with 'who'	B1
+460	relative, defining, object, with 'who/that'	B1
+461	relative, with 'whose name'	B1
+462	relative, with 'where', place	B1
+470	coordinating, complex adding	B1
+471	coordinating, 'plus' with nouns	B1
+473	coordinating, 'either … or'	B1
+475	subordinating, simple	B1
+476	articles, 'another'	B1
+477	articles, preposition + no article	B1
+483	possessives, 'their'	B1
+484	possessives, irregular plural noun + ''s'	B1
+485	quantity, with plural nouns 	B1
+487	quantity, with plural and uncountable nouns	B1
+488	quantity, 'much' with uncountable nouns, interrogative	B1
+489	quantity, 'so much', 'too much' with uncountable nouns	B1
+490	quantity, 'many' with plural nouns, interrogative	B1
+491	quantity, determiner + 'of' + determiner 	B1
+492	quantity, modifying	B1
+493	future continuous, affirmative	B1
+494	future continuous, negative with 'will'	B1
+500	future with be going to, negative	B1
+501	future with be going to, past	B1
+502	future with be going to, with adverbs	B1
+510	present simple for future use, with 'as soon as'	B1
+511	adjectives, 'it' + 'be' + 'important' + clause 	B1
+514	adjectives, 'it' + 'be' + adjective + 'for' + object + infinitive	B1
+515	can, negative questions	B1
+516	can, with adverbs	B1
+519	expressions with be, modal with 'be able to'	B1
+520	expressions with be, 'be' expressions	B1
+525	have (got) to, infinitive 	B1
+526	may, negative	B1
+527	may, with adverbs 	B1
+529	may, questions	B1
+530	might, negative	B1
+533	might, past affirmative	B1
+536	must, ellipsis	B1
+537	must, ellipsis	B1
+538	must, with adverbs	B1
+543	ought, affirmative	B1
+548	should, past affirmative	B1
+549	should, past negative	B1
+555	used to, affirmative|	B1
+556	used to, negative	B1
+561	would, past affirmative	B1
+562	would, past negative	B1
+563	would, questions	B1
+564	would, with adverbs	B1
+728	negation, auxiliary verbs 'be', 'have', past	B1
+729	negation, mental process verbs + clause	B1
+730	negation, questions	B1
+732	negation, pronouns	B1
+733	negation, adverbs	B1
+734	negation, 'not', non finite and ellipted clauses	B1
+574	noun phrases, complex noun phrases with adjectives	B1
+575	noun phrases, complex noun phrases with adverbs + adjectives	B1
+577	noun phrases, noun + prepositional phrases 	B1
+580	noun phrases, noun + 'of' + possessive pronoun 	B1
+581	noun phrases, friend + 'of' + possessive determiner + noun 	B1
+582	noun phrases, complex noun phrase with possessive '‘s' + noun	B1
+583	noun phrases, noun phrase, noun phrase 	B1
+584	noun phrases, indefinite pronouns 	B1
+586	types, common nouns	B1
+587	plural, collective nouns	B1
+588	uncountable, uncountable nouns	B1
+589	uncountable, with determiners, quantity	B1
+591	passives: form, infinitive 	B1
+592	passives: form, past simple, affirmative	B1
+593	passives: form, present continuous, affirmative 	B1
+594	passives: form, present simple, affirmative 	B1
+595	passives: form, present simple, negative	B1
+596	passives: form, with verbs taking two objects.	B1
+599	get and have, 'get' + '-ed'	B1
+600	past continuous, negative	B1
+601	past continuous, questions	B1
+602	past continuous, with adverbs	B1
+605	past perfect continuous, affirmative	B1
+609	past perfect simple, affirmative 	B1
+610	past perfect simple, negative	B1
+611	past perfect simple, with adverbs 	B1
+613	past simple, affirmative	B1
+614	past simple, negative	B1
+615	past simple, questions  	B1
+620	present perfect continuous, affirmative	B1
+621	present perfect continuous, questions	B1
+626	present perfect simple, affirmative	B1
+627	present perfect simple, negative	B1
+628	present perfect simple, negative questions	B1
+629	present perfect simple, with adverbs	B1
+633	prepositions, simple	B1
+634	prepositions, complex	B1
+635	prepositions, 'adverb' + preposition	B1
+636	prepositions, stranding	B1
+641	present simple, questions	B1
+645	possessive, + 'of yours' 	B1
+646	possessive, comparative clauses with 'mine', 'yours'	B1
+647	possessive, 'yours' as subject	B1
+650	reflexive, same subject and object, singular 	B1
+651	reflexive, singular, after prepositions	B1
+653	subject/ object, (subject) using 'it' to introduce	B1
+655	demonstratives, 'these'	B1
+657	demonstratives, 'those'	B1
+659	demonstratives, modifying	B1
+661	quantity, subject and object pronouns, 'both', 'a few', 'another'	B1
+662	quantity, with 'of' + object pronoun	B1
+663	substitution, one, ones, none, 'which one'	B1
+664	substitution, one, ones, none, 'this one', 'that one'	B1
+665	substitution, one, ones, none, 'ones'	B1
+666	substitution, one, ones, none, pre-modifying	B1
+669	indefinite - thing, -one, -body etc, subject	B1
+670	indefinite - thing, -one, -body etc, object or complement	B1
+673	reciprocal, 'each other'	B1
+674	alternatives, phrase + phrase	B1
+676	alternatives, clause + clause	B1
+678	tags, negative main clauses + affirmative question tags 	B1
+679	tags, affirmative main clauses + negative question tags 	B1
+680	tags, affirmative main clauses + affirmative question tags 	B1
+682	wh-, negative questions with modals	B1
+683	yes/no, negative questions with 'be'	B1
+684	yes/no, negative questions, auxiliary verbs	B1
+685	yes/no, negative questions modal verbs	B1
+718	reported speech, reported statements, pronoun and tense shift	B1
+719	reported speech, reported 'yes-no' questions	B1
+720	reported speech, reported 'wh-' questions	B1
+722	reported speech, direct speech, reporting clause, initial position	B1
+723	reported speech, direct speech, reporting clause, end position	B1
+724	reported speech, reported requests and commands	B1
+687	phrasal-prepositional, verb + particle + preposition + object	B1
+688	prepositional, verb + preposition + object 	B1
+689	patterns_that clauses, reporting verbs + direct object 'that'-clause	B1
+690	patterns_that clauses, verbs + prepositional phrase + 'that'-clause	B1
+691	phrasal, no object	B1
+692	phrasal, verb + particle + object	B1
+693	phrasal, verb + pronoun + particle 	B1
+694	types, semi-modal auxiliary verbs, 'used to', 'ought to'	B1
+695	patterns_with to and -ing, verb + 'to-' infinitive	B1
+697	patterns_with to and -ing, verb + '-ing' form	B1
+698	patterns_with to and -ing, 'help' + object 	B1
+699	patterns_with to and -ing, verbs + direct object + 'to' infinitive	B1
+700	patterns_with to and -ing, 'make', 'let' + infinitive without 'to'	B1
+701	there is/are, negative	B1
+702	there is/are, 'there' + modal verbs	B1
+739	combining adjectives, compound adjectives	B2
+740	combining adjectives, phrases modifying nouns	B2
+744	modifying adjectives, with 'enough' + 'to'-infinitive 	B2
+745	modifying adjectives, with 'rather a' 	B2
+747	adjective position, attributive only, time adjectives	B2
+749	superlatives, ellipsis, with 'the'	B2
+750	superlatives, with noun and 'to-' infinitive	B2
+753	adverbs and adverb phrases: types and meanings, degree, modifying noun phrases	B2
+754	adverbs and adverb phrases: types and meanings, degree, modifying pronouns	B2
+755	adverbs and adverb phrases: types and meanings, degree, modifying determiners	B2
+757	adverb phrases - form, comparative	B2
+758	comparatives, comparative adjective + 'than' + non-finite clause	B2
+760	comparatives, adjective + 'enough' + 'to'-infinitive 	B2
+761	comparatives, 'the same' (+ noun) + 'as' + clause 	B2
+762	comparatives, 'rather than' + non-finite clause	B2
+763	comparatives, 'as if' or 'as though' + finite clause	B2
+768	interrogatives, negative interrogative + adverb	B2
+770	relative clauses, pronoun + preposition	B2
+771	relative clauses, non-defining, with 'whose'	B2
+779	subordinating conjunctions, simple	B2
+780	subordinating conjunctions, complex	B2
+782	possessives, 'its'  	B2
+784	possessives, plural noun + 's''	B2
+785	possessives, of + noun phrase ''s'	B2
+786	quantity determiners, 'little/few'	B2
+787	future continuous, questions 	B2
+789	future expressions with be, 'be about to'	B2
+790	future expressions with be, 'be due to'	B2
+791	future expressions with be, 'be to'	B2
+797	future perfect continuous, affirmative 	B2
+798	future perfect continuous, negative	B2
+800	future perfect simple, affirmative	B2
+801	future perfect simple, negative 	B2
+805	adjectives for modality, 'it' + linking verb + adjectives + clause	B2
+807	adjectives for modality, subject + 'be' + adjective + 'to' + infinitive 	B2
+809	can, with adverbs	B2
+813	dare, affirmative	B2
+814	dare, negative	B2
+816	expressions with be, 'be' expressions + infinitive	B2
+817	expressions with be, 'be' + adjective + 'that'	B2
+831	may, with adverbs	B2
+836	must, past affirmative	B2
+837	must, questions	B2
+838	must, with adverbs	B2
+844	need, negative	B2
+846	ought, ellipsis	B2
+848	should, ellipsis 	B2
+849	should, 'should be' + '-ing'	B2
+852	used to, ellipsis	B2
+977	could, past	B2
+976	negation, 'neither of', 'none of' + pronoun	B2
+855	noun phrases, noun + 'of' + possessive determiner + noun 	B2
+856	noun phrases, possession with plural nouns  + '	B2
+857	noun phrases, postmodifying with adjective phrase	B2
+858	noun phrases, complex noun phrases with adjectives combined with 'but'	B2
+859	noun typesform'-ing' forms, subject	B2
+860	uncountable nouns, no article	B2
+861	passives: form, infinitive	B2
+862	passives: form, modal perfect 	B2
+863	passives: form, past continuous affirmative. 	B2
+864	passives: form, past perfect simple, affirmative 	B2
+865	passives: form, past perfect simple, negative 	B2
+866	passives: form, past simple negative	B2
+867	passives: form, present continuous, affirmative 	B2
+868	passives: form, present continuous, negative	B2
+869	passives: form, present perfect simple, affirmative 	B2
+870	passives: form, present perfect simple, negative 	B2
+871	passives: form, with modal verbs	B2
+872	passives: form, with verbs taking two objects, , with prepositional phrase	B2
+873	passives: form, with verbs taking two objects.	B2
+876	get and have, 'get' + reflexive pronoun + '-ed'	B2
+879	past continuous, with adverbs	B2
+883	past perfect continuous, negative	B2
+884	past perfect continuous, with adverbs	B2
+890	past perfect simple, ellipsis 	B2
+891	past perfect simple, questions	B2
+892	past perfect simple, with adverbs	B2
+897	past simple, negative	B2
+898	past simple, questions	B2
+899	past simple, with subordinating conjunctions	B2
+900	past simple, with time adjuncts	B2
+903	present perfect continuous, negative	B2
+904	present perfect continuous, with adverbs	B2
+907	present perfect simple, questions	B2
+908	prepositions, complex	B2
+912	present simple, inversion with 'not only ... but also'	B2
+915	possessive, +  'of ours'	B2
+916	possessive, comparative clauses with 'ours', 'hers'	B2
+917	possessive, 'hers' as object	B2
+918	possessive, 'ours' as object	B2
+919	possessive, 'ours' as subject 	B2
+920	possessive, 'theirs' as object 	B2
+922	reflexive pronouns, 'by itself'	B2
+923	reflexive pronouns, plural, after prepositions	B2
+924	reflexive pronouns, same subject and object, plural	B2
+929	subject/ object, (object) using 'it' to introduce	B2
+930	subject/ object, (subject) ellipsis 	B2
+931	subject/ object, (subject) empty 'it'	B2
+932	subject/ object, (subject) 'one'	B2
+935	Pronouns for quantity, subject and object pronouns, 'each', 'several', 'neither', 'enough'	B2
+936	Pronouns for quantity, with 'of' + object pronoun	B2
+937	substitution, one, ones, none, 'these ones', 'those ones'	B2
+938	indefinite - thing, -one, -body etc, subject	B2
+946	wh- questions, negative questions with main verbs	B2
+964	reported speech, direct speech, reporting clause, mid position	B2
+965	reported speech, direct speech, reporting clause, inverted subject	B2
+966	reported speech, modification, reporting verb + adverb	B2
+967	reported speech, reported requests and commands, negative	B2
+947	phrasal-prepositional, verb + particle + preposition + object	B2
+948	prepositional, prepositional verb, stranded preposition	B2
+949	prepositional, verb + adverb + preposition	B2
+950	phrasal verbs, no object	B2
+951	phrasal verbs, verb + particle + object	B2
+952	phrasal verbs, verb + noun + particle 	B2
+953	verb types, semi-modal auxiliary verbs, 'dare', 'need'	B2
+954	patterns_with to and -ing, verb + '-ing' form	B2
+955	patterns_with to and -ing, verb + new subject + '-ing' form	B2
+956	patterns_with to and -ing, 'to'-infinitive or '-ing' form, meaning	B2
+958	there is/are, 'there' + verbs with modal meaning	B2
+959	linking verbs, linking + complement	B2
+982	combining adjectives, compound adjectives	C1
+983	modifying adjectives, with extreme adverbs	C1
+984	adjective position, past particple as adjective	C1
+990	adverbs and adverb phrases: types and meanings, degree, modifying adverbs	C1
+991	adverbs and adverb phrases: types and meanings, degree, modifying comparatives	C1
+992	adverb phrases - form, adverb + adverb	C1
+995	comparatives, superlative adverb 'best' + clause	C1
+1001	subordinated clauses, non-finite after 'if'	C1
+1095	conditional clauses, ellipted 'if' clause	C1
+1097	conditional clauses, inverted conditional clause, 'should'	C1
+1006	coordinating conjunctions, 'either … or'	C1
+1010	possessives, 'one's'	C1
+1011	Determiners for quantity, 'either', 'neither' with singular nouns	C1
+1012	Determiners for quantity, 'either', 'neither' + 'of' + determiner with plural nouns	C1
+1015	future perfect simple, with adverbs 	C1
+1018	future with will and shall, negative 'shall' 	C1
+1019	future with be going to, with adverbs 	C1
+1020	present simple for future use, with 'by the time'	C1
+1025	can, passive 	C1
+1026	can, with adverbs	C1
+1029	dare, question	C1
+1035	might, questions 	C1
+1036	might, past, negative	C1
+1040	need, past, negative	C1
+1045	shall, negative	C1
+1049	used to, questions	C1
+1051	would, with adverbs	C1
+1104	negation, 'none', substitution	C1
+1105	negation, 'not all', 'not every'	C1
+1054	noun phrases, noun phrase with possessive 's without noun	C1
+1057	noun typesform'-ing' forms, abstract nouns	C1
+1058	uncountable nouns, uncountable nouns	C1
+1065	past simple, inversion with 'not only ... but also'	C1
+1066	past simple, questions 	C1
+1070	present perfect simple, negative	C1
+1076	possessive, 'ours' as subject 	C1
+1078	demonstratives, 'that of', 'those of'	C1
+1079	quantity, 'none', substitution	C1
+1081	quantity, modified	C1
+1082	quantity, relative pronouns	C1
+1083	substitution, one, ones, none, 'none'	C1
+1086	reciprocal pronouns, 'each ...' + 'the other(s)', as complement	C1
+1089	tags, tags with 'there' + 'be' 	C1
+1091	phrasal-prepositional, phrasal-prepositional verb, stranded preposition	C1
+1092	phrasal, verb + pronoun + particle 	C1
+1111	combining adjectives, combining multiple adjectives	C2
+1115	modifying adjectives, comparison 	C2
+1121	adverb phrases - form, pre- and post-modified adverbs	C2
+1123	comparatives, 'as if' + non-finite clause	C2
+1127	phrases/exclamations, 'how' + clause	C2
+1128	phrases/exclamations, 'how' + adverb + clause	C2
+1137	possessives, singular noun ending in 's' + apostrophe	C2
+1138	possessives, ''s' with ellipted noun	C2
+1139	possessives, ''s + 's'	C2
+1143	future perfect simple, questions 	C2
+1146	future with be going to, with adverbs 	C2
+1147	present simple for future use, inversion with 'only when'	C2
+1150	expressions with be, negative	C2
+1152	have (got) to, past	C2
+1159	might, 'might as well'	C2
+1160	must, ellipsis	C2
+1161	must, inversion	C2
+1162	must, past, negative	C2
+1163	must, with adverbs	C2
+1164	need, questions	C2
+1166	ought, contracted form, negative	C2
+1167	ought, negative	C2
+1168	ought, questions, negative 	C2
+1172	used to, 'used not to'	C2
+1174	would, with adverbs	C2
+1176	noun phrases, complex noun phrases with 'little or no'  + noun	C2
+1178	passives: form, non-finite perfect complements 	C2
+1182	past perfect continuous, questions	C2
+1184	past perfect simple, fixed expressions 'had it not been for', 'if it hadn't been for'	C2
+1185	past perfect simple, inversion with 'hardly ... when'	C2
+1191	possessive pronouns, 'hers' as subject 	C2
+1192	possessive pronouns, 'his'	C2
+1193	possessive pronouns, of 'theirs', 'hers', 'his'	C2
+1194	possessive pronouns, 'theirs' as subject	C2
+1196	subject/ object, (subject) cleft constructions with 'it'	C2
+1197	Pronouns for quantity, 'a lot' and 'much'	C2
+1200	reciprocal pronouns, 'each ... the other(s)', as object	C2
+1201	question alternatives, ellipsis	C2
+1203	phrasal-prepositional, verb + direct object + particle + preposition + object	C2

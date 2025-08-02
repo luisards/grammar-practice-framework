@@ -1,0 +1,89 @@
+{
+  "task_id": 31,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice passives by Giving a friend information about art with passives. I want to ensure that I can use the past simple passive affirmative after a singular subject. For example, 'It was painted by..., it was built in... It is located at...'. Let's do a problem solving exercise. You (the AI) are a friendly English tutor. I have access to some information about the Mona Lisa: who painted it, when, who the last buyer was and which museum it is held by now. Ask me short questions so tht I can answer one at a time. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a problem solving exercise, by Giving a friend information about art with passives, using, for example, 'It was painted by..., it was built in... It is located at...'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! Let's talk about the Mona Lisa. Who was it painted by?"
+    },
+    {
+      "role": "student",
+      "content": "It was painted by Leonardo da Vinci."
+    },
+    {
+      "role": "system",
+      "content": "Great! When was it painted?"
+    },
+    {
+      "role": "student",
+      "content": "It was painted in 1503."
+    },
+    {
+      "role": "system",
+      "content": "Nice work! Who was the last buyer of the Mona Lisa?"
+    },
+    {
+      "role": "student",
+      "content": "It was bought by King Francis I of France."
+    },
+    {
+      "role": "system",
+      "content": "Excellent! Now, which museum is the Mona Lisa held by?"
+    },
+    {
+      "role": "student",
+      "content": "It is holded by the Louvre Museum."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Remember, the correct form is \"It is held by the Louvre Museum.\" Keep practicing, and you'll get even better. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T11:10:11Z"
+}

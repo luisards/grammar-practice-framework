@@ -1,0 +1,89 @@
+{
+  "task_id": 33,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend information about the Taj Mahal'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! Did you know the Taj Mahal is in India? It\u2019s a very famous building."
+    },
+    {
+      "role": "student",
+      "content": "Yes, I knows it is in India."
+    },
+    {
+      "role": "system",
+      "content": "Great! The Taj Mahal is in the city of Agra. It was built by a king named Shah Jahan. He made it for his wife, Mumtaz Mahal. It\u2019s made of white marble and looks very beautiful. Have you seen pictures of it?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I seen pictures. It is very beautiful."
+    },
+    {
+      "role": "system",
+      "content": "I\u2019m glad you\u2019ve seen pictures! The Taj Mahal is also called a symbol of love because Shah Jahan built it to show his love for his wife. It took over 20 years to build, and many workers helped. Did you know it\u2019s also a UNESCO World Heritage Site? That means it\u2019s very important and protected. Would you like to visit it one day?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I would like to visit it someday. It looks amazing!"
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s wonderful! When you visit, you\u2019ll see the beautiful gardens and the reflection of the Taj Mahal in the water. It\u2019s even more stunning in person. I hope you get to see it soon! Thanks for practicing with me today!"
+    },
+    {
+      "role": "student",
+      "content": "Thank you! I enjoy practicing with you. Bye!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later! Bye!"
+    }
+  ],
+  "timestamp": "2025-06-08T11:47:54Z"
+}

@@ -1,0 +1,89 @@
+{
+  "task_id": 29,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend advice about a coworker'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "How are you? What's on your mind?"
+    },
+    {
+      "role": "student",
+      "content": "I am good. I think about my homework."
+    },
+    {
+      "role": "system",
+      "content": "Do you need help with your homework?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "It means I can assist you with your schoolwork. Do you have a problem or something you don't understand?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I have a math problem."
+    },
+    {
+      "role": "system",
+      "content": "But first, let's practice giving advice. Tell me, is everything okay at work?"
+    },
+    {
+      "role": "student",
+      "content": "I don't have a job. I'm a student."
+    },
+    {
+      "role": "system",
+      "content": "No problem, let's imagine you have a job. A friend asks you for advice about a coworker. What do you say? Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T17:40:01Z"
+}

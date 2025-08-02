@@ -1,0 +1,89 @@
+{
+  "task_id": 60,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Discussing enjoyable exercise routines'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How are you today? Do you like doing exercise?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I am good, thank you. Yes, I like exercise."
+    },
+    {
+      "role": "system",
+      "content": "Exercise can be fun. What kind of exercise do you like to do?"
+    },
+    {
+      "role": "student",
+      "content": "I like to run and swim."
+    },
+    {
+      "role": "system",
+      "content": "Running and swimming are good for your body. Do you like jogging in the park or swimming in a pool?"
+    },
+    {
+      "role": "student",
+      "content": "I like jogging in the park and swimming in a pool."
+    },
+    {
+      "role": "system",
+      "content": "That's great! You enjoy being outdoors and exercising in nature. So, what do you think is the best part about jogging in the park or swimming in a pool?"
+    },
+    {
+      "role": "student",
+      "content": "The best part is feeling relaxed and happy."
+    },
+    {
+      "role": "system",
+      "content": "That's wonderful! Feeling relaxed and happy is a great benefit of exercise. It's great that you enjoy both jogging in the park and swimming in a pool. You must be very healthy and happy! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:11:32Z"
+}

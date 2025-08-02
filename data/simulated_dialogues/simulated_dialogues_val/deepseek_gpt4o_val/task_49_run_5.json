@@ -1,0 +1,93 @@
+{
+  "task_id": 49,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about health habits with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me how people in your country usually stay healthy, then ask me short questions about my health habits using frequency adverbs (e.g. 'In my country people usually take walks. How about your country?', 'Do people usually drink tea there?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about health habits with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! In my country, people usually eat fresh fruits and vegetables to stay healthy. They also often exercise, like walking or jogging. How about you? Do you usually eat fruits and vegetables every day?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I usually eat fruits and vegetables every day. How often do you exercise?"
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s great! I sometimes exercise, like going for a walk or doing yoga. How about you? Do you often exercise, or do you sometimes skip it?"
+    },
+    {
+      "role": "student",
+      "content": "I often exercise, but I sometimes skip it when I'm busy. Do you always drink enough water every day?"
+    },
+    {
+      "role": "system",
+      "content": "I usually drink enough water, but I sometimes forget when I\u2019m busy. How about you? Do you always remember to drink water, or do you occasionally forget?"
+    },
+    {
+      "role": "student",
+      "content": "I usually remember to drink water, but I occasionally forget, especially when I'm busy. Do you always get enough sleep, or do you sometimes stay up late?"
+    },
+    {
+      "role": "system",
+      "content": "I usually get enough sleep, but I sometimes stay up late when I watch a movie or work. It\u2019s important to rest well, though! How about you? Do you always go to bed early, or do you sometimes stay up late too? Let\u2019s try to make healthy habits a priority! \ud83d\ude0a",
+      "advanced_content": "I usually get enough sleep, but I sometimes stay up late if I\u2019m watching a movie or working. It\u2019s important to rest well, though! How about you? Do you always go to bed early, or do you sometimes stay up late too? Let\u2019s try to make healthy habits a priority! \ud83d\ude0a",
+      "advanced_construct_ids": "899"
+    },
+    {
+      "role": "student",
+      "content": "I sometimes stay up late, especially if I\u2019m studying or watching a show. But I know it\u2019s important to rest well. Do you often eat breakfast, or do you sometimes skip it?"
+    },
+    {
+      "role": "system",
+      "content": "I usually eat breakfast because it gives me energy for the day, but I sometimes skip it when I\u2019m in a hurry. Good job! You have completed the task. You used the present simple and frequency adverbs very well. Keep practicing, and talk to you later! \ud83d\ude0a",
+      "advanced_content": "I usually eat breakfast because it gives me energy for the day, but I sometimes skip it if I\u2019m in a hurry. Good job! You have completed the task. You used the present simple and frequency adverbs very well. Keep practicing, and talk to you later! \ud83d\ude0a",
+      "advanced_construct_ids": "899, 956"
+    }
+  ],
+  "timestamp": "2025-06-05T14:22:49Z"
+}

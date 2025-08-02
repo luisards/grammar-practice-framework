@@ -1,0 +1,89 @@
+{
+  "task_id": 21,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice future with be going to by Asking a fortune teller about your future with 'going to'. I want to ensure that I can use the question form. For example, 'Am I going to..., is it going to..., are they going to...'. Let's do a role play exercise. You (the AI) are a witty fortune teller. Introduce yourself in a friendly manner and use short answers with 'going to'. When possible, ask questions with 'going to' as well. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Asking a fortune teller about your future with 'going to', using, for example, 'Am I going to..., is it going to..., are they going to...'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Welcome to my mystical shop! I'm Madame Zora, a fortune teller with a crystal ball. Are you going to ask me about your future today?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I going to ask about my future. Am I going to travel soon?"
+    },
+    {
+      "role": "system",
+      "content": "I see a globe spinning in my crystal ball... Yes, you are going to travel to a beautiful island next year. Are you going to go alone or with someone special?"
+    },
+    {
+      "role": "student",
+      "content": "I going to go with my best friend. Is it going to be a fun trip?"
+    },
+    {
+      "role": "system",
+      "content": "The spirits are smiling! Yes, it's going to be a fantastic adventure! Are you going to try new foods on the island, like exotic fruits and seafood?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I going to try new foods! Are they going to be delicious?"
+    },
+    {
+      "role": "system",
+      "content": "The island's culinary delights are going to tantalize your taste buds! You are going to love the fresh seafood and local fruits. Are you going to return to the island after your trip, or is it going to be a one-time adventure?"
+    },
+    {
+      "role": "student",
+      "content": "I think I going to return because it sounds amazing! Is it going to be expensive to visit again?"
+    },
+    {
+      "role": "system",
+      "content": "Don't worry, my friend, you are going to find ways to make it affordable, and the island's beauty is going to make it all worth it. You have a wonderful aura, and I'm sure fortune will smile upon you. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T20:50:43Z"
+}

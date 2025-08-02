@@ -1,0 +1,89 @@
+{
+  "task_id": 61,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a friend about a trip'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi! How are you today?"
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you. How are you?"
+    },
+    {
+      "role": "system",
+      "content": "I'm good too, thanks. I just got back from a trip to the beach."
+    },
+    {
+      "role": "student",
+      "content": "That sounds fun! Did you swim?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I swam a lot. The water was very warm."
+    },
+    {
+      "role": "student",
+      "content": "Did you see any fish?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I saw many fish. They were very colourful. I also saw a big turtle."
+    },
+    {
+      "role": "student",
+      "content": "Wow, a turtle! Was it close to you?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, it was very close to me. I was swimming and it swam right next to me. It was amazing! I'm glad I got to see it. Well, I should get going. It was nice chatting with you. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:12:03Z"
+}

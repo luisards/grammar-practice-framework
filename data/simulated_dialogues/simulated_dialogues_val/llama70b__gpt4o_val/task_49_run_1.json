@@ -1,0 +1,91 @@
+{
+  "task_id": 49,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about health habits with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me how people in your country usually stay healthy, then ask me short questions about my health habits using frequency adverbs (e.g. 'In my country people usually take walks. Hw about your country?', 'Do people usually drink tea there?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about health habits with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! In my country, people usually eat healthy food and exercise regularly to stay healthy. How about you, do you usually exercise?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I always exercise. I go to the gym three times a week."
+    },
+    {
+      "role": "system",
+      "content": "That's great. In my country, people sometimes go to the gym, but they usually walk or jog in the park. Do you usually walk to work or school?"
+    },
+    {
+      "role": "student",
+      "content": "I sometimes walk to work, but I usually take the bus."
+    },
+    {
+      "role": "system",
+      "content": "That's convenient. In my country, people often take the bus too. Do you usually eat breakfast before you go to work?"
+    },
+    {
+      "role": "student",
+      "content": "I always eat breakfast before go to work. It help me start the day."
+    },
+    {
+      "role": "system",
+      "content": "That's a great habit, people in my country usually drink a lot of water throughout the day to stay healthy, and I always recommend it, sometimes they even drink it with meals, but I usually ask my friends if they usually drink a lot of water."
+    },
+    {
+      "role": "student",
+      "content": "Yes, I usually drink a lot of water. I sometimes forget, but I try to drink enough every day."
+    },
+    {
+      "role": "system",
+      "content": "It's great that you drink water. I usually get enough sleep to stay healthy too. Do you usually go to bed early?",
+      "advanced_content": "It's great that you prioritize drinking water. I usually get enough sleep to stay healthy too. Do you usually go to bed early?",
+      "advanced_construct_ids": "805, 956, 753"
+    }
+  ],
+  "timestamp": "2025-06-04T13:19:53Z"
+}

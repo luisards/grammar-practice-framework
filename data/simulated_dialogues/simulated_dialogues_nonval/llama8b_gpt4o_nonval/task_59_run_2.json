@@ -1,0 +1,89 @@
+{
+  "task_id": 59,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice patterns_with to and -ing by Describing entertainment preferences with 'enjoy + ing'. I want to ensure that I can use 'enjoy' followed by the '-ing' form. For example, 'I enjoy eating, I enjoy doing, I enjoy going…'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Mention movies or series you enjoy watching and concerts you enjoy going to, then ask me similar questions. (e.g. 'I enjoy watching horror movies. How about you?', 'Do you enjoy going to concerts? Why?', 'Do you enjoy watching TV to relax?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing entertainment preferences with 'enjoy + ing', using, for example, 'I enjoy eating, I enjoy doing, I enjoy going…'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi! I'm glad you're here to practice your English. I enjoy watching comedies, like \"The Hangover\" and \"Friends\". Do you enjoy watching comedies?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I enjoy watching comedies. They make me laugh."
+    },
+    {
+      "role": "system",
+      "content": "That's great! I'm sure \"The Hangover\" and \"Friends\" are hilarious. I also enjoy watching series like \"Brooklyn Nine-Nine\" and \"The Good Place\". Do you enjoy watching action movies?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "Don't worry, it's a big question. I mean, do you like watching movies that have a lot of fighting and exciting scenes, like superheroes or adventure movies?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I enjoy watching action movies. They are exciting."
+    },
+    {
+      "role": "system",
+      "content": "I'm glad we're on the same page about action movies. I also enjoy going to concerts, especially when my favorite band is playing live. I've been to many concerts, and it's always a great experience. Do you enjoy going to concerts?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I enjoy going to concerts. The music is amazing."
+    },
+    {
+      "role": "system",
+      "content": "I'm glad you enjoy concerts! I also enjoy watching sports, like soccer and basketball. Do you enjoy watching sports?"
+    }
+  ],
+  "timestamp": "2025-06-03T21:19:48Z"
+}

@@ -1,0 +1,89 @@
+{
+  "task_id": 68,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Advising a friend against certain actions on a date'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi! How are you? Do you have a date tonight?"
+    },
+    {
+      "role": "student",
+      "content": "Hi! I am good, thank you. No date tonight."
+    },
+    {
+      "role": "system",
+      "content": "That's okay. But I heard you like someone. Is that true?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I like someone."
+    },
+    {
+      "role": "system",
+      "content": "Who is it? Tell me about this person. Are you planning to ask them out?"
+    },
+    {
+      "role": "student",
+      "content": "They are a classmate. Very nice and smart. I am thinking about asking them out."
+    },
+    {
+      "role": "system",
+      "content": "That's great! Be careful, okay? Don't rush into anything. Get to know them better first. What's your plan for the date if you ask them out?"
+    },
+    {
+      "role": "student",
+      "content": "Maybe a coffee shop. We can talk and get to know each other. Simple and nice."
+    },
+    {
+      "role": "system",
+      "content": "That sounds like a good plan. Just remember, don't talk about sensitive topics on the first date. Keep it light and fun. And don't spend too much money, okay? Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T18:07:09Z"
+}

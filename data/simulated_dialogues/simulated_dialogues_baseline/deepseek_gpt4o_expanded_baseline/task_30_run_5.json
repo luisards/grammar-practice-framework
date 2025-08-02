@@ -1,0 +1,89 @@
+{
+  "task_id": 30,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend advice about their routine'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi! How\u2019s your day going? I heard you\u2019ve been feeling a bit tired lately\u2014maybe we can talk about your routine and see how to make it better?"
+    },
+    {
+      "role": "student",
+      "content": "Hi! Yes, I feel tired. I sleep late."
+    },
+    {
+      "role": "system",
+      "content": "Got it! Try to sleep earlier\u2014it helps a lot. What time do you usually go to bed?"
+    },
+    {
+      "role": "student",
+      "content": "I go to bed at midnight."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s pretty late! Try going to bed at 10 PM instead. It will give you more rest and energy for the next day."
+    },
+    {
+      "role": "student",
+      "content": "I will try. Thank you!"
+    },
+    {
+      "role": "system",
+      "content": "You\u2019re welcome! Small changes can make a big difference. Let me know how it goes\u2014I\u2019m here to help! Take care!"
+    },
+    {
+      "role": "student",
+      "content": "Okay, I will let you know. Thank you for your help!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later! Take care and sleep well!"
+    }
+  ],
+  "timestamp": "2025-06-08T11:46:20Z"
+}

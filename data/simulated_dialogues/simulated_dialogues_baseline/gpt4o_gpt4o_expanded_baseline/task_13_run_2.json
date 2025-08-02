@@ -1,0 +1,89 @@
+{
+  "task_id": 13,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Playing a guessing game about singers'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! Let's play a guessing game about singers. I'll think of a singer, and you try to guess who it is. Ready? Here's your first clue: This singer is known for wearing a big, white glove. Who is it?"
+    },
+    {
+      "role": "student",
+      "content": "Michael Jackson."
+    },
+    {
+      "role": "system",
+      "content": "That's right! It's Michael Jackson. Great job! Ready for the next one? This singer is famous for her powerful voice and hit song \"Rolling in the Deep.\" Who is she?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "\"Rolling in the Deep\" is a popular song by a singer with a strong voice. She is known for her emotional songs. Can you guess who she is?"
+    },
+    {
+      "role": "student",
+      "content": "Adele."
+    },
+    {
+      "role": "system",
+      "content": "Yes, it's Adele! Well done! You're really good at this. Let's do one last one: This singer is known for her unique style and hit song \"Bad Romance.\" Who is she?"
+    },
+    {
+      "role": "student",
+      "content": "Lady Gaga."
+    },
+    {
+      "role": "system",
+      "content": "Correct! It's Lady Gaga. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:32:44Z"
+}

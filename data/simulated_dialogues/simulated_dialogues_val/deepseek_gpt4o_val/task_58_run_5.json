@@ -1,0 +1,91 @@
+{
+  "task_id": 58,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice patterns_with to and -ing by Discussing holiday activities with 'enjoy + ing'. I want to ensure that I can use 'enjoy' followed by the '-ing' form. For example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Describe activities you enjoy doing on holiday and ask me about my holiday activities. (e.g. 'When I am on holiday, I enjoy eating junk food. How about you?', 'Do you enjoy walking a lot or do you prefer to relax?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Discussing holiday activities with 'enjoy + ing', using, for example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! When I am on holiday, I enjoy swimming in the sea. How about you? What do you enjoy doing on holiday?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy hiking in the mountains."
+    },
+    {
+      "role": "system",
+      "content": "That sounds fun! I also enjoy taking photos of nature while hiking. Do you enjoy taking photos too, or do you just like walking?",
+      "advanced_content": "That sounds fun! I also enjoy taking photos of nature when I\u2019m hiking. Do you enjoy taking photos too, or do you just like walking?",
+      "advanced_construct_ids": "899"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy taking photos too. It's nice to capture the scenery."
+    },
+    {
+      "role": "system",
+      "content": "Great! I enjoy looking at photos after the holiday to remember the fun times. Do you enjoy sharing your photos with friends or keeping them for yourself?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy sharing my photos with friends. It's fun to show them where I've been."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s wonderful! I enjoy hearing stories from my friends about their holidays too. It sounds like you have a lot of fun on your trips. Thanks for sharing! Keep enjoying your holidays and taking great photos! \ud83d\ude0a"
+    },
+    {
+      "role": "student",
+      "content": "Thank you! I will. I enjoy hearing about your holiday activities too. \ud83d\ude0a What else do you enjoy doing on your holidays?"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You\u2019ve done great practicing with \u2018enjoy + -ing\u2019! I also enjoy reading books and trying new foods on holiday. Thanks for chatting with me today. Keep practicing, and talk to you later! \ud83d\ude0a"
+    }
+  ],
+  "timestamp": "2025-06-05T14:39:11Z"
+}

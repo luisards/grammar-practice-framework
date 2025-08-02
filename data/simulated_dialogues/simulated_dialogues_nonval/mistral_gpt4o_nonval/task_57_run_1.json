@@ -1,0 +1,89 @@
+{
+  "task_id": 57,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "mistral-small-24b-instruct-2501",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice patterns_with to and -ing by Discussing favourite foods with 'enjoy + ing'. I want to ensure that I can use 'enjoy' followed by the '-ing' form. For example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Share some foods you enjoy eating and ask me What foods I enjoy eating. (e.g. 'I enjoy eating spicy food. How about you?', 'When it is warm, I enjoy  drinking smoothies. And you?', 'What do you enjoy eating when you are tired?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Discussing favourite foods with 'enjoy + ing', using, for example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I enjoy eating pizza. How about you?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I enjoy eating pasta. What you enjoy eating?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy eating sushi. What do you enjoy eating for breakfast?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy eating pancakes for breakfast. What you enjoy doing on weekends?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy going to the park on weekends. What do you enjoy doing when you have free time?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy reading books when I have free time. What you enjoy doing after work?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy watching movies after work. It's been great practicing with you. Let's do this again soon!"
+    },
+    {
+      "role": "student",
+      "content": "Yes, it's been fun! I enjoy learning English with you. Let's practice again soon!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T18:42:08Z"
+}

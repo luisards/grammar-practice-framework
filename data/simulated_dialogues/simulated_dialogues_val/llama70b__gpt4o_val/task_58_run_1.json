@@ -1,0 +1,91 @@
+{
+  "task_id": 58,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice patterns_with to and -ing by Discussing holiday activities with 'enjoy + ing'. I want to ensure that I can use 'enjoy' followed by the '-ing' form. For example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Describe activities you enjoy doing on holiday and ask me about my holiday activities. (e.g. 'When I am on holiday, I enjoy eating junk food. How about you?', 'Do you enjoy walking a lot or do you prefer to relax?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Discussing holiday activities with 'enjoy + ing', using, for example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello. I'm happy to talk to you. When I am on holiday, I enjoy visiting new places. Do you enjoy traveling to new cities?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I enjoy to travel new cities. What do you enjoy doing on holiday?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy swimming and playing sports. Do you enjoy playing sports or going to the beach?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy going to the beach. Do you enjoy trying new foods on holiday?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I enjoy trying new foods. I also enjoy drinking local drinks. Do you enjoy eating at restaurants or do you prefer to buy food from street vendors?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy eat at restaurants, but I also like trying street food. Do you enjoy taking photos on holiday?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy taking photos on holiday. I like to capture memories of the places I visit. Do you enjoy buying souvenirs to remember your holiday?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I enjoy buy souvenirs to remember my holiday. Do you enjoy relaxing at the hotel or exploring all day?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy relaxing at the hotel and exploring all day. It's great to have a mix of both. Well, chatting with you about holiday activities was nice. You did a great job practicing \"enjoy + -ing\"! Good job! You have completed the task. Talk to you later!",
+      "advanced_content": "I enjoy relaxing at the hotel and exploring all day. It's great to have a mix of both. Well, it was nice chatting with you about holiday activities. You did a great job practicing \"enjoy + -ing\"! Good job! You have completed the task. Talk to you later!",
+      "advanced_construct_ids": "879"
+    }
+  ],
+  "timestamp": "2025-06-04T13:33:50Z"
+}

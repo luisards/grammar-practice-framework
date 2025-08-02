@@ -1,0 +1,89 @@
+{
+  "task_id": 33,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend information about the Taj Mahal'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi there! How are you today?"
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you. How are you?"
+    },
+    {
+      "role": "system",
+      "content": "I'm doing well, thank you! Have you ever heard about the Taj Mahal?"
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "That's okay! The Taj Mahal is a famous building in India. It is very beautiful and made of white marble. It was built a long time ago by a king for his wife. Many people visit it every year. Would you like to know more?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, please."
+    },
+    {
+      "role": "system",
+      "content": "Great! The Taj Mahal is in a city called Agra. It is one of the Seven Wonders of the World. The gardens around it are lovely too. I hope you get to see it one day! If you have more questions, feel free to ask."
+    },
+    {
+      "role": "student",
+      "content": "Thank you. What are the Seven Wonders?"
+    },
+    {
+      "role": "system",
+      "content": "The Seven Wonders of the World are amazing places or structures. They include the Great Wall of China and the Colosseum in Italy. There are others too, like Machu Picchu in Peru. You did a great job today! Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:44:13Z"
+}

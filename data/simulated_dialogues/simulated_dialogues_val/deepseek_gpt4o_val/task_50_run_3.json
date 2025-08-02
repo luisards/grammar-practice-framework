@@ -1,0 +1,91 @@
+{
+  "task_id": 50,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about leisure activities with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by mentioning some leisure activities you always, usually or sometimes do at the weekend, then ask me about mine. ('I sometimes read a book at the park. What do you do for relaxing?', 'I usually watch a TV show. How about you?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about leisure activities with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I always go for a walk in the morning. I usually watch a movie in the evening. Sometimes I play games with my friends. What do you do for fun?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I usually read books in my free time. Sometimes I go hiking on weekends. I always listen to music before bed. What about you?"
+    },
+    {
+      "role": "system",
+      "content": "That sounds nice! I always drink coffee in the morning. I usually cook dinner at home. Sometimes I visit my family on weekends. Do you ever go to the park or play sports?"
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s okay! Parks are great for relaxing. I sometimes go to the park to read or just sit. I usually play soccer with my friends on Saturdays. Do you want to try something new, like playing a sport or visiting a park?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I would like to try something new. I sometimes think about playing tennis. I usually see people playing at the park. Maybe I will visit the park this weekend. Do you have any tips for starting a new activity?"
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s great! It\u2019s fun to start a new activity. I usually say you should start with a friend or join a beginner\u2019s group. For tennis, you can rent a racket first to see if you like it. I always bring water and wear comfortable clothes when I try something new. Good luck, and I hope you enjoy the park this weekend! Let me know how it goes!",
+      "advanced_content": "That\u2019s great! Starting a new activity is fun. I usually suggest starting with a friend or joining a beginner\u2019s group. For tennis, you can rent a racket first to see if you like it. I always bring water and wear comfortable clothes when I try something new. Good luck, and I hope you enjoy the park this weekend! Let me know how it goes!",
+      "advanced_construct_ids": "859, 956, 1057"
+    },
+    {
+      "role": "student",
+      "content": "Thank you for the tips! I will try to find a friend to join me. I will bring water and wear comfortable clothes. I sometimes feel nervous about trying new things, but I am excited. I will let you know how it goes! Do you ever feel nervous about trying new activities?"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. I sometimes feel nervous too, but it\u2019s normal when trying something new. I\u2019m sure you\u2019ll do great! Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-05T14:24:10Z"
+}

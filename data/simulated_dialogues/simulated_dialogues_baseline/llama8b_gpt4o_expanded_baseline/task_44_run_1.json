@@ -1,0 +1,89 @@
+{
+  "task_id": 44,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Explaining where things are located in the supermarket'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! Welcome to the supermarket. What do you want to find today?"
+    },
+    {
+      "role": "student",
+      "content": "I looking for apples."
+    },
+    {
+      "role": "system",
+      "content": "Apples are near the front of the store, in the fruit and vegetable section. If you go straight ahead from here, you'll see the fruit stand."
+    },
+    {
+      "role": "student",
+      "content": "Thank you. I go now."
+    },
+    {
+      "role": "system",
+      "content": "Wait, I'll show you the way. The fruit stand is just down that aisle, on your right. You can't miss it."
+    },
+    {
+      "role": "student",
+      "content": "Okay, I follow you."
+    },
+    {
+      "role": "system",
+      "content": "We're here at the fruit stand now. You can see the apples on the table. Would you like me to help you pick some out?"
+    },
+    {
+      "role": "student",
+      "content": "No, I pick myself. Thank you!"
+    },
+    {
+      "role": "system",
+      "content": "You're welcome. You've found the apples. If you need to buy anything else, just let me know. I'll be happy to help."
+    }
+  ],
+  "timestamp": "2025-06-08T12:57:33Z"
+}

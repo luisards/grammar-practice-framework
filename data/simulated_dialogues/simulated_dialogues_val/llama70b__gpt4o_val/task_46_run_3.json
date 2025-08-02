@@ -1,0 +1,91 @@
+{
+  "task_id": 46,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about common habits in your country with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by asking me where I am from. Tell me something about your country, then ask me short questions about mine with frequency adverbs. (e.g. 'In my country, people usually have coffee in the morning. How about your country?', 'Do people in your country sometimes celebrate things with fireworks?', 'Do restaurants here usually charge for tap water?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about common habits in your country with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello. I'm from the UK. In my country, people usually have breakfast at home. Where are you from?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I'm from Japan. In my country, people usually have breakfast at home too."
+    },
+    {
+      "role": "system",
+      "content": "That's interesting. In the UK, people sometimes eat fish and chips for dinner. Do people in Japan usually eat sushi for dinner?"
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "That's okay. In the UK, people usually drink tea in the afternoon. Do people in Japan always drink green tea at home?"
+    },
+    {
+      "role": "student",
+      "content": "People in Japan sometimes drink green tea at home."
+    },
+    {
+      "role": "system",
+      "content": "That's great to know. In the UK, people usually watch TV in the evening. Do people in Japan usually watch TV or use their phones before bed?"
+    },
+    {
+      "role": "student",
+      "content": "People in Japan usually use their phones before bed."
+    },
+    {
+      "role": "system",
+      "content": "It was nice chatting with you about daily habits in our countries. I learned some interesting things about Japan. Good job! You have completed the task. Talk to you later! \n\nRephrased text: \nIt was nice chatting with you about daily habits in our countries. I learned some interesting things about Japan. Good job! You have completed the task. I will talk to you later!",
+      "advanced_content": "It was nice chatting with you about daily habits in our countries. I learned some interesting things about Japan. Good job! You have completed the task. Talk to you later!",
+      "advanced_construct_ids": "879"
+    }
+  ],
+  "timestamp": "2025-06-04T13:15:15Z"
+}

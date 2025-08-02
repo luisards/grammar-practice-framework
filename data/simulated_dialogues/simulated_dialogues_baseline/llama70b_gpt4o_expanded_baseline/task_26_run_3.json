@@ -1,0 +1,89 @@
+{
+  "task_id": 26,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend advice about school'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "How are you? Is everything okay at school?"
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you. Yes, everything is okay at school."
+    },
+    {
+      "role": "system",
+      "content": "That's great! Do you have any tests or exams coming up that you're worried about?"
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "What subjects are you finding a little difficult, maybe I can help?"
+    },
+    {
+      "role": "student",
+      "content": "Math is difficult for me."
+    },
+    {
+      "role": "system",
+      "content": "Don't worry, math can be tough. Do you want some tips on how to study for it or maybe practice some problems together?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I want tips, please."
+    },
+    {
+      "role": "system",
+      "content": "Make a plan and study a little each day. Practice with sample questions and watch video lessons if you need help. You can do it! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T17:38:05Z"
+}

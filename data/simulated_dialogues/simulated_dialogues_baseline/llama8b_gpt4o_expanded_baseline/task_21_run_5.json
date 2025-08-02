@@ -1,0 +1,89 @@
+{
+  "task_id": 21,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your future'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Welcome to my tent! Please, sit down and I'll read your palm. What would you like to know about your future?"
+    },
+    {
+      "role": "student",
+      "content": "Will I be happy?"
+    },
+    {
+      "role": "system",
+      "content": "Your lines show a lot of positive energy, but I see some challenges ahead. Happiness is coming, but it's not going to be easy."
+    },
+    {
+      "role": "student",
+      "content": "What challenges do you see?"
+    },
+    {
+      "role": "system",
+      "content": "I see a difficult decision coming up in your life, something that will test your courage and make you feel uncertain."
+    },
+    {
+      "role": "student",
+      "content": "What kind of decision?"
+    },
+    {
+      "role": "system",
+      "content": "It's a choice between two paths in your career, one that's safe and familiar, but not very exciting, and another that's riskier, but could bring you great success and personal growth."
+    },
+    {
+      "role": "student",
+      "content": "Which path should I choose?"
+    },
+    {
+      "role": "system",
+      "content": "That's a decision only you can make, but I sense that the universe is guiding you towards the riskier path. It's a path that will require trust and faith in yourself, but it could lead to amazing opportunities and a sense of fulfillment."
+    }
+  ],
+  "timestamp": "2025-06-08T12:38:02Z"
+}

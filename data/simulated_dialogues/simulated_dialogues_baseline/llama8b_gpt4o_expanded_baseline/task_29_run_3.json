@@ -1,0 +1,89 @@
+{
+  "task_id": 29,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend advice about a coworker'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Not yet; I'm a moment late. It is different from what we planned isn't it? Why not tell me about a coworker and I'll help you give your friend advice?"
+    },
+    {
+      "role": "student",
+      "content": "Sure! My coworker is very nice but talks a lot. It is hard to focus. What should I do?"
+    },
+    {
+      "role": "system",
+      "content": "You could try politely interrupting them when you need to focus, and say something like \"Excuse me, I need to finish this task.\" That way, you're not being rude, but you're also making it clear that you need to concentrate."
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "It's okay, it's a gentle way to say \"I need some quiet time\". You can also try to sit in a different place or wear headphones to signal that you're not available to chat."
+    },
+    {
+      "role": "student",
+      "content": "That's a good idea. I will try headphones. Thank you!"
+    },
+    {
+      "role": "system",
+      "content": "You're welcome! I'm glad I could help. Just remember, it's okay to set boundaries with your coworker and prioritize your work. If they respect your need for quiet time, it will make your workday easier."
+    },
+    {
+      "role": "student",
+      "content": "I understand. I will try to set boundaries. Thank you for your help!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T12:44:42Z"
+}

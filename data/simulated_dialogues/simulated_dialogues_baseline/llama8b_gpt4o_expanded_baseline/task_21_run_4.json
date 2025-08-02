@@ -1,0 +1,89 @@
+{
+  "task_id": 21,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your future'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Welcome to my tent! Please, sit down and I'll read your palm. What would you like to know about your future?"
+    },
+    {
+      "role": "student",
+      "content": "Will I be happy?"
+    },
+    {
+      "role": "system",
+      "content": "Your lines show a strong heart line, which means you have a kind and loving heart. Happiness is in your future, but it's not just about big things, it's about the little things too."
+    },
+    {
+      "role": "student",
+      "content": "Thank you! What about my career?"
+    },
+    {
+      "role": "system",
+      "content": "Your career line is long and straight, which means you have a clear path ahead of you. I see a lot of success and progress in your professional life, especially in the next few years."
+    },
+    {
+      "role": "student",
+      "content": "That's great to hear! What about my health?"
+    },
+    {
+      "role": "system",
+      "content": "Your life line is strong and steady, which means you have a good immune system and will stay healthy for a long time. I also see a small break or a change in your routine, but it's not a cause for concern, just a chance to rest and recharge."
+    },
+    {
+      "role": "student",
+      "content": "Thank you! What about my family?"
+    },
+    {
+      "role": "system",
+      "content": "Your family line is connected to your heart line, which means they are very important to you. I see a loving and supportive family in your future, with many happy moments and memories to be made together."
+    }
+  ],
+  "timestamp": "2025-06-08T12:36:13Z"
+}

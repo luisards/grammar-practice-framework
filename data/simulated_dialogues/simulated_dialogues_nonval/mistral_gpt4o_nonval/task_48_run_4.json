@@ -1,0 +1,89 @@
+{
+  "task_id": 48,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "mistral-small-24b-instruct-2501",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about school routines with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by telling me about a typical school/work day in your country using frequency adverbs, then ask me questions about my school routine. (e.g. 'I usually go to school at 7:30 am. How about you?', 'Do you sometimes study late at night?) Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about school routines with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! In my country, I usually wake up at 6:30 am. I always have breakfast at 7:00 am. I sometimes take the bus to school. I usually arrive at school at 8:00 am. I always have lunch at 12:00 pm. I sometimes study late at night. How about you?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I usually wake up at 7:00 am. I always have breakfast at 7:30 am. I sometimes walk to school. I usually arrive at school at 8:30 am. I always have lunch at 1:00 pm. I sometimes study in the evening. How about your classes?"
+    },
+    {
+      "role": "system",
+      "content": "I usually have 5 classes a day. I always have math first. I sometimes have English in the afternoon. I usually finish school at 3:00 pm. I always do my homework after school. Do you have many classes?"
+    },
+    {
+      "role": "student",
+      "content": "I usually have 6 classes a day. I always start with science. I sometimes have art in the afternoon. I usually finish school at 3:30 pm. I always do my homework in the evening. What do you do after school?"
+    },
+    {
+      "role": "system",
+      "content": "I usually go to the library to study. I sometimes play sports with my friends. I always have dinner at 7:00 pm. I usually go to bed at 10:00 pm. What do you do after school?"
+    },
+    {
+      "role": "student",
+      "content": "I usually go home and relax. I sometimes play video games. I always have dinner at 7:30 pm. I usually go to bed at 10:30 pm. Do you have any hobbies?"
+    },
+    {
+      "role": "system",
+      "content": "I usually read books in my free time. I sometimes draw pictures. I always listen to music. It was great talking to you! Let's practice more another time. Bye!"
+    },
+    {
+      "role": "student",
+      "content": "Bye! It was nice talking to you too. Let's practice again soon!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T18:34:00Z"
+}

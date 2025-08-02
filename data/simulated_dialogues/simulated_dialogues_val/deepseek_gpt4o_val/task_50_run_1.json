@@ -1,0 +1,93 @@
+{
+  "task_id": 50,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about leisure activities with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by mentioning some leisure activities you always, usually or sometimes do at the weekend, then ask me about mine. ('I sometimes read a book at the park. What do you do for relaxing?', 'I usually watch a TV show. How about you?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about leisure activities with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I always go for a walk in the park on weekends. I usually watch a movie in the evening. Sometimes, I read a book to relax. What do you do for fun on weekends?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I always go to the beach on weekends. I sometimes play soccer with friends. I usually watch TV in the evening. What do you like doing on Sundays?"
+    },
+    {
+      "role": "system",
+      "content": "Hello! On Sundays, I usually have breakfast late. I sometimes visit my family or call them. I always listen to music in the afternoon. What about you? What do you enjoy on Sundays?",
+      "advanced_content": "Hello! On Sundays, I usually have breakfast late. I sometimes visit my family or call them. I always listen to music in the afternoon. What about you? What do you like doing on Sundays?",
+      "advanced_construct_ids": "956"
+    },
+    {
+      "role": "student",
+      "content": "Hello! On Sundays, I usually sleep in. I sometimes go for a run in the morning. I always enjoy cooking dinner in the evening. Do you ever try new activities on weekends?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I sometimes try new activities on weekends! I usually go hiking or try a new recipe. I always enjoy learning something new. How about you? Do you ever try new hobbies or activities on weekends?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! Yes, I sometimes try new hobbies on weekends. I usually try painting or a new sport. I always enjoy discovering new things. Do you ever go to new places on weekends?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I sometimes go to new places on weekends! I usually visit a new caf\u00e9 or explore a different park. I always enjoy seeing new things. It\u2019s been great talking about our weekend activities with you! Keep practicing, and you\u2019ll get even better at using the present simple and frequency adverbs. Good luck! \ud83d\ude0a"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I sometimes go to new places on weekends too. I usually visit a museum or try a new restaurant. I always enjoy exploring different areas. Thank you for the conversation! \ud83d\ude0a"
+    },
+    {
+      "role": "system",
+      "content": "Great job! You always finish the task. You usually use the present simple and frequency adverbs very well. Practice more, and you\u2019ll sometimes get better. Talk to you later! \ud83d\ude0a",
+      "advanced_content": "Good job! You have completed the task. You did very well using the present simple and frequency adverbs. Keep practicing, and you\u2019ll keep improving. Talk to you later! \ud83d\ude0a",
+      "advanced_construct_ids": "956"
+    }
+  ],
+  "timestamp": "2025-06-05T14:23:16Z"
+}

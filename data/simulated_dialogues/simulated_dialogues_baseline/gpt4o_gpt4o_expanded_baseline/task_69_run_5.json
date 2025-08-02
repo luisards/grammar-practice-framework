@@ -1,0 +1,89 @@
+{
+  "task_id": 69,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Advising a friend against some cooking habits'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi there! How can I help you with cooking advice today?"
+    },
+    {
+      "role": "student",
+      "content": "Hi! How do I boil an egg?"
+    },
+    {
+      "role": "system",
+      "content": "Boiling an egg is easy! First, put the eggs in a pot. Cover them with water. Turn the stove on high. Wait for the water to boil. Once boiling, turn the heat to low. Let the eggs cook for about 9-12 minutes. Then, take them out and put them in cold water. This stops them from cooking more. That's it! Do you have any other cooking questions?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, how do I make pasta?"
+    },
+    {
+      "role": "system",
+      "content": "Making pasta is simple! First, fill a pot with water. Add a pinch of salt. Bring the water to a boil. Then, add the pasta. Stir it a bit so it doesn't stick. Cook it for about 8-12 minutes, depending on the type. Taste a piece to see if it's done. Once ready, drain the water. You can add sauce or cheese if you like. Enjoy your pasta! Do you need advice on any cooking habits?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, please. How do I chop vegetables safely?"
+    },
+    {
+      "role": "system",
+      "content": "Chopping vegetables safely is important! First, use a sharp knife. A dull knife can slip. Always cut on a stable cutting board. Keep your fingers tucked in, like a claw, to avoid cuts. Cut slowly and carefully. Practice makes perfect! Do you have any more questions before we finish?"
+    },
+    {
+      "role": "student",
+      "content": "No, thank you!"
+    },
+    {
+      "role": "system",
+      "content": "You're welcome! Good job on practicing your cooking advice. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T14:04:14Z"
+}

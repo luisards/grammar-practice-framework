@@ -1,0 +1,91 @@
+{
+  "task_id": 50,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about leisure activities with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by mentioning some leisure activities you always, usually or sometimes do at the weekend, then ask me about mine. ('I sometimes read a book at the park. What do you do for relaxing?', 'I usually watch a TV show. How about you?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about leisure activities with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I usually play football on Sundays. Sometimes I go to the cinema with friends. What do you do at the weekend?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I usually read books on Saturdays. Sometimes I go hiking with my family. What about you?"
+    },
+    {
+      "role": "system",
+      "content": "I always listen to music on Fridays. Sometimes I play video games with my brother. What do you do on Fridays?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "It means I listen to music every Friday. I always do it. Sometimes I also play video games. Do you listen to music or play games?"
+    },
+    {
+      "role": "student",
+      "content": "I sometimes listen to music, especially on weekends. I rarely play video games, but I enjoy them when I do. Do you have a favorite game?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I usually play soccer games on my console. Sometimes I play with friends online. It's always fun. I also usually watch movies on Saturdays. What about you, do you usually watch movies or TV shows?"
+    },
+    {
+      "role": "student",
+      "content": "I usually watch TV shows on weekends. Sometimes I watch movies with my family. I always enjoy a good comedy. Do you have a favorite movie genre?"
+    },
+    {
+      "role": "system",
+      "content": "I usually like action movies. Sometimes I watch romantic comedies with my sister. It's always nice to spend time with family. Well, that's all the time we had for today. You did a great job practicing the present simple with frequency adverbs! Continue doing well, and you'll become a pro in no time. Good job! You have completed the task. Talk to you later!",
+      "advanced_content": "I usually like action movies. Sometimes I watch romantic comedies with my sister. It's always nice to spend time with family. Well, that's all the time we had for today. You did a great job practicing the present simple with frequency adverbs! Keep it up, and you'll become a pro in no time. Good job! You have completed the task. Talk to you later!",
+      "advanced_construct_ids": "952"
+    }
+  ],
+  "timestamp": "2025-06-04T13:22:04Z"
+}

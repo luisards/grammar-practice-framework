@@ -1,0 +1,89 @@
+{
+  "task_id": 75,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Reporting a boss's phone call'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How can I help you today?"
+    },
+    {
+      "role": "student",
+      "content": "Hi! I want to practice English."
+    },
+    {
+      "role": "system",
+      "content": "That's great to hear. What would you like to practice? We can have a conversation, listen to a talk, or do a role-play. What do you think?"
+    },
+    {
+      "role": "student",
+      "content": "Let's have a conversation."
+    },
+    {
+      "role": "system",
+      "content": "That sounds like a good idea, let's start with a conversation. Can we do a scenario where you're a receptionist and you need to report to an English teacher about your boss's phone call? I'll play the boss and you can receive the call, then report it to me. Okay?"
+    },
+    {
+      "role": "student",
+      "content": "Okay, let's try it. I'm ready."
+    },
+    {
+      "role": "system",
+      "content": "I'm the boss. I'm calling you from the office. \"Hello, is this the reception?\""
+    },
+    {
+      "role": "student",
+      "content": "Yes, this is the reception. How can I help you?"
+    },
+    {
+      "role": "system",
+      "content": "You can start reporting your boss's phone call to me now. For example, you might say something like, \"Our boss called the office at 10:00 and said...\""
+    }
+  ],
+  "timestamp": "2025-06-08T13:23:57Z"
+}

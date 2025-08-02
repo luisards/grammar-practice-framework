@@ -1,0 +1,89 @@
+{
+  "task_id": 59,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice patterns_with to and -ing by Describing entertainment preferences with 'enjoy + ing'. I want to ensure that I can use 'enjoy' followed by the '-ing' form. For example, 'I enjoy eating, I enjoy doing, I enjoy going…'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Mention movies or series you enjoy watching and concerts you enjoy going to, then ask me similar questions. (e.g. 'I enjoy watching horror movies. How about you?', 'Do you enjoy going to concerts? Why?', 'Do you enjoy watching TV to relax?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing entertainment preferences with 'enjoy + ing', using, for example, 'I enjoy eating, I enjoy doing, I enjoy going…'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I'm glad you're here to practice your English. I enjoy watching comedy movies. My favorite is \"The Hangover\". I also enjoy going to concerts. I like rock music. Do you enjoy watching movies or listening to music?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy watching movies. My favorite is \"Inception\". I also enjoy listening music. I like pop songs. Do you enjoy reading books?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy reading science fiction books. My favorite is \"The Hunger Games\". I also enjoy going to bookstores to find new authors. Do you enjoy watching series like \"Game of Thrones\"?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy watching series. My favorite is \"Stranger Things\". I also enjoy going to the theater. Do you enjoy playing sports?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy playing basketball. My favorite is playing with my friends on weekends. Do you enjoy going to the beach to relax?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy going to the beach. I like swimming in the sea. I also enjoy building sandcastles. Do you enjoy cooking at home?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy cooking at home. My favorite is making pasta dishes. I also enjoy trying new recipes. Do you enjoy trying new foods when you travel?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy trying new foods when I travel. I like tasting local dishes. I also enjoy visiting food markets. Do you enjoy dancing at parties?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy dancing at parties. My favorite is dancing to disco music. I also enjoy singing karaoke with friends. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T21:19:38Z"
+}

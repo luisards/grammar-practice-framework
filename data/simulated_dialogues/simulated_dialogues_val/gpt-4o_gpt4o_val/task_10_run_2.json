@@ -1,0 +1,95 @@
+{
+  "task_id": 10,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing dishes with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me your opinion about food and ask me about mine (e.g. 'I like sushi. I think sushi is very tasty. What food do you think is very tasty?', 'Mexican food is too spicy. Do you like food that is very spicy?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing dishes with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I love Italian food. I think pasta is really delicious. What food do you think is really delicious?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I think sushi is really delicious. What food do you find very spicy?"
+    },
+    {
+      "role": "system",
+      "content": "I find Indian curry really spicy. Do you really enjoy food that is so spicy?",
+      "advanced_content": "I find Indian curry really spicy. Do you enjoy food that is quite spicy?",
+      "advanced_construct_ids": "753"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "When I ask, \"Do you really enjoy food that is so spicy?\" I'm inquiring if you genuinely like eating food that is extremely spicy and hot. \"Really\" strongly emphasizes the question, and \"so spicy\" indicates the food has a very intense, hot flavor. Do you genuinely like eating food with a lot of spice?",
+      "advanced_content": "When I ask, \"Do you really enjoy food that is so spicy?\" I'm inquiring if you genuinely like consuming food that is extremely spicy and hot. \"Really\" is used to strongly emphasize the question, and \"so spicy\" indicates that the food possesses a very intense, hot flavor. Do you truly like eating food with a lot of spice?",
+      "advanced_construct_ids": "753, 983"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I genuinely like eating food with a lot of spice. It makes the meal quite exciting. What dessert do you think is very sweet?"
+    },
+    {
+      "role": "system",
+      "content": "I think chocolate cake is very sweet. It's often too rich for some people, but I enjoy it. What dessert do you find really delicious?"
+    },
+    {
+      "role": "student",
+      "content": "I find cheesecake really delicious. It's often very creamy and has a nice balance of flavors. What drink do you think is too bitter?"
+    },
+    {
+      "role": "system",
+      "content": "I really think black coffee is very bitter. Some people really like it, but I definitely prefer it with a bit of sugar. You've done a really great job practicing adverbs and adjectives today! Talk to you later!",
+      "advanced_content": "I really think black coffee is extremely bitter. Some people absolutely like it, but I definitely prefer it with a bit of sugar. You've done a very great job practicing adverbs and adjectives today! Talk to you quite later!",
+      "advanced_construct_ids": "983"
+    }
+  ],
+  "timestamp": "2025-06-05T11:53:30Z"
+}

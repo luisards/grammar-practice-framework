@@ -1,0 +1,89 @@
+{
+  "task_id": 50,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "mistral-small-24b-instruct-2501",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about leisure activities with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by mentioning some leisure activities you always, usually or sometimes do at the weekend, then ask me about mine. ('I sometimes read a book at the park. What do you do for relaxing?', 'I usually watch a TV show. How about you?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about leisure activities with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I always go for a walk in the park. I usually play video games. I sometimes visit my friends. What do you do on weekends?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! On weekends, I usually read books. I sometimes watch movies. I always relax at home. What about you?"
+    },
+    {
+      "role": "system",
+      "content": "I usually go to the cinema. I sometimes cook new recipes. I always spend time with my family. Do you like to exercise?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "Exercise means to do physical activity to stay healthy. Like running, swimming, or playing sports. Do you do any of these?"
+    },
+    {
+      "role": "student",
+      "content": "I sometimes go for a run. I usually do yoga at home. I always walk my dog. Do you like to play sports?"
+    },
+    {
+      "role": "system",
+      "content": "I sometimes play basketball with friends. I usually go swimming. I always enjoy a good hike. It was nice talking to you. Let's practice more another time. Bye!"
+    },
+    {
+      "role": "student",
+      "content": "Bye! It was nice talking to you too. Let's practice again soon!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T18:35:38Z"
+}

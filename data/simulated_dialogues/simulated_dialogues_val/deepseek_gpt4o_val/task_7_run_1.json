@@ -1,0 +1,93 @@
+{
+  "task_id": 7,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing countries with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your country and ask me about mine (e.g. 'My country is very big. Is your country very big too?', 'Is your home town really nice?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing countries with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! My country is quite large and very diverse. Is your country very big too?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! My country is really small but very beautiful. It have so nice beaches."
+    },
+    {
+      "role": "system",
+      "content": "That sounds lovely! My country has some really hot summers. Does your country get too hot in the summer?"
+    },
+    {
+      "role": "student",
+      "content": "In summer, it get too hot sometimes, but usually it is very nice."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s good to hear! My country is quite famous for very delicious food. Is the food in your country really tasty too?",
+      "advanced_content": "That\u2019s good to hear! My country is quite famous for its delicious food. Is the food in your country really tasty too?",
+      "advanced_construct_ids": "782, 753"
+    },
+    {
+      "role": "student",
+      "content": "Yes, the food in my country is really tasty and very spicy. We have so many delicious dishes!"
+    },
+    {
+      "role": "system",
+      "content": "That sounds amazing! My country is also quite famous for its really fun festivals. Does your country have very exciting festivals too? It\u2019s been so nice to hear about your country!",
+      "advanced_content": "That sounds amazing! My country is also quite famous for its really interesting festivals. Does your country have very exciting festivals too? It\u2019s been so nice learning about your country!",
+      "advanced_construct_ids": "1057"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my country have very exciting festivals too! They are really colorful and quite fun. It's nice to share about our countries!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You did really well describing your country with adverbs and adjectives. It was so nice to learn about it! Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-05T13:21:11Z"
+}

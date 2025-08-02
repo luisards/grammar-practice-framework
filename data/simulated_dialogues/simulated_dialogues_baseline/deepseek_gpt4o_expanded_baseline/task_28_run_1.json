@@ -1,0 +1,89 @@
+{
+  "task_id": 28,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend advice about health'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi! How are you feeling today?"
+    },
+    {
+      "role": "student",
+      "content": "I feeling good, thank you."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s great to hear! Do you have any health goals or things you want to improve? I\u2019d love to help!"
+    },
+    {
+      "role": "student",
+      "content": "I want to eat more healthy foods."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s a great goal! Start by adding more fruits and vegetables to your meals. Try to eat less junk food and drink more water. Small changes can make a big difference!"
+    },
+    {
+      "role": "student",
+      "content": "Thank you for advice. I will try that."
+    },
+    {
+      "role": "system",
+      "content": "You\u2019re welcome! Remember, it\u2019s all about small, steady steps. If you need more tips or just want to chat, I\u2019m here. Good luck, and take care of yourself! \ud83d\ude0a"
+    },
+    {
+      "role": "student",
+      "content": "Thank you! I will ask if need help."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You\u2019ve completed the task. Keep up the great work, and I\u2019m here whenever you need help. Talk to you later! \ud83d\ude0a"
+    }
+  ],
+  "timestamp": "2025-06-08T11:44:28Z"
+}

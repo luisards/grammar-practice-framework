@@ -1,0 +1,89 @@
+{
+  "task_id": 46,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about common habits in your country with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by asking me where I am from. Tell me something about your country, then ask me short questions about mine with frequency adverbs. (e.g. 'In my country, people usually have coffee in the morning. How about your country?', 'Do people in your country sometimes celebrate things with fireworks?', 'Do restaurants here usually charge for tap water?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about common habits in your country with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I'm glad you're here to practice English. I'm from the United States. In the US, people often have breakfast in the morning. Usually, they eat cereal or eggs. Do people in your country sometimes have breakfast at night?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! In my country, people never have breakfast at night. We always eat breakfast in the morning. Sometimes, we have bread and cheese."
+    },
+    {
+      "role": "system",
+      "content": "That's interesting! In the US, people often go to the movies on weekends. Do people in your country usually watch TV at home?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, people in my country usually watches TV at home. We sometimes go to the cinema, but not often."
+    },
+    {
+      "role": "system",
+      "content": "In the US, people frequently use public transport, like buses and trains. Do people in your country always drive cars or walk to school?"
+    },
+    {
+      "role": "student",
+      "content": "In my country, people usually drive cars to school. Sometimes, they walk if it's close. We don't always use public transport."
+    },
+    {
+      "role": "system",
+      "content": "In the US, people usually go to the beach on summer holidays. Sometimes, they go to the mountains. Do people in your country often go to the beach or mountains on weekends?"
+    },
+    {
+      "role": "student",
+      "content": "In my country, people often go to the beach on weekends, especially in summer. We sometimes go to the mountains, but not as often."
+    },
+    {
+      "role": "system",
+      "content": "It was great chatting with you about your country and mine. You did a fantastic job using the present simple with frequency adverbs. I'm proud of you! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T21:09:46Z"
+}

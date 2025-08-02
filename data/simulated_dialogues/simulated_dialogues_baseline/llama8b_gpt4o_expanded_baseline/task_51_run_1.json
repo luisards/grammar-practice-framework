@@ -1,0 +1,89 @@
+{
+  "task_id": 51,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Describing the day where you are'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello, how are you? It's a nice day outside, the sun is shining. I'm sitting in a small caf\u00e9 with big windows, and I can see trees swaying in the wind. The air is calm and clean."
+    },
+    {
+      "role": "student",
+      "content": "I is fine, thank you. What are you doing in the caf\u00e9?"
+    },
+    {
+      "role": "system",
+      "content": "I'm a tutor, and I'm here to help people like you practice their English. I'm sitting at a small table by the window, too, and I can see the same trees swaying in the wind."
+    },
+    {
+      "role": "student",
+      "content": "That's nice. Do you like help people learn English?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I like helping people learn English. It's a happy feeling when they understand something new and get better at speaking."
+    },
+    {
+      "role": "student",
+      "content": "That's great! I want to get better, too. Can you help me with speaking?"
+    },
+    {
+      "role": "system",
+      "content": "Of course, I can help you with speaking. Let's practice describing a day in a classroom, like this one, and then we can talk about your plans and goals for learning English. How does that sound to you?"
+    },
+    {
+      "role": "student",
+      "content": "That sounds good to me. Let's start!"
+    },
+    {
+      "role": "system",
+      "content": "Let's start describing the day in this classroom. I see students writing in notebooks and looking at a board with a teacher writing some words."
+    }
+  ],
+  "timestamp": "2025-06-08T13:03:24Z"
+}

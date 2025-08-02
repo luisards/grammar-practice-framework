@@ -1,0 +1,89 @@
+{
+  "task_id": 58,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Discussing enjoyable holiday activities'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How are you today?"
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you. How are you?"
+    },
+    {
+      "role": "system",
+      "content": "I'm good too, thanks. I was thinking about holidays. What do you like to do on holiday?"
+    },
+    {
+      "role": "student",
+      "content": "I like to relax and read books. What about you?"
+    },
+    {
+      "role": "system",
+      "content": "I like to go to the beach and swim. It's nice to cool off in the water on a hot day."
+    },
+    {
+      "role": "student",
+      "content": "That sounds fun! Do you go often?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I go to the beach often, especially in the summer. Going to the beach helps me to feel happy and relaxed, and it's a great place to think about my life."
+    },
+    {
+      "role": "student",
+      "content": "I agree. The beach is a peaceful place. Do you have a favorite beach?"
+    },
+    {
+      "role": "system",
+      "content": "I have a favorite beach near my hometown. It's called Brighton Beach. The sand is white and the water is clear. I like to walk along the beach and watch the sunset. It's a beautiful sight."
+    }
+  ],
+  "timestamp": "2025-06-08T13:09:43Z"
+}

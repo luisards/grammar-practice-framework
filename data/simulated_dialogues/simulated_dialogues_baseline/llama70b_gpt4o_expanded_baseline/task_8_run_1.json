@@ -1,0 +1,89 @@
+{
+  "task_id": 8,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Describing your house'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello, how are you? I live in a nice house. Would you like to hear about it?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I want to hear about it. What it like?"
+    },
+    {
+      "role": "system",
+      "content": "My house is small and cozy. It has two floors and a garden. I like my garden, it's very green."
+    },
+    {
+      "role": "student",
+      "content": "That sounds nice. Do you have any pets?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I have a pet. I have a cat. Her name is Lily. She likes to play in the garden."
+    },
+    {
+      "role": "student",
+      "content": "What color is Lily?"
+    },
+    {
+      "role": "system",
+      "content": "Lily is white. She's very cute. Now, would you like to tell me about your house?"
+    },
+    {
+      "role": "student",
+      "content": "I live in a apartment. It small but nice. I have one bedroom and a kitchen."
+    },
+    {
+      "role": "system",
+      "content": "That's great. It sounds like a nice apartment. I'm glad we could talk about our homes. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T17:24:52Z"
+}

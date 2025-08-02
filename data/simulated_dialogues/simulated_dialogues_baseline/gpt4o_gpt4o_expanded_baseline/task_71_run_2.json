@@ -1,0 +1,89 @@
+{
+  "task_id": 71,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving information about an interview'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How can I help you with your interview practice today?"
+    },
+    {
+      "role": "student",
+      "content": "Hi! I need help with job interview questions."
+    },
+    {
+      "role": "system",
+      "content": "Sure! Let's start with some common questions. Can you tell me about yourself?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "This question is asking for a short summary about you. Talk about your work experience, skills, and what you enjoy doing. Keep it simple and focused on things related to the job."
+    },
+    {
+      "role": "student",
+      "content": "I am a recent graduate in computer science. I have experience in coding and enjoy solving problems. I am looking for a software developer position."
+    },
+    {
+      "role": "system",
+      "content": "That's a great start! You can also mention any specific programming languages you know or projects you have worked on. This will help the interviewer understand your skills better. Is there anything else you would like to practice before we finish?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, how do I answer \"What are your strengths?\""
+    },
+    {
+      "role": "system",
+      "content": "To answer \"What are your strengths?\", think about what you are good at. Choose strengths that match the job. For example, you can say, \"I am good at problem-solving and I work well in a team.\" You can also mention any technical skills you have. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T14:05:07Z"
+}

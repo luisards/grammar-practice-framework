@@ -1,0 +1,89 @@
+{
+  "task_id": 48,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about school routines with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by telling me about a typical school/work day in your country using frequency adverbs, then ask me questions about my school routine. (e.g. 'I usually go to school at 7:30 am. How about you?', 'Do you sometimes study late at night?) Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about school routines with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello. I usually wake up at 6:00 am. I always have breakfast before I go to work. Sometimes I arrive at the office late. I normally teach English classes in the morning. How about you, what time do you usually go to school?"
+    },
+    {
+      "role": "student",
+      "content": "I usually goes to school at 8:00 am."
+    },
+    {
+      "role": "system",
+      "content": "That's great! I sometimes have meetings with my colleagues in the afternoon. Do you always do your homework as soon as you get home from school?"
+    },
+    {
+      "role": "student",
+      "content": "I sometimes do my homework right away, but I always finish it before bed."
+    },
+    {
+      "role": "system",
+      "content": "That's a good habit! I usually mark papers and prepare lessons in the evening. Sometimes I give my students a lot of homework, but I never give them too much on Fridays. Do you normally study with your friends or alone?"
+    },
+    {
+      "role": "student",
+      "content": "I usually study alone, but sometimes I study with my friends."
+    },
+    {
+      "role": "system",
+      "content": "That's a good balance. I often tell my students that studying with friends can be helpful, but it's also important to have time to focus alone. Usually, my students listen to my advice, but sometimes they don't follow it. Do you always review your notes before a test?"
+    },
+    {
+      "role": "student",
+      "content": "I always review my notes before a test. It helps me remember better."
+    },
+    {
+      "role": "system",
+      "content": "That's a great study habit! I usually see improvement in my students when they review their notes regularly. Well, it was nice chatting with you about our daily routines. I think you did a great job using the present simple with frequency adverbs. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T14:46:48Z"
+}

@@ -1,0 +1,89 @@
+{
+  "task_id": 22,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice future with be going to by Asking a fortune teller about your friend's future with 'going to'. I want to ensure that I can use the question form. For example, 'Am I going to..., is it going to..., are they going to...'. Let's do a role play exercise. You (the AI) are a witty fortune teller. Introduce yourself in a friendly manner and use short answers with 'going to'. When possible, ask questions with 'going to' as well. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Asking a fortune teller about your friend's future with 'going to', using, for example, 'Am I going to..., is it going to..., are they going to...'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I'm Luna, the fortune teller. Are you going to ask about your future or a friend's?"
+    },
+    {
+      "role": "student",
+      "content": "I'm going to ask about my friend's future. Are they going to be successful in their career?"
+    },
+    {
+      "role": "system",
+      "content": "They are going to have a great job. Is your friend going to move to a new city for work?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, they are going to move to a new city for work. Are they going to enjoy living there?"
+    },
+    {
+      "role": "system",
+      "content": "They are going to love it. Is your friend going to get married in the near future?"
+    },
+    {
+      "role": "student",
+      "content": "No, they are not going to get married in the near future. Are they going to make new friends in the new city?"
+    },
+    {
+      "role": "system",
+      "content": "They are going to meet many people. Are they going to travel a lot after moving to the new city?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, they are going to travel a lot after moving to the new city. Is your friend going to find a hobby they enjoy there?"
+    },
+    {
+      "role": "system",
+      "content": "They are going to find a great hobby. It was nice talking to you, I think I've seen enough of your friend's future. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T14:22:30Z"
+}

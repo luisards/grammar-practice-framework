@@ -1,0 +1,89 @@
+{
+  "task_id": 48,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about school routines with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by telling me about a typical school/work day in your country using frequency adverbs, then ask me questions about my school routine. (e.g. 'I usually go to school at 7:30 am. How about you?', 'Do you sometimes study late at night?) Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about school routines with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! In my country, I usually wake up early at 6:00 am. I always have a cup of coffee before I go to work. I usually work from 8:00 am to 5:00 pm, Monday to Friday. I sometimes have a meeting at 2:00 pm. I always take a break at 4:00 pm. I usually go home at 5:30 pm. I sometimes do some exercise in the evening. I always watch TV at 8:00 pm. I usually go to bed at 10:00 pm. Do you usually go to school in the morning?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I usually go to school in the morning. I usually start at 8:00 am."
+    },
+    {
+      "role": "system",
+      "content": "I sometimes have breakfast at 7:00 am before I go to school. Do you always have a lunch break at school?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I always have a lunch break at school. It is usually at 12:00 pm."
+    },
+    {
+      "role": "system",
+      "content": "I sometimes have a snack after lunch. Do you usually do your homework in the afternoon?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I usually do my homework in the afternoon. I sometimes start at 4:00 pm."
+    },
+    {
+      "role": "system",
+      "content": "I sometimes help my friends with their homework in the evening. Do you usually have any sports or music classes at school?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I usually have sports classes at school. I sometimes have music classes too."
+    },
+    {
+      "role": "system",
+      "content": "It was great chatting with you about our school routines. I think you did a fantastic job using the present simple with frequency adverbs. You answered all my questions clearly and correctly. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T21:11:55Z"
+}

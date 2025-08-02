@@ -1,0 +1,89 @@
+{
+  "task_id": 10,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing dishes with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me your opinion about food and ask me about mine (e.g. 'I like sushi. I think sushi is very tasty. What food do you think is very tasty?', 'Mexican food is too spicy. Do you like food that is very spicy?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing dishes with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I love pizza. I think pizza is really delicious. What food do you think is really delicious?"
+    },
+    {
+      "role": "student",
+      "content": "I think sushi is really delicious."
+    },
+    {
+      "role": "system",
+      "content": "Great choice! I think sushi is quite fresh and very healthy. Do you like food that is quite fresh?"
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "That’s okay! Fresh food is usually very light and tasty. For example, salads are quite fresh. Do you think salads are too boring or quite nice?"
+    },
+    {
+      "role": "student",
+      "content": "I think salads are quite nice."
+    },
+    {
+      "role": "system",
+      "content": "That’s good to hear! I think salads are very refreshing, especially on a hot day. Thank you for practicing with me today! Keep using adverbs like \"really,\" \"very,\" and \"quite\" to describe food—it’s a great way to improve your English. See you next time!"
+    },
+    {
+      "role": "student",
+      "content": "Thank you! I enjoyed practicing with you. I will keep using adverbs and adjectives to describe food. See you next time!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. I’m glad you enjoyed practicing. Keep up the great work with adverbs and adjectives—you’re doing really well! Talk to you later! 😊"
+    }
+  ],
+  "timestamp": "2025-06-04T20:47:16Z"
+}

@@ -1,0 +1,89 @@
+{
+  "task_id": 26,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice should by Giving a friend advice using 'should'. I want to ensure that I can use the affirmative form. For example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have problems with school. Start by telling me what's wrong and ask for advice (e.g. 'Should I...?, 'What should I do?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Giving a friend advice using 'should', using, for example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "I'm having trouble with my math class. I don't understand the lessons. What should I do?"
+    },
+    {
+      "role": "student",
+      "content": "You should ask your teacher for help. You should also try studying with a friend."
+    },
+    {
+      "role": "system",
+      "content": "That's a good idea. My friend is very good at math. Should I ask him to study with me every day?"
+    },
+    {
+      "role": "student",
+      "content": "You should ask him to study with you a few times a week. You should also review your notes daily."
+    },
+    {
+      "role": "system",
+      "content": "I will review my notes every day. I'm also worried about my English class. I don't speak English well. What should I do to improve my speaking?"
+    },
+    {
+      "role": "student",
+      "content": "You should practice speaking with native speakers. You should also watch English movies and repeat the dialogues."
+    },
+    {
+      "role": "system",
+      "content": "That's a great idea. I should watch English movies without subtitles to improve my listening. I should also try to speak in English every day, even if it's just for a few minutes. What should I do if I make mistakes while speaking?"
+    },
+    {
+      "role": "student",
+      "content": "You should not worry too much about mistakes. You should learn from them and keep practicing. You should also ask for feedback from others."
+    },
+    {
+      "role": "system",
+      "content": "I feel better now. I should follow your advice and work hard. I should be more confident in my English class too. Thank you for your help! You gave me great advice. I will try my best. Goodbye!"
+    }
+  ],
+  "timestamp": "2025-06-03T14:26:56Z"
+}

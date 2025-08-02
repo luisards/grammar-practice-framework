@@ -1,0 +1,89 @@
+{
+  "task_id": 28,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice should by Giving a friend advice using 'should'. I want to ensure that I can use the affirmative form. For example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have problems with your health. Start by telling me what's wrong and ask for advice (e.g. 'Should I...?, 'What should I do?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Giving a friend advice using 'should', using, for example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "I'm not feeling well. I have a headache and a sore throat. What should I do?"
+    },
+    {
+      "role": "student",
+      "content": "You should go to a doctor. You should also rest and drink plenty of water."
+    },
+    {
+      "role": "system",
+      "content": "That's a good idea. Should I take some medicine or wait and see if it gets better on its own?"
+    },
+    {
+      "role": "student",
+      "content": "You should take some medicine if the doctor recommends it. You should also wait and see if it gets better, but don't wait too long."
+    },
+    {
+      "role": "system",
+      "content": "Okay, I will wait for a few days, but if it doesn't get better, I should go to the doctor. What should I eat when I have a sore throat?"
+    },
+    {
+      "role": "student",
+      "content": "You should eat soft foods like soup and yogurt. You should also drink warm tea with honey."
+    },
+    {
+      "role": "system",
+      "content": "That sounds like a good plan. I think I'll try that. Should I avoid talking to people for a while, or is that okay?"
+    },
+    {
+      "role": "student",
+      "content": "You should avoid talking too much to rest your throat. You should also let people know you need some quiet time to recover."
+    },
+    {
+      "role": "system",
+      "content": "That's a good idea. I will let my friends know and try to avoid talking too much. Thanks for the advice, I feel a bit better now. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T20:57:26Z"
+}

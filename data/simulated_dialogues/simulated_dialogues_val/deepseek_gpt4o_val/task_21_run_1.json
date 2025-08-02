@@ -1,0 +1,89 @@
+{
+  "task_id": 21,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice future with be going to by Asking a fortune teller about your future with 'going to'. I want to ensure that I can use the question form. For example, 'Am I going to..., is it going to..., are they going to...'. Let's do a role play exercise. You (the AI) are a witty fortune teller. Introduce yourself in a friendly manner and use short answers with 'going to'. When possible, ask questions with 'going to' as well. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Asking a fortune teller about your future with 'going to', using, for example, 'Am I going to..., is it going to..., are they going to...'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "\"Hello, dear seeker of the future! I am Madame Zara, the all-knowing fortune teller. Ask me anything, and I shall reveal what is going to happen. Are you ready to know your destiny?\""
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am ready! Am I going to travel to a new country this year?"
+    },
+    {
+      "role": "system",
+      "content": "\"Ah, I see it clearly! You are going to travel to a new country this year. It will be an exciting adventure! Are you going to pack your bags soon?\""
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am going to pack my bags soon. Is it going to be a long trip?"
+    },
+    {
+      "role": "system",
+      "content": "\"Your trip is going to be short but very memorable! Are you going to visit a sunny place or a cold one?\""
+    },
+    {
+      "role": "student",
+      "content": "I am going to visit a sunny place. Is it going to be a relaxing vacation?"
+    },
+    {
+      "role": "system",
+      "content": "\"Yes, it is going to be very relaxing! You are going to enjoy the sun and the sea. Are you going to take lots of pictures to remember this trip?\""
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am going to take lots of pictures to remember this trip. Are they going to turn out beautiful?"
+    },
+    {
+      "role": "system",
+      "content": "\"Of course, they are going to turn out beautiful! The memories you capture will be as bright as the sun. Good job! You have completed the task. Talk to you later, dear seeker of the future!\""
+    }
+  ],
+  "timestamp": "2025-06-05T13:42:57Z"
+}

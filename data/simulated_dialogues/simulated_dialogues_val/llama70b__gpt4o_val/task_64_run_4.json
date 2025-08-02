@@ -1,0 +1,93 @@
+{
+  "task_id": 64,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice wh- by Asking a friend about a birthday party with 'what', 'when', 'where' and 'how'. I want to ensure that I can use 'wh-'words + auxiliary 'do' + subject + main verb to form 'wh-'questions. For example, 'where did you go?, when did you arrive?, what did you do?'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have just attended a birthday party. Start by telling me you are back. Answer my questions. (e.g. \u201cI just got home from the party. What do you want to know first?\u201d, \u201cIt was fun. Do you enjoy birthday parties?\u201d) Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Asking a friend about a birthday party with 'what', 'when', 'where' and 'how', using, for example, 'where did you go?, when did you arrive?, what did you do?'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "I just came home from the party. What do you want to know first?",
+      "advanced_content": "I just got home from the party. What do you want to know first?",
+      "advanced_construct_ids": "949"
+    },
+    {
+      "role": "student",
+      "content": "What did you do at the party?"
+    },
+    {
+      "role": "system",
+      "content": "We played games, ate cake, and danced. What did you think I would do at a birthday party?"
+    },
+    {
+      "role": "student",
+      "content": "I thought you might just talk and hang out. When did the party start?"
+    },
+    {
+      "role": "system",
+      "content": "It started at 5 pm. Where did you think the party was?",
+      "advanced_content": "It started at 5 pm. Where did you think the party would be?",
+      "advanced_construct_ids": "992"
+    },
+    {
+      "role": "student",
+      "content": "I thought the party was at your house. Where was it actually?"
+    },
+    {
+      "role": "system",
+      "content": "It was at a park near my house. How did you think we would celebrate a birthday?"
+    },
+    {
+      "role": "student",
+      "content": "I thought you would celebrate with a small group of friends at home. How did you get to the park?"
+    },
+    {
+      "role": "system",
+      "content": "We took a bus to the park. It was easy. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T13:42:26Z"
+}

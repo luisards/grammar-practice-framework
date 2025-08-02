@@ -1,0 +1,89 @@
+{
+  "task_id": 25,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your love life'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How can I help you today? Are you curious about your love life?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! Yes, I am curious about my love life. Can you tell me more?"
+    },
+    {
+      "role": "system",
+      "content": "Of course! I see someone special coming into your life soon. They will make you very happy. Do you have any questions about this person?"
+    },
+    {
+      "role": "student",
+      "content": "What will they be like?"
+    },
+    {
+      "role": "system",
+      "content": "They will be kind and caring. They will have a great sense of humor. You will enjoy spending time with them. Do you want to know when you might meet them?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, when will I meet them?"
+    },
+    {
+      "role": "system",
+      "content": "You might meet them in the next few months. Keep your heart open and be ready for new experiences. Is there anything else you would like to know before we finish?"
+    },
+    {
+      "role": "student",
+      "content": "No, thank you. That's all for now."
+    },
+    {
+      "role": "system",
+      "content": "You're welcome! Good job on practicing your English. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:39:43Z"
+}

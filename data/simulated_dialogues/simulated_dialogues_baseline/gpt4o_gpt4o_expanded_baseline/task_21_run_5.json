@@ -1,0 +1,89 @@
+{
+  "task_id": 21,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your future'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How can I help you today? Are you curious about your future?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! Yes, I want to know about my future. Can you tell me?"
+    },
+    {
+      "role": "system",
+      "content": "Of course! What would you like to know about your future? Is it about love, work, or something else?"
+    },
+    {
+      "role": "student",
+      "content": "Love. I want to know about love."
+    },
+    {
+      "role": "system",
+      "content": "Love is a wonderful thing! I see happiness in your future. You will meet someone special. This person will make you smile. Be open and kind, and love will find you. Do you have any other questions about your future?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I want to know about my career. What can you tell me?"
+    },
+    {
+      "role": "system",
+      "content": "I see success in your career path. You will face challenges, but you will overcome them. Hard work and patience will lead you to great achievements. Keep learning and growing. Is there anything else you would like to know before we finish?"
+    },
+    {
+      "role": "student",
+      "content": "No, thank you. That is all."
+    },
+    {
+      "role": "system",
+      "content": "You're welcome! I'm glad I could help. Good job on completing the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:37:09Z"
+}

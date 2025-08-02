@@ -1,0 +1,89 @@
+{
+  "task_id": 36,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice past simple by Talking about yesterday with the past tense. I want to ensure that I can use the affirmative form with an increasing range of verbs. For example, 'I went to..., I cooked..., I met..., I called...'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your day yesterday and ask me about mine. (e.g. 'I called my friend. What did you do?, 'I went to work. Where did you go?', 'I played with my friends. What did you do?', 'I ate pasta. What did you eat?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about yesterday with the past tense, using, for example, 'I went to..., I cooked..., I met..., I called...'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! Yesterday, I went to the park. Where did you go?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! Yesterday, I went to the library. What did you do there?"
+    },
+    {
+      "role": "system",
+      "content": "I read a book at the park. What did you do at the library?"
+    },
+    {
+      "role": "student",
+      "content": "I studied for my exam at the library. Who did you meet at the park?"
+    },
+    {
+      "role": "system",
+      "content": "I met my friend at the park. Who did you meet at the library?"
+    },
+    {
+      "role": "student",
+      "content": "I met my classmate at the library. What did you eat at the park?"
+    },
+    {
+      "role": "system",
+      "content": "I ate a sandwich at the park. What did you eat at the library?"
+    },
+    {
+      "role": "student",
+      "content": "I ate a snack at the library. What time did you leave the park?"
+    },
+    {
+      "role": "system",
+      "content": "I left the park at 5 PM. What time did you leave the library? Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-05T12:19:15Z"
+}

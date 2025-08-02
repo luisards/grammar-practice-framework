@@ -1,0 +1,89 @@
+{
+  "task_id": 25,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your love life'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Welcome to my little shop. I sense you're curious about something. What can I help you with today?"
+    },
+    {
+      "role": "student",
+      "content": "I want to buy a book."
+    },
+    {
+      "role": "system",
+      "content": "I'm afraid we don't sell books here. We do readings and predictions. Would you like a reading about your love life?"
+    },
+    {
+      "role": "student",
+      "content": "No, thank you. What else can you do?"
+    },
+    {
+      "role": "system",
+      "content": "We offer palm readings, tarot cards, and astrology. We also have a crystal ball for a more general reading. Which one sounds interesting to you?"
+    },
+    {
+      "role": "student",
+      "content": "Palm reading sounds interesting."
+    },
+    {
+      "role": "system",
+      "content": "Let's start the palm reading. Please place your hand on the table with your palm facing up. I'll take a look at your lines and see what I can see about your love life."
+    },
+    {
+      "role": "student",
+      "content": "Okay, my hand is ready. What do you see?"
+    },
+    {
+      "role": "system",
+      "content": "I see a strong heart line, which suggests you're a romantic at heart. Your love life has been a bit complicated lately, but I see a new relationship on the horizon. It's going to be a passionate and exciting one."
+    }
+  ],
+  "timestamp": "2025-06-08T12:41:33Z"
+}

@@ -1,0 +1,95 @@
+{
+  "task_id": 30,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice should by Giving a friend advice using 'should'. I want to ensure that I can use the affirmative form. For example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have problems with your routine. Start by telling me what's wrong and ask for advice (e.g. 'Should I...?, 'What should I do?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Giving a friend advice using 'should', using, for example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "I'm so tired. I wake up late every day. Should I go to bed earlier?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, you should go to bed earlier. It will help you feel more rested."
+    },
+    {
+      "role": "system",
+      "content": "I also have a problem with food. I eat a lot of junk food. What should I do to eat healthier?",
+      "advanced_content": "I also have a problem with my eating habits. I eat a lot of junk food. What should I do to eat healthier?",
+      "advanced_construct_ids": "1057"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "It means I eat a lot of unhealthy food like chips and burgers. I don't eat many fruits and vegetables. Should I buy healthy food when I am at the store?",
+      "advanced_content": "It means I eat a lot of unhealthy food like chips and burgers. I don't eat many fruits and vegetables. Should I buy healthy food when I go shopping?",
+      "advanced_construct_ids": "956, 1057"
+    },
+    {
+      "role": "student",
+      "content": "Yes, you should buy healthy food. Try to get more fruits and vegetables."
+    },
+    {
+      "role": "system",
+      "content": "That's great advice. I will buy more fruits and vegetables. I also want to exercise. I don't have much time for sports. Should I start with short walks every day?",
+      "advanced_content": "That's great advice. I will buy more fruits and vegetables. I also want to exercise more. I don't have much time for sports. Should I start with short walks every day?",
+      "advanced_construct_ids": "753"
+    },
+    {
+      "role": "student",
+      "content": "Yes, you should start with short walks every day. It's a good way to begin exercising."
+    },
+    {
+      "role": "system",
+      "content": "Thank you for your advice. I think I can change my routine now. You should be proud of me for wanting to make healthy changes. I will go to bed earlier, eat healthier food, and start with short walks. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T12:55:34Z"
+}

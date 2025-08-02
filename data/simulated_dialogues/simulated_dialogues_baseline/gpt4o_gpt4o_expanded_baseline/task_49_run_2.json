@@ -1,0 +1,89 @@
+{
+  "task_id": 49,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Talking about health habits'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How are you today?"
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you. How are you?"
+    },
+    {
+      "role": "system",
+      "content": "I am good too, thank you! Do you have any healthy habits?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "Healthy habits are things we do to keep our body and mind strong. They help us feel good and stay well. Do you have any habits like that?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I exercise and eat fruits."
+    },
+    {
+      "role": "system",
+      "content": "That's great! Exercise and eating fruits are very good for your health. Do you have any other healthy habits?"
+    },
+    {
+      "role": "student",
+      "content": "I drink water and sleep well."
+    },
+    {
+      "role": "system",
+      "content": "Those are excellent habits! Drinking water and getting enough sleep are very important. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:52:30Z"
+}

@@ -1,0 +1,89 @@
+{
+  "task_id": 26,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice should by Giving a friend advice using 'should'. I want to ensure that I can use the affirmative form. For example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have problems with school. Start by telling me what's wrong and ask for advice (e.g. 'Should I...?, 'What should I do?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Giving a friend advice using 'should', using, for example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "I'm having a lot of trouble with my schoolwork. I'm feeling very stressed. My math test is tomorrow and I'm not sure if I'm prepared."
+    },
+    {
+      "role": "student",
+      "content": "You should take a deep breath and relax. You should review your notes and focus on key topics. You should also get a good night's sleep."
+    },
+    {
+      "role": "system",
+      "content": "That's good advice. But what if I don't have time to review all my notes? The test is tomorrow. Should I just try to memorize some key formulas?"
+    },
+    {
+      "role": "student",
+      "content": "You should focus on understanding the main concepts instead of memorizing. You should practice a few problems to reinforce your understanding. You should also ask your teacher for help if you can."
+    },
+    {
+      "role": "system",
+      "content": "I don't know if I can ask my teacher for help. I'm afraid she will think I'm not doing my work. Should I ask her anyway?"
+    },
+    {
+      "role": "student",
+      "content": "You should definitely ask her for help. You should explain that you're trying your best. You should remember that teachers are there to help you learn."
+    },
+    {
+      "role": "system",
+      "content": "I think I'll ask her for help after class today. I'll explain that I'm feeling stressed and ask if she can give me some extra time to review. What should I say to her to make sure she understands I'm serious and not just making excuses?"
+    },
+    {
+      "role": "student",
+      "content": "You should be honest and sincere. You should say, \"I've been trying hard, but I'm feeling overwhelmed. I really want to understand the material better. Can you help me with some extra guidance?\" You should also mention specific areas where you need help."
+    },
+    {
+      "role": "system",
+      "content": "I think that's perfect! I'll go talk to my teacher now. Thanks for the advice! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T20:55:41Z"
+}

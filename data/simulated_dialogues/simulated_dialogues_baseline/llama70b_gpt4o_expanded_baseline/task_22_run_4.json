@@ -1,0 +1,89 @@
+{
+  "task_id": 22,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your friend's future'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I want to ask about my friend's future. Can you help me?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! Yes, I can try to help. What do you want to know?"
+    },
+    {
+      "role": "system",
+      "content": "My friend is looking for a job. Will she find one soon?"
+    },
+    {
+      "role": "student",
+      "content": "I hope so! Is she applying to many places?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, she is. She applied to five companies last week."
+    },
+    {
+      "role": "student",
+      "content": "That's great! Has she heard back from any of them?"
+    },
+    {
+      "role": "system",
+      "content": "Not yet, but I think she will get some interviews soon. Do you see a good job in her future?"
+    },
+    {
+      "role": "student",
+      "content": "I believe she will find a good job. Keep encouraging her!"
+    },
+    {
+      "role": "system",
+      "content": "Thank you for your help! I'll tell her to stay positive. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T17:35:21Z"
+}

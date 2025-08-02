@@ -1,0 +1,89 @@
+{
+  "task_id": 30,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice should by Giving a friend advice using 'should'. I want to ensure that I can use the affirmative form. For example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have problems with your routine. Start by telling me what's wrong and ask for advice (e.g. 'Should I...?, 'What should I do?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Giving a friend advice using 'should', using, for example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "I'm tired every day. I wake up late and I don't have time for exercise. What should I do?"
+    },
+    {
+      "role": "student",
+      "content": "You should try to go to bed earlier. You should set an alarm to wake up on time. You should make a schedule for exercise."
+    },
+    {
+      "role": "system",
+      "content": "I think I should also eat healthy food. Should I stop eating fast food? What should I eat for breakfast to have more energy?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, you should stop eating fast food. You should eat fruits and oatmeal for breakfast. You should drink plenty of water too."
+    },
+    {
+      "role": "system",
+      "content": "That's a great idea. I should also take a walk after breakfast. Should I walk for 30 minutes or 1 hour? What should I do if it's raining outside?"
+    },
+    {
+      "role": "student",
+      "content": "You should walk for 30 minutes to start. If it's raining, you should exercise indoors. You should try a home workout or yoga."
+    },
+    {
+      "role": "system",
+      "content": "That sounds like a good plan. I should start with 30 minutes of walking and try yoga when it's raining. What should I do to make sure I stick to my new routine and don't get lazy? Should I tell a friend about my goals?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, you should tell a friend about your goals. You should also set reminders on your phone. You should reward yourself for sticking to your routine."
+    },
+    {
+      "role": "system",
+      "content": "That's great advice, thank you! I should tell you about my progress next week. You should hold me accountable. I feel more confident now that I can stick to my new routine. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T14:31:34Z"
+}

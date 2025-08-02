@@ -1,0 +1,89 @@
+{
+  "task_id": 29,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice should by Giving a friend advice using 'should'. I want to ensure that I can use the affirmative form. For example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have problems with a coworker. Start by telling me what's wrong and ask for advice (e.g. 'Should I...?, 'What should I do?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Giving a friend advice using 'should', using, for example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "I'm having a problem at work. My coworker is very lazy and doesn't do his job. It makes me angry. Should I talk to him about it?"
+    },
+    {
+      "role": "student",
+      "content": "You should talk to him about it. Maybe he don't know he's being lazy."
+    },
+    {
+      "role": "system",
+      "content": "That's a good idea. But I'm not sure if I should talk to our boss about it too. What should I do if he doesn't listen to me and keeps being lazy?"
+    },
+    {
+      "role": "student",
+      "content": "You should talk to your boss if he doesn't listen. It's important to solve the problem."
+    },
+    {
+      "role": "system",
+      "content": "You're right, I should talk to my boss if he doesn't listen. But I'm worried that my coworker will get angry with me. Should I talk to him alone or with another coworker?"
+    },
+    {
+      "role": "student",
+      "content": "You should talk to him alone first. It's better to keep it private. If he gets angry, you can involve another coworker later."
+    },
+    {
+      "role": "system",
+      "content": "That's a good plan. You're right, I should talk to him alone first and keep it private. What should I do after I talk to him, to make sure he understands the problem and will do his job?"
+    },
+    {
+      "role": "student",
+      "content": "You should ask him if he understands and if he needs help. You should also offer support and check in with him later to see if things improve."
+    },
+    {
+      "role": "system",
+      "content": "I think that's a great idea. You should be proud of helping me with my problem. I will talk to my coworker alone and offer support. I should also check in with him later to see if things improve. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T14:29:42Z"
+}

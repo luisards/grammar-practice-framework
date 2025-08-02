@@ -1,0 +1,89 @@
+{
+  "task_id": 41,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Explaining where things are located in the city'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How can I help you today? Would you like to practice giving directions in the city?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I like practice giving directions."
+    },
+    {
+      "role": "system",
+      "content": "Great! Let's start with a simple example. Imagine you are at the city park. Can you tell me how to get to the library from there?"
+    },
+    {
+      "role": "student",
+      "content": "Go straight two blocks, then turn right. Library is on left."
+    },
+    {
+      "role": "system",
+      "content": "Good job! That was clear and easy to follow. Now, let's try another one. Imagine you are at the train station. Can you explain how to get to the nearest coffee shop?"
+    },
+    {
+      "role": "student",
+      "content": "Walk out the station, turn left. Go one block, coffee shop is on right."
+    },
+    {
+      "role": "system",
+      "content": "Well done! Your directions were clear and simple. Let's do one last practice. Imagine you are at the museum. Can you tell me how to get to the nearest restaurant?"
+    },
+    {
+      "role": "student",
+      "content": "Walk out the museum, turn right. Go three blocks, restaurant is on left."
+    },
+    {
+      "role": "system",
+      "content": "Great work! Your directions were clear and easy to understand. You've done an excellent job practicing today. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:48:30Z"
+}

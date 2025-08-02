@@ -1,0 +1,89 @@
+{
+  "task_id": 50,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about leisure activities with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by mentioning some leisure activities you always, usually or sometimes do at the weekend, then ask me about mine. ('I sometimes read a book at the park. What do you do for relaxing?', 'I usually watch a TV show. How about you?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about leisure activities with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I always go for a walk on weekends. I usually watch movies, and sometimes I cook new recipes. What do you do for fun?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I usually read books. I sometimes play video games, and I always listen to music. What about you?"
+    },
+    {
+      "role": "system",
+      "content": "That sounds fun! I always enjoy listening to music too. I usually play board games with friends, and sometimes I go cycling. Do you ever try new activities on weekends?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "\"Try new activities\" means doing something different or new that you haven’t done before. For example, trying a new sport, learning to paint, or visiting a new place. Do you ever do something new on weekends?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I sometimes try new activities on weekends. I usually try a new recipe or visit a new park. Do you have a favorite activity you always do?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I always go for a walk because it helps me relax. I also usually watch movies because I enjoy stories. It’s great that you try new recipes and visit new parks—that sounds exciting! Thanks for practicing with me today. Keep exploring new activities and using English to talk about them! 😊"
+    },
+    {
+      "role": "student",
+      "content": "Thank you! I will keep practicing. I always enjoy learning new things. I usually practice English with friends, and sometimes I watch English movies. Do you have any tips for learning English?"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You’ve done great today. My tip is to keep practicing regularly, just like you’re doing now. Watching English movies and talking with friends are excellent ways to improve. Keep it up! Talk to you later! 😊"
+    }
+  ],
+  "timestamp": "2025-06-04T21:30:48Z"
+}

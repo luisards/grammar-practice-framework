@@ -1,0 +1,89 @@
+{
+  "task_id": 10,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing dishes with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite ineresting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me your opinion about food and ask me about mine (e.g. 'I like sushi. I think sushi is very tasty. What food do you think is very tasty?', 'Mexican food is too spicy. Do you like food that is very spicy?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing dishes with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite ineresting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I like pizza. It's really delicious. What food do you think is really delicious?"
+    },
+    {
+      "role": "student",
+      "content": "I think ice cream is very tasty. It melt too fast."
+    },
+    {
+      "role": "system",
+      "content": "Ice cream melts really quickly. I think chocolate ice cream is extremely good. Do you like cake that is very sweet?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I like cake that is very sweet. It taste so good."
+    },
+    {
+      "role": "system",
+      "content": "Fruit cake is quite sweet. I think it's moderately priced. Do you like food that is reasonably cheap?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I like food that is reasonably cheap. It save money."
+    },
+    {
+      "role": "system",
+      "content": "Fast food is quite cheap, but it's not very healthy. Do you think healthy food is slightly more expensive?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I think healthy food is slightly more expensive. It cost more."
+    },
+    {
+      "role": "system",
+      "content": "That's true, healthy food can cost a bit more. But it's really worth it. I think eating well is extremely important. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T14:11:04Z"
+}

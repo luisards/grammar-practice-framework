@@ -1,0 +1,89 @@
+{
+  "task_id": 49,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about health habits with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me how people in your country usually stay healthy, then ask me short questions about my health habits using frequency adverbs (e.g. 'In my country people usually take walks. Hw about your country?', 'Do people usually drink tea there?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about health habits with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! In my country, people usually eat a lot of fruits and vegetables, and they often go to the gym to stay healthy. How about you? Do people in your country usually exercise in the morning?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! In my country, people sometimes exercise in the morning. It depends on their schedule."
+    },
+    {
+      "role": "system",
+      "content": "That's interesting! Do people in your country usually drink a lot of water every day?"
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "Don't worry, it's okay. People in my country usually drink water whenever they need it, and sometimes they drink juice or soda too. Do people in your country usually eat breakfast before school or work?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, people in my country usually eat breakfast before school or work. It's an important meal for us."
+    },
+    {
+      "role": "system",
+      "content": "It seems like people in your country value breakfast as a crucial meal. Do people in your country usually go to bed early to get enough sleep?"
+    },
+    {
+      "role": "student",
+      "content": "People in my country sometimes go to bed early, but it depends on their work or study schedule."
+    },
+    {
+      "role": "system",
+      "content": "It's great that people in your country make time for sleep when they can. I think that's very important for staying healthy. It was nice chatting with you about health habits. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T21:12:41Z"
+}

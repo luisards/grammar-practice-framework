@@ -1,0 +1,89 @@
+{
+  "task_id": 26,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend advice about school'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi! How's it going?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I am good. How are you?"
+    },
+    {
+      "role": "system",
+      "content": "I'm good too, thanks. How's your school going?"
+    },
+    {
+      "role": "student",
+      "content": "School is going well. I am learning a lot."
+    },
+    {
+      "role": "system",
+      "content": "That's great to hear! What subjects are you enjoying the most?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy math and science the most."
+    },
+    {
+      "role": "system",
+      "content": "That's really cool! You're good at math and science, so you might want to think about taking those subjects in your future career."
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am thinking about it. I like solving problems."
+    },
+    {
+      "role": "system",
+      "content": "That's awesome, problem-solving skills are very valuable.  If you need to study more or talk about anything else, I'm here to help. I hope you keep doing well in school and I'll see you next time. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T12:42:24Z"
+}

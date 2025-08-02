@@ -1,0 +1,89 @@
+{
+  "task_id": 51,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Describing the day where you are'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! It's nice to meet you. I'm in my office now. It's a small room with a desk and a chair. I have a computer and some books on the desk."
+    },
+    {
+      "role": "student",
+      "content": "Hello! Nice to meet you too. What books do you have?"
+    },
+    {
+      "role": "system",
+      "content": "I have a dictionary, a grammar book, and a book about English idioms. They help me teach English to my students."
+    },
+    {
+      "role": "student",
+      "content": "That's great! Do you use them often?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I use them every day. I teach English to students like you, and I need to know the words and expressions to help them learn."
+    },
+    {
+      "role": "student",
+      "content": "That's helpful! Do you have a favorite book?"
+    },
+    {
+      "role": "system",
+      "content": "I like the grammar book. It helps me explain rules to my students clearly."
+    },
+    {
+      "role": "student",
+      "content": "That's good! Grammar is important. Do you teach online or in person?"
+    },
+    {
+      "role": "system",
+      "content": "I teach both online and in person. I like teaching online because it's convenient for my students, and I like teaching in person because I can see their faces and help them more easily. It's nice to teach in different ways. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:03:46Z"
+}

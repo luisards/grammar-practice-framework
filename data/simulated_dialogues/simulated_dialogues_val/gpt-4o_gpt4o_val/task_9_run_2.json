@@ -1,0 +1,97 @@
+{
+  "task_id": 9,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing professions with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your profession and ask me about mine (e.g. 'I am a teacher. My profession is very difficult. Is your profession difficult too?', 'Is your profession really fun?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing professions with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I am an English tutor. My job is really rewarding. Is your profession very exciting?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I am a student. My studies are quite interesting. Is your job sometimes stressful?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, my job can be quite stressful at times, especially when I have a lot of students. However, it is also really fulfilling. Are your studies sometimes quite challenging?",
+      "advanced_content": "Yes, my job can be quite stressful at times, especially when I have so many students. However, it is also really fulfilling. Are your studies sometimes very challenging?",
+      "advanced_construct_ids": "1081"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "\"Challenging\" means something hard but also interesting and rewarding. It needs effort and hard work. Are your studies sometimes very hard?",
+      "advanced_content": "\"Challenging\" means something that is difficult but also interesting and rewarding. It requires effort and hard work. Are your studies sometimes very difficult?",
+      "advanced_construct_ids": "859"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my studies are sometimes very hard, but they are also really rewarding when I learn new things. Is teaching often very busy?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, teaching is often very busy, especially when I have many lessons to prepare. But it's also quite enjoyable because I get to help students learn. Do you find learning English really fun?",
+      "advanced_content": "Yes, teaching is often very busy, especially when I have many lessons to prepare. But it's also quite enjoyable because I get to help students learn. Do you find learning English really fun?",
+      "advanced_construct_ids": "859, 1057"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I find learning English really fun because it is very interesting to discover new words and ways to express myself. Is teaching sometimes really tiring?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, teaching can sometimes be really tiring, especially after a very long day. However, watching students improve a lot makes it totally worth it. Great job! You have fully completed the task. Talk to you soon!",
+      "advanced_content": "Yes, teaching can occasionally be really exhausting, particularly after a very long day. However, seeing students significantly improve makes it entirely worth it. Very good job! You have completely finished the task. Talk to you quite soon!",
+      "advanced_construct_ids": "859, 809, 1057, 1026"
+    }
+  ],
+  "timestamp": "2025-06-05T11:51:51Z"
+}

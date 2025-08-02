@@ -1,0 +1,93 @@
+{
+  "task_id": 6,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing family and friends with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your family and ask me about mine (e.g. 'My family is very big. Is your family very big too?', 'Do you have siblings? Are they really nice?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing family and friends with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! It's nice to meet you. My family is quite small. I have one brother. He is really funny. How about you? Is your family big or small?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! Nice to meet you too. My family is very big. I have three sisters and two brothers. They are all very kind. How about your friends? Are they interesting?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, my friends are quite interesting. One of my friends is very talented at playing the guitar. Another friend is really good at painting. Do you have friends with special talents?",
+      "advanced_content": "Yes, my friends are quite interesting. One of my friends is extremely talented at playing the guitar. Another friend is really good at painting. Do you have friends with special talents?",
+      "advanced_construct_ids": "983"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I have friends with special talents. One friend is really good at singing. Another friend is very skilled at playing soccer. They are both quite amazing. Do you spend much time with your family?"
+    },
+    {
+      "role": "system",
+      "content": "I try to spend a lot of time with my family. We often have dinner together, which is really nice. On weekends, we sometimes go for walks or watch movies. Do you spend much time with your family? What do you usually do together?"
+    },
+    {
+      "role": "student",
+      "content": "I spend a lot of time with my family, especially on weekends. We often cook together, which is very fun. Sometimes, we play board games or go to the park. It\u2019s really nice to be with them."
+    },
+    {
+      "role": "system",
+      "content": "That sounds wonderful! Being with family is really important and enjoyable. I'm glad you have such fun activities together. Before we finish, do you have any questions about using adverbs or adjectives?",
+      "advanced_content": "That sounds wonderful! Spending time with family is so important and enjoyable. I'm glad to hear you have such fun activities together. Before we finish, do you have any questions about using adverbs or adjectives?",
+      "advanced_construct_ids": "859, 1057"
+    },
+    {
+      "role": "student",
+      "content": "No questions right now. I think I understand how to use adverbs and adjectives better. Thank you for the practice!"
+    },
+    {
+      "role": "system",
+      "content": "Really good job! You have very successfully completed the task. I'm quite glad I could really help you practice. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-05T11:48:18Z"
+}

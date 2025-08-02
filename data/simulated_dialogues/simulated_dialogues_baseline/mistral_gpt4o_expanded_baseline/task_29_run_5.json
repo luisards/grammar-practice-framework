@@ -1,0 +1,89 @@
+{
+  "task_id": 29,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "mistral-small-24b-instruct-2501",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend advice about a coworker'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi there! What's up?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I'm learning English. How are you?"
+    },
+    {
+      "role": "system",
+      "content": "I'm good, thanks! You're practicing English? That's great. What's been happening at work lately?"
+    },
+    {
+      "role": "student",
+      "content": "Work is busy. I have many tasks. How about you?"
+    },
+    {
+      "role": "system",
+      "content": "I'm here to help you, so no tasks for me! Is there someone at work who's been giving you trouble?"
+    },
+    {
+      "role": "student",
+      "content": "No, everyone is nice. How about you?"
+    },
+    {
+      "role": "system",
+      "content": "That's good to hear. If you ever need advice about a coworker, remember to be kind and understanding. Try to see their perspective. Also, talk to them directly if something is bothering you. It's important to communicate openly."
+    },
+    {
+      "role": "student",
+      "content": "Thank you for the advice! I will remember that."
+    },
+    {
+      "role": "system",
+      "content": "You're welcome! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T02:47:12Z"
+}

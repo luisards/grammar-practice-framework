@@ -1,0 +1,89 @@
+{
+  "task_id": 71,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving information about an interview'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How can I help you with your interview practice today?"
+    },
+    {
+      "role": "student",
+      "content": "Hi! I need help with job interview questions."
+    },
+    {
+      "role": "system",
+      "content": "Sure! Let's start with a common question. Can you tell me about yourself?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I'm a student. I study computer science. I like coding and learning new things. I also enjoy playing soccer in my free time."
+    },
+    {
+      "role": "system",
+      "content": "That's great! You have a good mix of skills and hobbies. Now, let's try another question. Why do you want to work for this company?"
+    },
+    {
+      "role": "student",
+      "content": "I want to work for this company because it is innovative and has a good reputation. I admire the projects you do and want to contribute and learn more."
+    },
+    {
+      "role": "system",
+      "content": "That sounds like a strong reason! It's important to show enthusiasm for the company. For our last question, how do you handle challenges or difficult situations?"
+    },
+    {
+      "role": "student",
+      "content": "I stay calm and think carefully. I break the problem into smaller parts and solve them one by one. I also ask for help if needed."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T14:05:28Z"
+}

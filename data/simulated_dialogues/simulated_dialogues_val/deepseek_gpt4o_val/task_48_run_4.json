@@ -1,0 +1,91 @@
+{
+  "task_id": 48,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about school routines with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by telling me about a typical school/work day in your country using frequency adverbs, then ask me questions about my school routine. (e.g. 'I usually go to school at 7:30 am. How about you?', 'Do you sometimes study late at night?) Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about school routines with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! In my country, students usually go to school at 8:00 am. They often have lunch at 12:30 pm and sometimes finish classes at 3:00 pm. They always do homework in the evening. How about you? What time do you usually go to school?"
+    },
+    {
+      "role": "student",
+      "content": "I usually go to school at 8:30 am."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s great! Do you sometimes have breakfast before school, or do you always eat at school?"
+    },
+    {
+      "role": "student",
+      "content": "I always have breakfast before school."
+    },
+    {
+      "role": "system",
+      "content": "Nice! I usually have breakfast at home too. Do you often have a lot of homework in the evening, or do you sometimes finish it quickly?"
+    },
+    {
+      "role": "student",
+      "content": "I often have a lot of homework in the evening."
+    },
+    {
+      "role": "system",
+      "content": "I see! Homework can take a lot of time. Do you usually study with friends, or do you always study alone?"
+    },
+    {
+      "role": "student",
+      "content": "I usually study alone."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. You did very well talking about your school routine using frequency adverbs. Practice more, and you\u2019ll get even better! Talk to you later!",
+      "advanced_content": "Good job! You have completed the task. You did very well talking about your school routine using frequency adverbs. Keep practicing, and you\u2019ll get even better! Talk to you later!",
+      "advanced_construct_ids": "956"
+    }
+  ],
+  "timestamp": "2025-06-05T14:20:47Z"
+}

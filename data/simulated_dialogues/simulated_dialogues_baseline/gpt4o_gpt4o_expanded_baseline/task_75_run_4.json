@@ -1,0 +1,89 @@
+{
+  "task_id": 75,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Reporting a boss's phone call'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How can I help you today? Are you ready to practice reporting a phone call?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am ready. Let's start!"
+    },
+    {
+      "role": "system",
+      "content": "Great! Imagine your boss called you about a meeting. Can you tell me what your boss said during the call?"
+    },
+    {
+      "role": "student",
+      "content": "My boss said there is a meeting tomorrow at 10 AM."
+    },
+    {
+      "role": "system",
+      "content": "Good job! Can you tell me if your boss mentioned where the meeting will be held?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my boss said the meeting will be in the conference room."
+    },
+    {
+      "role": "system",
+      "content": "Great! You've done well. To wrap up, can you tell me if your boss mentioned anything else about the meeting, like who will attend or what it's about?"
+    },
+    {
+      "role": "student",
+      "content": "My boss said the meeting is about the new project and all team members should attend."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T14:08:00Z"
+}

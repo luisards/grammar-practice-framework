@@ -1,0 +1,89 @@
+{
+  "task_id": 50,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about leisure activities with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by mentioning some leisure activities you always, usually or sometimes do at the weekend, then ask me about mine. ('I sometimes read a book at the park. What do you do for relaxing?', 'I usually watch a TV show. How about you?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about leisure activities with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I usually play soccer on Sundays. Sometimes I go to the cinema with friends. What do you do at the weekend?"
+    },
+    {
+      "role": "student",
+      "content": "I always go to the park on Saturdays. I sometimes watch movies at home. I go shopping rarely."
+    },
+    {
+      "role": "system",
+      "content": "That sounds fun! I rarely go shopping, but I usually eat out with my family on Saturdays. Sometimes I play video games with friends. What about reading books, do you ever do that?"
+    },
+    {
+      "role": "student",
+      "content": "I sometimes read books, but I don't read them always. I usually prefer watching TV. Do you like reading?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I like reading. I usually read news online, but I sometimes read magazines. I always listen to music, though. What kind of music do you usually listen to?"
+    },
+    {
+      "role": "student",
+      "content": "I usually listen pop music, but I sometimes enjoy rock. I always listen to music when I study. Do you listen to music while working?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I usually listen to music while working, it helps me focus. Sometimes I listen to classical music, it's very calming. I always try to find new songs to listen to. What about you, do you usually discover new music on the radio or online?"
+    },
+    {
+      "role": "student",
+      "content": "I usually discover new music online. I sometimes find new songs on the radio, but not often. I always enjoy finding new artists to listen to. Do you have a favorite artist?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I have a few favorite artists. I usually listen to their songs when I'm relaxing. Sometimes I go to their concerts, it's always a lot of fun. Well, it was great chatting with you about our leisure activities! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T14:49:13Z"
+}

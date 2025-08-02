@@ -1,0 +1,95 @@
+{
+  "task_id": 10,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing dishes with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me your opinion about food and ask me about mine (e.g. 'I like sushi. I think sushi is very tasty. What food do you think is very tasty?', 'Mexican food is too spicy. Do you like food that is very spicy?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing dishes with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I think pizza is really delicious. What food do you think is really delicious?"
+    },
+    {
+      "role": "student",
+      "content": "I think sushi is really delicious."
+    },
+    {
+      "role": "system",
+      "content": "Great choice! I think sushi is really fresh and healthy. Do you like food that is so fresh?",
+      "advanced_content": "Great choice! I think sushi is very fresh and healthy. Do you like food that is very fresh?",
+      "advanced_construct_ids": "753"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I really like food that is so fresh. It tastes very good and is quite healthy."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s wonderful! I think salads are really healthy too. Do you like salads, or do you think they are very boring?",
+      "advanced_content": "That\u2019s wonderful! I think salads are quite healthy too. Do you like salads, or do you think they are too boring?",
+      "advanced_construct_ids": "753"
+    },
+    {
+      "role": "student",
+      "content": "I think salads are quite interesting. They can be really tasty with the right ingredients."
+    },
+    {
+      "role": "system",
+      "content": "I agree! Salads can be really tasty with the right ingredients. Adding nuts or cheese makes them very special. What ingredients do you like in your salads?",
+      "advanced_content": "I agree! Salads can be really tasty with the right ingredients. I think adding nuts or cheese makes them very special. What ingredients do you like in your salads?",
+      "advanced_construct_ids": "956, 859, 1057"
+    },
+    {
+      "role": "student",
+      "content": "I like adding tomatoes and cucumbers. They make the salad really refreshing and quite crunchy."
+    },
+    {
+      "role": "system",
+      "content": "That sounds really delicious! You did a great job describing food with adverbs and adjectives. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-05T13:28:22Z"
+}

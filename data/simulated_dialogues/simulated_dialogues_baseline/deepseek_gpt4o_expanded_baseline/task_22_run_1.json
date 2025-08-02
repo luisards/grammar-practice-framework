@@ -1,0 +1,89 @@
+{
+  "task_id": 22,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your friend's future'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! What would you like to know about your friend\u2019s future?"
+    },
+    {
+      "role": "student",
+      "content": "What is my friend going to do tomorrow?"
+    },
+    {
+      "role": "system",
+      "content": "Your friend will meet someone new and have a fun day!"
+    },
+    {
+      "role": "student",
+      "content": "That sounds exciting! What they doing after?"
+    },
+    {
+      "role": "system",
+      "content": "After that, your friend will relax at home and maybe watch a favorite show."
+    },
+    {
+      "role": "student",
+      "content": "Sounds nice! Will they go anywhere else?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, your friend might take a short walk in the evening to enjoy the fresh air. It will be a peaceful end to their day!"
+    },
+    {
+      "role": "student",
+      "content": "That sounds lovely! What they do on weekend?"
+    },
+    {
+      "role": "system",
+      "content": "Your friend will spend the weekend with family, maybe having a small picnic. It will be a happy time! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T11:40:09Z"
+}

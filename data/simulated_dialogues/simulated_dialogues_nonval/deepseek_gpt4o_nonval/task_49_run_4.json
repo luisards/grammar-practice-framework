@@ -1,0 +1,89 @@
+{
+  "task_id": 49,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about health habits with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me how people in your country usually stay healthy, then ask me short questions about my health habits using frequency adverbs (e.g. 'In my country people usually take walks. How about your country?', 'Do people usually drink tea there?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about health habits with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! In my country, people usually eat fresh fruits and vegetables to stay healthy. They also often exercise, like walking or jogging. How about you? Do you usually eat fruits and vegetables every day?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I usually eat fruits and vegetables every day. How about exercise? Do you often exercise?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I often exercise! I usually go for a run or do yoga three times a week. How about you? Do you sometimes exercise, or do you have a favorite activity?"
+    },
+    {
+      "role": "student",
+      "content": "I sometimes exercise. I like to go for a walk or ride my bike. Do you always eat healthy snacks, or do you sometimes eat junk food?"
+    },
+    {
+      "role": "system",
+      "content": "I sometimes eat junk food, but I always try to eat healthy snacks like nuts or fruit. How about you? Do you usually choose healthy snacks, or do you sometimes eat sweets?"
+    },
+    {
+      "role": "student",
+      "content": "I usually choose healthy snacks, but I sometimes eat sweets. Do you ever drink soda, or do you always drink water?"
+    },
+    {
+      "role": "system",
+      "content": "I rarely drink soda. I usually drink water because it’s healthier. How about you? Do you often drink water, or do you sometimes prefer other drinks? Let’s finish by sharing one healthy habit you always try to follow!"
+    },
+    {
+      "role": "student",
+      "content": "I often drink water, but I sometimes prefer juice. One healthy habit I always try to follow is getting enough sleep every night. How about you? What's one healthy habit you always try to maintain?"
+    },
+    {
+      "role": "system",
+      "content": "One healthy habit I always try to maintain is eating breakfast every morning. It gives me energy for the day! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T21:30:16Z"
+}

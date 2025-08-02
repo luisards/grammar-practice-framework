@@ -1,0 +1,93 @@
+{
+  "task_id": 58,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice patterns_with to and -ing by Discussing holiday activities with 'enjoy + ing'. I want to ensure that I can use 'enjoy' followed by the '-ing' form. For example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Describe activities you enjoy doing on holiday and ask me about my holiday activities. (e.g. 'When I am on holiday, I enjoy eating junk food. How about you?', 'Do you enjoy walking a lot or do you prefer to relax?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Discussing holiday activities with 'enjoy + ing', using, for example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! When I am on holiday, I enjoy swimming in the sea. How about you? What do you enjoy doing on holiday?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy to visit new places on holiday."
+    },
+    {
+      "role": "system",
+      "content": "That's great! It's exciting to visit new places. When I'm on holiday, I also enjoy trying local food. Do you enjoy trying new foods when you travel?",
+      "advanced_content": "That's great! Visiting new places is exciting. When I am on holiday, I also enjoy trying local food. Do you enjoy trying new foods when you travel?",
+      "advanced_construct_ids": "859"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I enjoy to try new foods when I travel. It's fun! What else do you enjoy doing on holiday?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy taking long walks on the beach. It's very relaxing. Do you enjoy walking a lot or do you prefer to relax in other ways?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy relax on the beach. It's very peaceful. Do you enjoy any outdoor activities on holiday?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy hiking in the mountains. It's a great way to enjoy nature. As we finish, is there anything else you enjoy doing on holiday that we haven't discussed?",
+      "advanced_content": "I enjoy hiking in the mountains. It's a great way to enjoy nature. As we wrap up, is there anything else you enjoy doing on holiday that we haven't talked about?",
+      "advanced_construct_ids": "950"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy reading books by the pool. It's a nice way to unwind. What about you? Is there anything else you enjoy doing on holiday?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy taking photos of beautiful places. It's a wonderful way to remember my trips. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-05T12:39:10Z"
+}

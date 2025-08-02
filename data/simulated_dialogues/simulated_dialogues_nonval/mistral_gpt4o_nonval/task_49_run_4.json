@@ -1,0 +1,89 @@
+{
+  "task_id": 49,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "mistral-small-24b-instruct-2501",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about health habits with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me how people in your country usually stay healthy, then ask me short questions about my health habits using frequency adverbs (e.g. 'In my country people usually take walks. How about your country?', 'Do people usually drink tea there?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about health habits with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! In my country, people usually exercise every day. How about you? Do you exercise every day?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I sometimes exercise. Not every day. How about you?"
+    },
+    {
+      "role": "system",
+      "content": "I exercise every day. Do you usually eat vegetables?"
+    },
+    {
+      "role": "student",
+      "content": "I usually eat vegetables. Not always, but often. Do you always eat breakfast?"
+    },
+    {
+      "role": "system",
+      "content": "I always eat breakfast. Do you sometimes drink water?"
+    },
+    {
+      "role": "student",
+      "content": "I always drink water. It's important. Do you usually sleep early?"
+    },
+    {
+      "role": "system",
+      "content": "I usually sleep early. It's good for health. Do you always brush your teeth?"
+    },
+    {
+      "role": "student",
+      "content": "I always brush my teeth. It's important for dental health. Do you sometimes take a walk outside?"
+    },
+    {
+      "role": "system",
+      "content": "I sometimes take a walk outside. It's nice to be in nature. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T18:35:03Z"
+}

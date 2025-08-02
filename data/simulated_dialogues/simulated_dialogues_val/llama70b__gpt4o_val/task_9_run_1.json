@@ -1,0 +1,95 @@
+{
+  "task_id": 9,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing professions with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your profession and ask me about mine (e.g. 'I am a teacher. My profession is very difficult. Is your profession difficult too?', 'Is your profession really fun?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing professions with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello. I am a teacher. My job is really interesting. Is your job interesting too?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my job is very good. I work as a nurse. It is quite busy."
+    },
+    {
+      "role": "system",
+      "content": "That's extremely great. Nursing is an incredibly rewarding job, making a significantly big difference in people's lives. My job can be extremely stressful at times, especially when dealing with utterly desperate emergencies. Is your job incredibly stressful too, or just moderately challenging?",
+      "advanced_content": "That's absolutely great. Nursing is an incredibly rewarding profession, really making a difference in people's lives. My job can be overwhelmingly stressful at times, particularly when dealing with emergencies. Is your job extremely stressful too, or just moderately challenging?",
+      "advanced_construct_ids": "859, 983"
+    },
+    {
+      "role": "student",
+      "content": "My job is sometimes very stressful, but mostly quite rewarding. I help patients feel really better."
+    },
+    {
+      "role": "system",
+      "content": "That's really nice. Helping patients feel better is very satisfying. I think teaching is also very rewarding, especially when students learn very quickly. Is your work with patients often very stressful, or just a little challenging sometimes?",
+      "advanced_content": "That's incredibly nice. Helping patients feel better is remarkably satisfying. I find teaching extremely rewarding as well, particularly when students learn exceptionally quickly. Is your work with patients frequently emotionally demanding, or just moderately challenging on occasion?",
+      "advanced_construct_ids": "859, 956, 983, 1057"
+    },
+    {
+      "role": "student",
+      "content": "My work is sometimes so stressful, but usually very fulfilling. I enjoy helping people feel really good."
+    },
+    {
+      "role": "system",
+      "content": "That's really great. You have a good job. I also like my job very much, especially when students do very well. Is your job fun or just enjoyable most of the time?",
+      "advanced_content": "That's really great. It's very good that you find your job fulfilling. I also find my job extremely rewarding, especially when students do exceptionally well. Is your profession really fun, or just fairly enjoyable most of the time?",
+      "advanced_construct_ids": "805, 1057, 983"
+    },
+    {
+      "role": "student",
+      "content": "My job is mostly enjoyable, but sometimes it is too busy. I like helping people feel really happy."
+    },
+    {
+      "role": "system",
+      "content": "That's really nice. I'm glad we could chat about our jobs. It was very interesting talking to you. I think we both have very rewarding professions. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T18:19:26Z"
+}

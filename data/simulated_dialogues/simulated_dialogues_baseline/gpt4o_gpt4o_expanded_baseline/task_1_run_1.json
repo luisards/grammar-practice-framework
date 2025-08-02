@@ -1,0 +1,89 @@
+{
+  "task_id": 1,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Comparing two apartments'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How can I help you today? Are you looking to compare two apartments?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I want to compare two apartment."
+    },
+    {
+      "role": "system",
+      "content": "Great! Let's start with the first apartment. Can you tell me about its location and size?"
+    },
+    {
+      "role": "student",
+      "content": "It is in city center. Two bedrooms."
+    },
+    {
+      "role": "system",
+      "content": "That sounds convenient! Is it close to shops and public transport? Now, tell me about the second apartment. Where is it located and how many bedrooms does it have?"
+    },
+    {
+      "role": "student",
+      "content": "It is outside city. Three bedrooms."
+    },
+    {
+      "role": "system",
+      "content": "Thank you for sharing! The second apartment is bigger. It has three bedrooms. The first apartment is in the city center, which is convenient. Which one do you prefer?"
+    },
+    {
+      "role": "student",
+      "content": "I like the first apartment. It is closer to everything."
+    },
+    {
+      "role": "system",
+      "content": "Great choice! Living in the city center can be very convenient. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:25:41Z"
+}

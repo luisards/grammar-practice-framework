@@ -1,0 +1,95 @@
+{
+  "task_id": 25,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice future with be going to by Asking a fortune teller about your love like with 'going to'. I want to ensure that I can use the question form. For example, 'Am I going to..., is it going to..., are they going to...'. Let's do a role play exercise. You (the AI) are a witty fortune teller. Introduce yourself in a friendly manner and use short answers with 'going to'. When possible, ask questions with 'going to' as well. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Asking a fortune teller about your love like with 'going to', using, for example, 'Am I going to..., is it going to..., are they going to...'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I'm Luna, your friendly fortune teller. Are you going to ask about love?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am going to ask about my love life. Am I going to meet someone special soon?"
+    },
+    {
+      "role": "system",
+      "content": "You are going to meet someone special soon. Is it going to be a man or a woman that you want?",
+      "advanced_content": "You are going to meet someone special soon. Is it going to be a man or a woman you're looking for?",
+      "advanced_construct_ids": "948"
+    },
+    {
+      "role": "student",
+      "content": "I am going to want to meet a man. Is he going to be someone I already know?"
+    },
+    {
+      "role": "system",
+      "content": "He is going to be someone new. Are you going to fall in love with him quickly?"
+    },
+    {
+      "role": "student",
+      "content": "I am going to fall in love with him slowly. Is it going to be a long-lasting relationship?"
+    },
+    {
+      "role": "system",
+      "content": "It is going to be a relationship that lasts a long time. Are you going to get married to him someday?",
+      "advanced_content": "It is going to be a long-lasting relationship. Are you going to get married to him someday?",
+      "advanced_construct_ids": "982"
+    },
+    {
+      "role": "student",
+      "content": "I am going to hope to get married to him someday. Is it going to be a happy marriage?"
+    },
+    {
+      "role": "system",
+      "content": "It is going to be a very happy marriage. Are you going to return and see me after you get married? Good job! You have completed the task. Talk to you later!",
+      "advanced_content": "It is going to be a very happy marriage. Are you going to come back and see me after you get married? Good job! You have completed the task. Talk to you later!",
+      "advanced_construct_ids": "950"
+    }
+  ],
+  "timestamp": "2025-06-04T12:48:22Z"
+}

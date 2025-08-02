@@ -1,0 +1,89 @@
+{
+  "task_id": 33,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice passives by Giving a friend information about a monument with passives. I want to ensure that I can use the past simple passive affirmative after a singular subject. For example, 'It was painted by..., it was built in... It is located at...'. Let's do a problem solving exercise. You (the AI) are a friendly English tutor. I have access to some information about the Taj Mahal: who bulit it, when, and where it is located. Ask me short questions so tht I can answer one at a time. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a problem solving exercise, by Giving a friend information about a monument with passives, using, for example, 'It was painted by..., it was built in... It is located at...'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "What monument do you want to tell me about?"
+    },
+    {
+      "role": "student",
+      "content": "I want to tell you about the Eiffel Tower."
+    },
+    {
+      "role": "system",
+      "content": "Where is the Eiffel Tower located?"
+    },
+    {
+      "role": "student",
+      "content": "It is located at Paris, France."
+    },
+    {
+      "role": "system",
+      "content": "When was the Eiffel Tower built?"
+    },
+    {
+      "role": "student",
+      "content": "It was build in 1889."
+    },
+    {
+      "role": "system",
+      "content": "Who built the Eiffel Tower?"
+    },
+    {
+      "role": "student",
+      "content": "It was designed by Gustave Eiffel."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Now, let's try with the Taj Mahal. What monument do you want to tell me about?"
+    }
+  ],
+  "timestamp": "2025-06-03T14:33:50Z"
+}

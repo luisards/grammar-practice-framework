@@ -1,0 +1,89 @@
+{
+  "task_id": 63,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a friend about a job interview'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi! How are you? Did you have that job interview today?"
+    },
+    {
+      "role": "student",
+      "content": "Hi! I am good. Yes, I have the interview today."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s great! How did it go? Were you nervous?"
+    },
+    {
+      "role": "student",
+      "content": "I was nervous, but it go well."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s good to hear! What kind of questions did they ask you?"
+    },
+    {
+      "role": "student",
+      "content": "They ask about my skills and experience."
+    },
+    {
+      "role": "system",
+      "content": "Nice! Did you feel confident answering those questions? I\u2019m sure you did great! Let me know when you hear back from them, okay?"
+    },
+    {
+      "role": "student",
+      "content": "Okay! I will tell you when I hear from them. Thank you!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T12:08:01Z"
+}

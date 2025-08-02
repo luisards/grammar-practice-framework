@@ -1,0 +1,89 @@
+{
+  "task_id": 29,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving a friend advice about a coworker'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "How are you? Do you need some advice about something?"
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you. Yes, I need advice on learning English."
+    },
+    {
+      "role": "system",
+      "content": "No, I mean something personal. You look a little worried. Is everything okay at work?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, everything is okay at work. Just a bit stressed."
+    },
+    {
+      "role": "system",
+      "content": "What's making you stressed? Is it a project or a person at work?"
+    },
+    {
+      "role": "student",
+      "content": "It's a project. Deadlines are tight."
+    },
+    {
+      "role": "system",
+      "content": "That can be tough. But you know what? You're doing great. Just focus on one task at a time and ask for help if you need it. Now, is there someone at work who can support you with this project, like a coworker or a boss?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my coworker can help."
+    },
+    {
+      "role": "system",
+      "content": "That's great! Talk to your coworker and see how they can assist you. You got this! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T17:40:23Z"
+}

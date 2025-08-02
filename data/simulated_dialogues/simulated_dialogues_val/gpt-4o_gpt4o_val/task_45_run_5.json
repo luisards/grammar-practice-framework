@@ -1,0 +1,91 @@
+{
+  "task_id": 45,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice prepositions by Giving someone directions using prepositions. I want to ensure that I can use a limited range of complex prepositions. For example, 'near to, far from, in front of, inside of.'. Let's do a problem solving exercise. You (the AI) are a friendly English tutor. I see a cinema seating chart, you do not. Ask me questions about seat positions using prepositions (e.g. \u2018Is row B far from the screen?\u2019, \u2018Are the VIP seats in front of the exit?\u2019). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a problem solving exercise, by Giving someone directions using prepositions, using, for example, 'near to, far from, in front of, inside of.'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! Let's practice using prepositions with a seating chart. Is the first row near to the screen?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, the first row is near to the screen."
+    },
+    {
+      "role": "system",
+      "content": "Great! Are the seats in row D far from the screen?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, the seats in row D are far from the screen."
+    },
+    {
+      "role": "system",
+      "content": "Are there any seats in front of the VIP section?"
+    },
+    {
+      "role": "student",
+      "content": "No, there are no seats in front of the VIP section."
+    },
+    {
+      "role": "system",
+      "content": "Great job! You're good with prepositions. Let's try another one. Are the seats in the VIP section near the exit?",
+      "advanced_content": "Great job! You're doing well with prepositions. Let's do one more. Are the seats inside of the VIP section near to the exit?",
+      "advanced_construct_ids": "956, 949, 753"
+    },
+    {
+      "role": "student",
+      "content": "No, the seats in the VIP section are not near the exit."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-05T12:27:12Z"
+}

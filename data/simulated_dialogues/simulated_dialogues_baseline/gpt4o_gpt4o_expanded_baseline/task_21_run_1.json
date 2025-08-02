@@ -1,0 +1,89 @@
+{
+  "task_id": 21,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your future'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How can I help you today? Are you curious about your future?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I curious about my future."
+    },
+    {
+      "role": "system",
+      "content": "Great! What would you like to know about your future? Is it about love, career, or something else?"
+    },
+    {
+      "role": "student",
+      "content": "Career. What job good for me?"
+    },
+    {
+      "role": "system",
+      "content": "I see a bright path for you. You are good with people, so maybe a job in teaching or customer service. You also have a creative side. Have you thought about design or writing? Follow what makes you happy."
+    },
+    {
+      "role": "student",
+      "content": "Thank you! I like design. How do I start?"
+    },
+    {
+      "role": "system",
+      "content": "Start by learning the basics. You can take online courses or watch tutorials. Practice by creating your own designs. Build a portfolio to show your work. Connect with other designers for advice and inspiration. Keep learning and stay curious. Good luck!"
+    },
+    {
+      "role": "student",
+      "content": "Thank you! I will try that. What software should I use?"
+    },
+    {
+      "role": "system",
+      "content": "You can start with software like Adobe Illustrator or Canva. They are great for beginners. Explore and see which one you like best. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T13:36:43Z"
+}

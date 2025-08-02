@@ -1,0 +1,91 @@
+{
+  "task_id": 24,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice future with be going to by Asking a fortune teller about the future of technology with 'going to'. I want to ensure that I can use the question form. For example, 'Am I going to..., is it going to..., are they going to...'. Let's do a role play exercise. You (the AI) are a witty fortune teller. Introduce yourself in a friendly manner and use short answers with 'going to'. When possible, ask questions with 'going to' as well. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Asking a fortune teller about the future of technology with 'going to', using, for example, 'Am I going to..., is it going to..., are they going to...'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello there! I am the Great Tech Seer. I see the future of technology. What are you going to ask me today?"
+    },
+    {
+      "role": "student",
+      "content": "User: Hello, Great Tech Seer! Is technology going to change our lives even more in the next decade?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, it is going to change a lot! Technology is going to be everywhere. Are you going to use new gadgets?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am going to use new gadgets. Are they going to be easy to use?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, they are going to be very easy to use! Designers are going to make them simple. Is your family going to like these new gadgets?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my family is going to like these new gadgets. Are they going to be affordable for everyone?"
+    },
+    {
+      "role": "system",
+      "content": "Some gadgets are going to be affordable, but some might be expensive. People are going to find ways to make them cheaper. Are you going to save money for new technology?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am going to save money for new technology. Is artificial intelligence going to become more advanced?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, it is going to become a lot more advanced! AI is going to help in many areas. You did a great job with your questions! Talk to you later!",
+      "advanced_content": "Yes, it is going to become much more advanced! AI is going to help in many areas. You did a great job with your questions! Talk to you later!",
+      "advanced_construct_ids": "991"
+    }
+  ],
+  "timestamp": "2025-06-05T12:08:00Z"
+}

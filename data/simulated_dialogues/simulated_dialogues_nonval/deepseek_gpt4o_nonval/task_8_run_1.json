@@ -1,0 +1,89 @@
+{
+  "task_id": 8,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing your house with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your home and ask me about mine (e.g. 'My apartment is very small. Is your apartment small too?', 'Is your home really nice?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing your house with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! My house is quite cozy and very clean. Is your house cozy too?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my house is really cozy and very nice. The kitchen is too small, but the living room is very big."
+    },
+    {
+      "role": "system",
+      "content": "That sounds lovely! My kitchen is also quite small, but it’s really modern. Is your living room very comfortable too?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my living room is very comfortable and really bright. The sofa is so soft, but the TV is too old."
+    },
+    {
+      "role": "system",
+      "content": "That’s great! My sofa is also extremely soft, and my TV is quite new. Is your bedroom very peaceful and quiet?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my bedroom is very peaceful and really quiet. The bed is so comfortable, but the room is too cold in winter."
+    },
+    {
+      "role": "system",
+      "content": "I’m glad your bedroom is so peaceful! My bedroom is also very quiet, but it’s quite warm in winter. It sounds like your home is really nice overall, even with a few small issues. Thank you for practicing with me today—you did a great job using adverbs and adjectives! Keep up the good work! 😊"
+    },
+    {
+      "role": "student",
+      "content": "Thank you! I really enjoy practicing English. My house is very nice, but the garden is too messy. The flowers are really beautiful, but the grass is so long."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You’ve done really well practicing adverbs and adjectives today. Your house sounds lovely, even if the garden is a bit messy. Keep practicing, and your English will get even better! Talk to you later! 😊"
+    }
+  ],
+  "timestamp": "2025-06-04T20:45:11Z"
+}

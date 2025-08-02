@@ -1,0 +1,91 @@
+{
+  "task_id": 27,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice should by Giving a friend advice using 'should'. I want to ensure that I can use the affirmative form. For example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have problems with a friend. Start by telling me what's wrong and ask for advice (e.g. 'Should I...?, 'What should I do?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Giving a friend advice using 'should', using, for example, 'You shoud go to a doctor, you should talk to someone, you should study more'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "I'm so upset. I had a big fight with my sister. She borrowed my favorite book and lost it. I'm very angry. What should I do?"
+    },
+    {
+      "role": "student",
+      "content": "You should talk to her calmly. You should explain why the book is important to you. You should try to find a solution together."
+    },
+    {
+      "role": "system",
+      "content": "That's a good idea. I should apologize too, because I shouted at her. But I'm still sad about the book. I think I should look for the book in her room and in the house, maybe she forgot where she put it. Should I ask my mom to help us talk?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "I mean, should I ask my mom to be with us when we talk, so she can help us not fight and find a solution?"
+    },
+    {
+      "role": "student",
+      "content": "You should ask your mom to help. She can make sure you both stay calm. You should also look for the book together. It might be somewhere in the house."
+    },
+    {
+      "role": "system",
+      "content": "That's a great idea. I should ask my mom to help us right now. You should come over too, so we look for the book together. What should I say to my mom when I ask for her help?",
+      "advanced_content": "That's a great idea. I should ask my mom to help us right now. You should come over too, so we can all look for the book together. What should I say to my mom when I ask for her help?",
+      "advanced_construct_ids": "809, 1026"
+    },
+    {
+      "role": "student",
+      "content": "You should say, \"Mom, can you help us talk? We need to find a solution and stay calm.\" You should also tell her about the book and how important it is to you."
+    },
+    {
+      "role": "system",
+      "content": "I'll go talk to my mom now. You should be proud of me for staying calm and looking for a solution. I should thank you for your help and advice. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T12:50:43Z"
+}

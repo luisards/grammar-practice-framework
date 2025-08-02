@@ -1,0 +1,89 @@
+{
+  "task_id": 66,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Advising a friend against camping dangers'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "How are you? I heard you're going camping this weekend."
+    },
+    {
+      "role": "student",
+      "content": "I am good. Yes, I am going camping."
+    },
+    {
+      "role": "system",
+      "content": "Be careful, okay? I've heard there are some dangers in the woods, like wild animals and steep hills."
+    },
+    {
+      "role": "student",
+      "content": "Thank you. I will be careful."
+    },
+    {
+      "role": "system",
+      "content": "You should also bring a map and a first aid kit, just in case."
+    },
+    {
+      "role": "student",
+      "content": "Yes, I will bring them."
+    },
+    {
+      "role": "system",
+      "content": "Let's review what you need to do to stay safe: watch out for wild animals, be careful on steep hills, and bring a map and a first aid kit."
+    },
+    {
+      "role": "student",
+      "content": "Got it. I will remember."
+    },
+    {
+      "role": "system",
+      "content": "Great, I'm sure you'll have a safe trip. Don't forget to tell someone where you're going and when you'll be back. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T18:05:28Z"
+}

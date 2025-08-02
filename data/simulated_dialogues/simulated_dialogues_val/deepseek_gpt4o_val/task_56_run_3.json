@@ -1,0 +1,93 @@
+{
+  "task_id": 56,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice patterns_with to and -ing by Discussing hobbies with 'enjoy + ing'. I want to ensure that I can use 'enjoy' followed by the '-ing' form. For example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me What you enjoy doing. Then ask me the same with short questions. (I enjoy reading. What do you enjoy doing?', 'When Igo out I enjoy dancing. How about you?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Discussing hobbies with 'enjoy + ing', using, for example, 'I enjoy eating, I enjoy doing, I enjoy going\u2026'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I enjoy reading books. What do you enjoy doing?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I enjoy playing soccer. What else do you enjoy doing?"
+    },
+    {
+      "role": "system",
+      "content": "I also enjoy listening to music. When you leave your house, what do you enjoy doing?",
+      "advanced_content": "I also enjoy listening to music. When you go out, what do you enjoy doing?",
+      "advanced_construct_ids": "950"
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s okay! When I leave my house, I enjoy walking in the park. Do you enjoy walking or doing something else outside?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy riding my bike outside. What about you, do you enjoy any outdoor activities?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I enjoy hiking in the mountains. It\u2019s fun and relaxing. Do you enjoy trying new outdoor activities, or do you prefer sticking to what you know?"
+    },
+    {
+      "role": "student",
+      "content": "I enjoy trying new outdoor activities. It\u2019s exciting! How about you, do you enjoy trying new things or do you prefer familiar activities?"
+    },
+    {
+      "role": "system",
+      "content": "I enjoy trying new things and doing familiar activities. It\u2019s fun to try different things! Good job! You have completed the task. Talk to you later!",
+      "advanced_content": "I enjoy trying new things and doing familiar activities. It\u2019s fun mixing it up! Good job! You have completed the task. Talk to you later!",
+      "advanced_construct_ids": "952"
+    }
+  ],
+  "timestamp": "2025-06-05T14:34:39Z"
+}

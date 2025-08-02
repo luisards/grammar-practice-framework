@@ -1,0 +1,89 @@
+{
+  "task_id": 66,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Advising a friend against camping dangers'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello, how are you doing today?"
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you. How are you?"
+    },
+    {
+      "role": "system",
+      "content": "I'm great, thanks for asking! I was thinking of going camping this weekend with some friends, but I'm not sure if it's a good idea."
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "What's making you think twice about going camping?"
+    },
+    {
+      "role": "student",
+      "content": "Maybe the weather will be bad."
+    },
+    {
+      "role": "system",
+      "content": "That's a good point, bad weather can make camping uncomfortable. Also, have you thought about bears and other wild animals that might be in the woods?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am worried about bears."
+    },
+    {
+      "role": "system",
+      "content": "That's another concern I had in mind too. Honestly, I think you should reconsider your camping trip, especially with bad weather and wild animals at risk. Maybe you can plan something else, like a fun outdoor activity like hiking or playing games together, but in a safer place like a park or a town. \n\nGood job! You have completed the task."
+    }
+  ],
+  "timestamp": "2025-06-08T13:15:26Z"
+}

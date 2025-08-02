@@ -1,0 +1,89 @@
+{
+  "task_id": 44,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice prepositions by Giving someone directions using prepositions. I want to ensure that I can use a limited range of complex prepositions. For example, 'near to, far from, in front of, inside of.'. Let's do a problem solving exercise. You (the AI) are a friendly English tutor. I see a supermarket layout, you do not. Ask me questions about where to find certain products using prepositions (e.g. ‘Is the dairy section near to the entrance?’, ‘Are the cereals inside of aisle three?’). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a problem solving exercise, by Giving someone directions using prepositions, using, for example, 'near to, far from, in front of, inside of.'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I'd love to help you practice giving directions using prepositions. Let's start. Is the pharmacy located near to the customer service desk?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, the pharmacy is near to the customer service desk."
+    },
+    {
+      "role": "system",
+      "content": "That's correct! Now, is the coffee shop far from the pharmacy?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, the coffee shop is far to the pharmacy."
+    },
+    {
+      "role": "system",
+      "content": "That's almost correct! You can say \"far from the pharmacy\" instead of \"far to the pharmacy\". Now, are the fruit and vegetables in front of the bakery?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, the fruit and vegetables is in front of the bakery."
+    },
+    {
+      "role": "system",
+      "content": "Great job! Now, are the checkout counters inside of the large area with the food court?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, the checkout counters are inside of the large area with the food court."
+    },
+    {
+      "role": "system",
+      "content": "You're doing great. That's the last question. Now, let's summarize what we've covered. You've successfully given directions using prepositions like \"near to\", \"far from\", \"in front of\", and \"inside of\". You've also corrected your answers when I pointed out small mistakes. Good job! You have completed the task. It was a pleasure helping you practice. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-03T21:08:33Z"
+}

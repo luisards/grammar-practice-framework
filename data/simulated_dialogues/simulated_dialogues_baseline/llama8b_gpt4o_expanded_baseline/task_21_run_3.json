@@ -1,0 +1,89 @@
+{
+  "task_id": 21,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your future'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Welcome to my little shop! Please, sit down and let's talk about your future. What would you like to know?"
+    },
+    {
+      "role": "student",
+      "content": "What will my future be like?"
+    },
+    {
+      "role": "system",
+      "content": "That's a big question.  To start, I see you in a calm and happy place with a lot of trees and sunshine. It looks peaceful."
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "Don't worry, it's just a picture in my mind. I see you sitting on a bench, reading a book, and smiling."
+    },
+    {
+      "role": "student",
+      "content": "That sounds nice. What book am I reading?"
+    },
+    {
+      "role": "system",
+      "content": "It's a book about travel and adventure, with pictures of beautiful places."
+    },
+    {
+      "role": "student",
+      "content": "I like travel books. Where am I going?"
+    },
+    {
+      "role": "system",
+      "content": "I see you on a sandy beach in a tropical island. You're smiling and looking happy. You might be thinking of visiting Bali, perhaps enjoying the sunrise over the ocean. I see a sun rising in the background. Your future is full of calm and happy moments; would you like to know more or is that enough for you?"
+    }
+  ],
+  "timestamp": "2025-06-08T12:35:58Z"
+}

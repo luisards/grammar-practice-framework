@@ -1,0 +1,89 @@
+{
+  "task_id": 70,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Advising a friend against some actions in public transport'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi, how are you? I just got back from the city on the bus."
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you. You take bus often?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I do. I take the bus to work every day. But I saw something strange on the bus today. A man was playing music very loudly."
+    },
+    {
+      "role": "student",
+      "content": "That is strange. What music he play?"
+    },
+    {
+      "role": "system",
+      "content": "It was very loud pop music. He didn't use headphones, so everyone could hear it. I think he should use headphones in public."
+    },
+    {
+      "role": "student",
+      "content": "Yes, he should. It is polite to use headphones."
+    },
+    {
+      "role": "system",
+      "content": "We should remind our friends to be considerate of others in public transport, like using headphones when listening to music."
+    },
+    {
+      "role": "student",
+      "content": "Yes, it's important to be considerate. We all share the space."
+    },
+    {
+      "role": "system",
+      "content": "I'm glad we agree. Let's advise our friends to be more considerate in public. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T18:08:12Z"
+}

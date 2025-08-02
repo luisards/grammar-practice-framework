@@ -1,0 +1,93 @@
+{
+  "task_id": 48,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about school routines with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by telling me about a typical school/work day in your country using frequency adverbs, then ask me questions about my school routine. (e.g. 'I usually go to school at 7:30 am. How about you?', 'Do you sometimes study late at night?) Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about school routines with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello. I usually wake up at 6:00 am. I always have breakfast before I go to work. Sometimes I walk to the office, but usually, I take the bus. I often see students on my way to work when they are going to school. They usually carry big bags and sometimes look very tired. How about you, what time do you usually go to school?",
+      "advanced_content": "Hello. I usually wake up at 6:00 am. I always have breakfast before I go to work. Sometimes I walk to the office, but usually, I take the bus. I often see students going to school on my way to work. They usually carry big bags and sometimes look very tired. How about you, what time do you usually go to school?",
+      "advanced_construct_ids": "955"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I usually go to school at 8:00 am. I always have breakfast before I leave. Sometimes I walk with my friends, but I usually take the bus. How do you usually spend your lunch break?"
+    },
+    {
+      "role": "system",
+      "content": "I usually spend my lunch break reading a book or sometimes chatting with my colleagues. I often eat a sandwich or salad, but rarely go to a restaurant. Sometimes I attend meetings during lunch. Do you usually eat lunch at school or do you sometimes go home?"
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "That's okay, it can be different for everyone. I usually have a lot of work to do, so I often stay at the office during lunch. Sometimes I have to attend meetings or sometimes I have to mark papers. Do you usually do your homework when you get home from school, or do you sometimes watch TV first?",
+      "advanced_content": "That's okay, it can be different for everyone. I usually have a lot of work to do, so I often stay at the office during lunch. Sometimes I have to attend meetings or sometimes I have to mark papers. Do you usually do your homework as soon as you get home from school, or do you sometimes watch TV first?",
+      "advanced_construct_ids": "780, 949"
+    },
+    {
+      "role": "student",
+      "content": "I usually do my homework when I get home from school. Sometimes I watch TV after I finish my homework. I always try to finish my assignments before dinner. How about you, do you usually work late or do you sometimes finish early?"
+    },
+    {
+      "role": "system",
+      "content": "I usually finish work at 5:00 pm, but sometimes I have to stay late to finish my tasks. Occasionally, I have to work on weekends, but rarely do I have to work at night. I always try to have some free time to relax and spend time with my family. Do you usually study on weekends, or do you sometimes take a break from schoolwork?"
+    },
+    {
+      "role": "student",
+      "content": "I usually study on weekends, but I sometimes take a break to relax or hang out with friends. I always try to balance my time so I can enjoy my weekends. Do you usually have any hobbies or activities you do after work?"
+    },
+    {
+      "role": "system",
+      "content": "I usually read books or sometimes watch movies after work. I often go for a walk or occasionally play sports to stay active. I always try to make time for things I enjoy. It was great chatting with you about our daily routines! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T13:18:24Z"
+}

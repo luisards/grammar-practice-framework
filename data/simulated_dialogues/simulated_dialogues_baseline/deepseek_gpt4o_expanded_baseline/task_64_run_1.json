@@ -1,0 +1,89 @@
+{
+  "task_id": 64,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a friend about a birthday party'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi! Did you go to Sarah\u2019s birthday party last weekend?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I go to the party."
+    },
+    {
+      "role": "system",
+      "content": "Great! How was the party? Did you have fun?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, it was fun. I dance a lot."
+    },
+    {
+      "role": "system",
+      "content": "That sounds awesome! What kind of music did they play? Did you have any favorite songs?"
+    },
+    {
+      "role": "student",
+      "content": "They play pop music. My favorite song was \"Happy.\""
+    },
+    {
+      "role": "system",
+      "content": "Nice! \"Happy\" is such a fun song to dance to. Did you eat any cake or snacks at the party?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I eat cake and chips."
+    },
+    {
+      "role": "system",
+      "content": "Sounds like you had a great time! Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-08T12:08:41Z"
+}

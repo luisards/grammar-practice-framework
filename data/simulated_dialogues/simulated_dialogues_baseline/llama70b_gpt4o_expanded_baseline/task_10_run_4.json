@@ -1,0 +1,89 @@
+{
+  "task_id": 10,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Describing dishes'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello, how are you? Do you like food?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I am good, thank you. Yes, I like food."
+    },
+    {
+      "role": "system",
+      "content": "What's your favorite food? Do you like sweet or savory dishes?"
+    },
+    {
+      "role": "student",
+      "content": "My favorite food is pizza. I like savory dishes."
+    },
+    {
+      "role": "system",
+      "content": "Pizza is yummy. What's on your favorite pizza?"
+    },
+    {
+      "role": "student",
+      "content": "I like cheese and pepperoni on my pizza."
+    },
+    {
+      "role": "system",
+      "content": "That sounds delicious. Now, can you describe a pizza to someone who has never seen one?"
+    },
+    {
+      "role": "student",
+      "content": "A pizza is a round, flat bread with toppings. It usually has tomato sauce, cheese, and other ingredients like pepperoni or vegetables. It's baked in an oven and cut into slices."
+    },
+    {
+      "role": "system",
+      "content": "Great job describing a pizza! You did a fantastic job. It was nice chatting with you about food. Goodbye! Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T17:26:59Z"
+}

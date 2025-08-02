@@ -1,0 +1,93 @@
+{
+  "task_id": 6,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing family and friends with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your family and ask me about mine (e.g. 'My family is very big. Is your family very big too?', 'Do you have siblings? Are they really nice?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing family and friends with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello. My family is very nice. I have a really nice mom. She is quite kind. Is your family nice too?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my family is really nice. My dad is very funny. My sister is quite smart. How about your friends?"
+    },
+    {
+      "role": "system",
+      "content": "My friends are very good. I have a really close friend. He is so funny. We always laugh together. Is your sister really smart in school?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my sister is really smart in school. She is very good at math. Her teacher is quite impressed. Do you have any other friends?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I have another friend. She is very nice. We often talk about movies. They are usually very interesting. Does your sister like watching movies too?",
+      "advanced_content": "Yes, I have another friend. She is extremely nice. We often talk about movies. They are usually very interesting. Does your sister like watching movies too?",
+      "advanced_construct_ids": "753, 983"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my sister really likes watching movies. She thinks they are quite entertaining. We often watch together. Do you like watching movies with your friends?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, I really enjoy watching movies with my friends. We usually have a very good time together. My friends are so much fun. Is your family very close, do you often do things together?",
+      "advanced_content": "Yes, I really enjoy watching movies with my friends. We usually have a very good time together. My friends are so much fun to be with. Is your family very close, do you often do things together?",
+      "advanced_construct_ids": "948"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my family is very close. We often do things together. We have really fun family dinners. My mom is a very good cook. Do you have family dinners too?"
+    },
+    {
+      "role": "system",
+      "content": "Yes, we have family dinners too. They are really nice. My mom is a very good cook as well. She makes very delicious food. It was great talking to you about our families and friends. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T18:14:13Z"
+}

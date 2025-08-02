@@ -1,0 +1,89 @@
+{
+  "task_id": 51,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Describing the day where you are'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I'm in a classroom. It's a sunny day."
+    },
+    {
+      "role": "student",
+      "content": "Hello! I like sunny days. How are you?"
+    },
+    {
+      "role": "system",
+      "content": "I'm fine, thanks. I'm teaching English today. The classroom is quiet."
+    },
+    {
+      "role": "student",
+      "content": "That's nice. I like quiet classrooms. What are you teaching?"
+    },
+    {
+      "role": "system",
+      "content": "I'm teaching grammar. The students are writing exercises."
+    },
+    {
+      "role": "student",
+      "content": "Grammar is important. Are the exercises difficult?"
+    },
+    {
+      "role": "system",
+      "content": "No, the exercises are not difficult. The students are doing well. We will finish soon."
+    },
+    {
+      "role": "student",
+      "content": "That's good. I hope they learn a lot. What will you do after class?"
+    },
+    {
+      "role": "system",
+      "content": "I will go home after class. I'm happy with the lesson today. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-07T17:55:33Z"
+}

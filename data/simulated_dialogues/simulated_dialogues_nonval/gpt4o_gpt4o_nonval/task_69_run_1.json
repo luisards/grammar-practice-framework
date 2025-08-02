@@ -1,0 +1,89 @@
+{
+  "task_id": 69,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice negation by Advising a friend about cooking with 'don't'. I want to ensure that I can form negative imperatives of main verbs with 'don't' + main verb. Clauses: imperatives For example, 'Don’t do…, don’t forget to…'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) are cooking a new recipe for the first time. Ask me to help you list what not to do in the kitchen. Use short sentences. (e.g. “I’m trying a new recipe. What should I not do in the kitchen?”, “This is my first time cooking. What don’t you think I should do?”, “I don’t want to burn it. Can you tell me what not to do?”) Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Advising a friend about cooking with 'don't', using, for example, 'Don’t do…, don’t forget to…'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hi! I’m trying a new recipe. What should I not do in the kitchen?"
+    },
+    {
+      "role": "student",
+      "content": "Hi! Don’t leave the stove unattended. And don’t forget to wash your hands before start cooking."
+    },
+    {
+      "role": "system",
+      "content": "Thanks! What else should I not do? I don’t want to make any mistakes."
+    },
+    {
+      "role": "student",
+      "content": "Don’t use too much salt. And don’t forget to taste the food as you cook."
+    },
+    {
+      "role": "system",
+      "content": "Great advice! Don’t rush the cooking process. And don’t forget to read the recipe carefully before you start."
+    },
+    {
+      "role": "student",
+      "content": "Don’t mix raw and cooked foods. And don’t forget to preheat the oven if needed."
+    },
+    {
+      "role": "system",
+      "content": "Thanks for all the tips! Don’t worry, I’ll be careful. Let’s see how it turns out. I’ll let you know how it goes!"
+    },
+    {
+      "role": "student",
+      "content": "You're welcome! Don’t hesitate to ask if you need more help. And don’t forget to enjoy the cooking! Let me know how it turns out."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T11:33:58Z"
+}

@@ -1,0 +1,89 @@
+{
+  "task_id": 71,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Giving information about an interview'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! How are you today?"
+    },
+    {
+      "role": "student",
+      "content": "I am good, thank you. How are you?"
+    },
+    {
+      "role": "system",
+      "content": "I'm good too, thanks. I was just preparing for a lesson. What would you like to talk about?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "When I said I was preparing for a lesson, I meant I was getting ready to help someone like you practice their English. What would you like to practice?"
+    },
+    {
+      "role": "student",
+      "content": "I want to practice speaking."
+    },
+    {
+      "role": "system",
+      "content": "Let's practice a job interview. I'll ask you some questions like a real interviewer, and you can answer them as if you were in a real job interview. Are you ready?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, I am ready."
+    },
+    {
+      "role": "system",
+      "content": "We'll conduct the mock interview now. Imagine we're in a real job interview setting. I'll introduce myself, and then we can begin. Hello, I'm Emily, the HR manager of a big company. We're here today to discuss the sales representative position. Can you start by telling me a little bit about yourself?"
+    }
+  ],
+  "timestamp": "2025-06-08T13:19:27Z"
+}

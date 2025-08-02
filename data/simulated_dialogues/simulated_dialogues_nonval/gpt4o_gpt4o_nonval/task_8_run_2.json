@@ -1,0 +1,89 @@
+{
+  "task_id": 8,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing your house with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite ineresting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your home and ask me about mine (e.g. 'My apartment is very small. Is your apartment small too?', 'Is your home really nice?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing your house with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite ineresting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! My house is quite cozy. Is your home cozy too?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! My house is really nice. It's very comfortable."
+    },
+    {
+      "role": "system",
+      "content": "That sounds lovely! My living room is very bright. Is your living room bright as well?"
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "\"Bright\" means there is a lot of light in the room. It can be from windows or lamps. So, I'm asking if your living room has a lot of light. Is it bright?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my living room is very bright. It has big windows."
+    },
+    {
+      "role": "system",
+      "content": "That's great! Big windows can make a room feel so open and airy. My kitchen is quite small, but it's really modern. How about your kitchen? Is it big or small?"
+    },
+    {
+      "role": "student",
+      "content": "My kitchen is quite big. It's very modern too."
+    },
+    {
+      "role": "system",
+      "content": "Good job! You have completed the task. It was nice chatting with you. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T10:52:01Z"
+}

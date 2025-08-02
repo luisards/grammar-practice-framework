@@ -1,0 +1,89 @@
+{
+  "task_id": 45,
+  "run_id": 4,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Explaining where things are located in the cinema'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! Welcome to the cinema. What would you like to know about the cinema?"
+    },
+    {
+      "role": "student",
+      "content": "What movies are playing?"
+    },
+    {
+      "role": "system",
+      "content": "Let me check the schedule for you. We have a new action movie called \"The Hero\" in 3D, a romantic comedy called \"Love Story\" in 2D, and a science fiction movie called \"Galaxy Quest\" in IMAX."
+    },
+    {
+      "role": "student",
+      "content": "What time is \"The Hero\" playing?"
+    },
+    {
+      "role": "system",
+      "content": "\"The Hero\" is playing at 2:00 PM, 5:00 PM, and 8:00 PM. Would you like to know where the 3D cinema is located?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, please. Where is the 3D cinema located?"
+    },
+    {
+      "role": "system",
+      "content": "The 3D cinema is located on the second floor, down the corridor to your left. You can't miss it, it's the big screen with a 3D logo on it. The stairs are just over there, and the lift is next to the stairs."
+    },
+    {
+      "role": "student",
+      "content": "Thank you. How much is a ticket?"
+    },
+    {
+      "role": "system",
+      "content": "Tickets cost \u00a310 for adults, \u00a38 for children, and \u00a35 for students on weekdays. On weekends, all tickets are \u00a312. Would you like to buy a ticket now, or would you like to ask something else?"
+    }
+  ],
+  "timestamp": "2025-06-08T12:58:56Z"
+}

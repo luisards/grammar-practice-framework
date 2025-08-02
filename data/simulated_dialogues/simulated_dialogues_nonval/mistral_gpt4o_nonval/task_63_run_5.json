@@ -1,0 +1,89 @@
+{
+  "task_id": 63,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "mistral-small-24b-instruct-2501",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice wh- by Asking a friend about a job interview with 'What', 'when', 'where' and 'how'. I want to ensure that I can use 'wh-'words + auxiliary 'do' + subject + main verb to form 'wh-'questions. For example, 'where did you go?, when did you arrive?, What did you do?'. Let's do a role play exercise. You (the AI) are a friend. You (the AI) have just finished a job interview. Start by letting me know how it went. Answer my questions. (e.g. \u201cThe interview went well. What would you like to ask about it?\u201d, \u201cIt was a good interview. Did you ever do one?\u201d, \u201cI completed the interview. How do you think I did?\u201d) Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Asking a friend about a job interview with 'What', 'when', 'where' and 'how', using, for example, 'where did you go?, when did you arrive?, What did you do?'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! The interview went well."
+    },
+    {
+      "role": "student",
+      "content": "What questions did they ask?"
+    },
+    {
+      "role": "system",
+      "content": "They asked about my skills and experience."
+    },
+    {
+      "role": "student",
+      "content": "When did the interview start?"
+    },
+    {
+      "role": "system",
+      "content": "It started at 10 AM."
+    },
+    {
+      "role": "student",
+      "content": "Where was the interview held?"
+    },
+    {
+      "role": "system",
+      "content": "It was held at the company's office downtown."
+    },
+    {
+      "role": "student",
+      "content": "How did you feel during the interview?"
+    },
+    {
+      "role": "system",
+      "content": "I felt confident and prepared. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T18:48:46Z"
+}

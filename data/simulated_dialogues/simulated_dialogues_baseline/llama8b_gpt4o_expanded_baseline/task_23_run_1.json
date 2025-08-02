@@ -1,0 +1,89 @@
+{
+  "task_id": 23,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "llama-3.1-8b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "You are a friendly English tutor. I want to practice by 'Asking a fortune teller about your family's future'. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Welcome to my little shop! Please, sit down and I'll do my best to see what the future holds for you. What would you like to know about your family's future?"
+    },
+    {
+      "role": "student",
+      "content": "I want to know if my family will be happy."
+    },
+    {
+      "role": "system",
+      "content": "I see a bright light around your family. It means love and happiness are coming to you. But I also see a small cloud, which means you need to work together as a family to keep the happiness."
+    },
+    {
+      "role": "student",
+      "content": "Thank you. We will work hard together. Will we have good health?"
+    },
+    {
+      "role": "system",
+      "content": "I see a strong tree growing near your family. It means good health and strength will be with you for a long time. But I also see a small branch that needs care. It means you should take care of your elderly family members, especially their health."
+    },
+    {
+      "role": "student",
+      "content": "Thank you. We will take care of them. Will we have enough money?"
+    },
+    {
+      "role": "system",
+      "content": "I see a full wallet in my vision, which means your family's financial situation will be stable and secure. But I also see a small coin falling out, which means you should be careful with your spending and save for the future."
+    },
+    {
+      "role": "student",
+      "content": "Thank you. We will save money. Will our family travel together?"
+    },
+    {
+      "role": "system",
+      "content": "I see a beautiful map unfolding in my vision, which means your family will have many exciting travel opportunities together. I see a big smile on everyone's face, which means you will have wonderful times exploring new places and making memories together. Your family's unity and love will take you on many amazing adventures."
+    }
+  ],
+  "timestamp": "2025-06-08T12:39:09Z"
+}

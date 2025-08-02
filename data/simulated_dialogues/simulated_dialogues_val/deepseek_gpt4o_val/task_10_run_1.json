@@ -1,0 +1,95 @@
+{
+  "task_id": 10,
+  "run_id": 1,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing dishes with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite interesting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me your opinion about food and ask me about mine (e.g. 'I like sushi. I think sushi is very tasty. What food do you think is very tasty?', 'Mexican food is too spicy. Do you like food that is very spicy?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing dishes with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite interesting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I love pizza. I think pizza is really delicious. What food do you think is really delicious?"
+    },
+    {
+      "role": "student",
+      "content": "I think pasta is very tasty. I eat it quick often."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s really great! I think pasta is quite satisfying. Do you like it with sauce that\u2019s extremely creamy or something a bit simpler?",
+      "advanced_content": "That\u2019s great! I think pasta is quite satisfying. Do you like it with sauce that is really creamy or something more simple?",
+      "advanced_construct_ids": "753"
+    },
+    {
+      "role": "student",
+      "content": "I like it with sauce that's very creamy. It's so good!"
+    },
+    {
+      "role": "system",
+      "content": "I agree! Creamy sauce is really tasty. I think lasagna is also very rich and cheesy. Do you like lasagna, or is it too heavy for you?",
+      "advanced_content": "I agree! Creamy sauce is so flavorful. I think lasagna is also very rich and cheesy. Do you like lasagna, or is it too heavy for you?",
+      "advanced_construct_ids": "753"
+    },
+    {
+      "role": "student",
+      "content": "I like lasagna very much. It's really filling but not too heavy for me."
+    },
+    {
+      "role": "system",
+      "content": "That\u2019s great! I think lasagna is very comforting. What about desserts? I think chocolate cake is really sweet and very enjoyable. Do you like desserts that are too sweet or just a little sweet?",
+      "advanced_content": "That\u2019s great! I think lasagna is quite comforting. What about desserts? I think chocolate cake is so sweet and really enjoyable. Do you like desserts that are extremely sweet or just a little sweet?",
+      "advanced_construct_ids": "753, 983"
+    },
+    {
+      "role": "student",
+      "content": "I like desserts that are quite sweet. Chocolate cake is so delicious!"
+    },
+    {
+      "role": "system",
+      "content": "Good job! You did really well practicing adverbs and adjectives. Chocolate cake is indeed so delicious! Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-05T13:27:12Z"
+}

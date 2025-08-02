@@ -1,0 +1,89 @@
+{
+  "task_id": 46,
+  "run_id": 3,
+  "system_info": {
+    "system_model": "gpt-4o",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice present simple by Talking about common habits in your country with frequency adverbs. I want to ensure that I can use the present simple with adverbs of indefinite frequency. For example, 'usually, sometimes, always'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Start by asking me where I am from. Tell me something about your country, then ask me short questions about mine with frequency adverbs. (e.g. 'In my country, people usually have coffee in the morning. How about your country?', 'Do people in your country sometimes celebrate things with fireworks?', 'Do restaurants here usually charge for tap water?') Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Talking about common habits in your country with frequency adverbs, using, for example, 'usually, sometimes, always'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! Where are you from? I'm from the United States. In my country, people usually have coffee in the morning. How about your country?"
+    },
+    {
+      "role": "student",
+      "content": "Hello! I'm from Japan. In my country, people usually have rice for breakfast."
+    },
+    {
+      "role": "system",
+      "content": "That's interesting! In the United States, people often drive cars to work. Do people in your country usually take public transportation to work?"
+    },
+    {
+      "role": "student",
+      "content": "I don't know."
+    },
+    {
+      "role": "system",
+      "content": "That's okay! In Japan, people sometimes use bicycles to get around. Do people in your country often ride bicycles?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, people in Japan often ride bicycles, especially in cities."
+    },
+    {
+      "role": "system",
+      "content": "That's great to hear! In the United States, people sometimes have picnics in parks during the weekend. Do people in your country often spend time in parks?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, people in Japan sometimes spend time in parks, especially during cherry blossom season."
+    },
+    {
+      "role": "system",
+      "content": "That sounds lovely! Cherry blossom season must be beautiful. Good job! You have completed the task. Talk to you later!"
+    }
+  ],
+  "timestamp": "2025-06-04T11:19:46Z"
+}

@@ -1,0 +1,89 @@
+{
+  "task_id": 25,
+  "run_id": 2,
+  "system_info": {
+    "system_model": "deepseek-v3",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice future with be going to by Asking a fortune teller about your love like with 'going to'. I want to ensure that I can use the question form. For example, 'Am I going to..., is it going to..., are they going to...'. Let's do a role play exercise. You (the AI) are a witty fortune teller. Introduce yourself in a friendly manner and use short answers with 'going to'. When possible, ask questions with 'going to' as well. Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a role play exercise, by Asking a fortune teller about your love like with 'going to', using, for example, 'Am I going to..., is it going to..., are they going to...'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "\"Hello, dear! I am Madame Zara, the fortune teller. I see you’re curious about your future. Are you going to ask me about love? Let’s find out what the stars say!\""
+    },
+    {
+      "role": "student",
+      "content": "Hello, Madame Zara! Yes, I am going to ask about my love life. Am I going to meet someone special soon?"
+    },
+    {
+      "role": "system",
+      "content": "\"Ah, I see a spark in your future! Yes, you are going to meet someone special. Is it going to be at a place you often visit? The stars say... keep your eyes open!\""
+    },
+    {
+      "role": "student",
+      "content": "What does that mean?"
+    },
+    {
+      "role": "system",
+      "content": "\"It means you are going to cross paths with someone soon. Are you going to be brave and say hello? The stars say a simple 'hi' is going to change everything!\""
+    },
+    {
+      "role": "student",
+      "content": "I am going to try to be brave! Is it going to be a long-lasting relationship?"
+    },
+    {
+      "role": "system",
+      "content": "\"The stars are smiling! Yes, it is going to be a long-lasting relationship if you are going to put in the effort. Are you going to trust the journey? Remember, love is going to bloom when you least expect it. Good luck, dear!\""
+    },
+    {
+      "role": "student",
+      "content": "Thank you, Madame Zara! I am going to trust the journey and keep my heart open. Are they going to feel the same way about me?"
+    },
+    {
+      "role": "system",
+      "content": "\"Yes, they are going to feel the same way about you! The stars say your hearts are going to connect deeply. Good job! You have completed the task. Talk to you later, dear!\""
+    }
+  ],
+  "timestamp": "2025-06-04T20:59:50Z"
+}

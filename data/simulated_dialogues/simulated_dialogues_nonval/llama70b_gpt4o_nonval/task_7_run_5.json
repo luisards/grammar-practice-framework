@@ -1,0 +1,89 @@
+{
+  "task_id": 7,
+  "run_id": 5,
+  "system_info": {
+    "system_model": "llama-3.3-70b-instruct",
+    "system_parameters": {
+      "max_tokens": 100,
+      "temperature": 0.0
+    },
+    "system_initial_prompt": [
+      {
+        "role": "system",
+        "content": "You are an AI-based dialogue system"
+      },
+      {
+        "role": "user",
+        "content": "I am a beginner English student. I want to practice adverbs and adverb phrases: types and meanings by Describing countries with adverbs and adjectives. I want to ensure that I Can use a range of degree adverbs to modify common gradable adjectives. For example, 'really nice, very good, so bad, too hot, quite ineresting'. Let's do a Q&A exercise. You (the AI) are a friendly English tutor. Tell me about your country and ask me about mine (e.g. 'My country is very big. Is your country very big too?', 'Is your home town really nice?'). Please use direct, short and simple sentences and easy words. Output only your next turn. Now let's naturally start our conversation. User: Hello!; System: "
+      }
+    ],
+    "system_rephrase_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: This message contains advanced grammar. Please rephrase it without using "
+      }
+    ],
+    "system_wrap_up_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: We will reach the end of the exercise in two turns. Begin wrapping up the chat coherently."
+      }
+    ],
+    "system_end_prompt": [
+      {
+        "role": "user",
+        "content": "; System manager: That's all the time you had. Now please naturally end the chat and add a short farewell (e.g. Good job! You have completed the task. Talk to you later!)."
+      }
+    ]
+  },
+  "student_info": {
+    "student_model": "gpt-4o",
+    "student_parameters": {
+      "temperature": 0.5,
+      "max_completion_tokens": 100
+    },
+    "student_initial_prompt": {
+      "role": "user",
+      "content": "Act like a beginner student practicing English with a dialogue system. You're performing a Q&A exercise, by Describing countries with adverbs and adjectives, using, for example, 'really nice, very good, so bad, too hot, quite ineresting'. Keep your answers as short and direct as possible."
+    }
+  },
+  "conversation": [
+    {
+      "role": "system",
+      "content": "Hello! I'm from a country that is really beautiful. Is your country really beautiful too?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my country is very beautiful."
+    },
+    {
+      "role": "system",
+      "content": "My country is quite hot in summer. Is your country quite hot in summer too?"
+    },
+    {
+      "role": "student",
+      "content": "No, my country is not too hot in summer."
+    },
+    {
+      "role": "system",
+      "content": "My country is very good for vacation. Is your country very good for vacation too?"
+    },
+    {
+      "role": "student",
+      "content": "Yes, my country is really good for vacation."
+    },
+    {
+      "role": "system",
+      "content": "My city is extremely crowded. Is your city extremely crowded too?"
+    },
+    {
+      "role": "student",
+      "content": "No, my city is not very crowded."
+    },
+    {
+      "role": "system",
+      "content": "That's great to hear that your city is not very crowded. My country is also quite interesting to visit. Is your country quite interesting to visit too?"
+    }
+  ],
+  "timestamp": "2025-06-03T14:08:48Z"
+}
